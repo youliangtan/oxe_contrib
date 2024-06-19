@@ -24,7 +24,7 @@ jobs:
         # Add any required dependencies here, e.g., pip install -r requirements.txt
 
     - name: Run README generation script
-      run: python generate_readme.py
+      run: python scripts/generate_readme.py
 
     - name: Commit and push changes
       run: |
