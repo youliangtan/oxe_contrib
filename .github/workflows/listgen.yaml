@@ -21,7 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        # Add any required dependencies here, e.g., pip install -r requirements.txt
+        pip install pyyaml pandas
 
     - name: Run README generation script
       run: python scripts/generate_readme.py
