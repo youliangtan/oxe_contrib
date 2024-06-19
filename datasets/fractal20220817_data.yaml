@@ -1,0 +1,26 @@
+citation: "@article{brohan2022rt,\n  title={Rt-1: Robotics transformer for real-world\
+  \ control at scale},\n  author={Brohan, Anthony and Brown, Noah and Carbajal, Justice\
+  \ and Chebotar, Yevgen and Dabis, Joseph and Finn, Chelsea and Gopalakrishnan, Keerthana\
+  \ and Hausman, Karol and Herzog, Alex and Hsu, Jasmine and others},\n  journal={arXiv\
+  \ preprint arXiv:2212.06817},\n  year={2022}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: fractal20220817_data
+description: Table-top manipulation with 17 objects
+download:
+- link: gs://gresearch/robotics/fractal20220817_data/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 87212
+schema:
+- TODO: schema_todo
+size_in_gb: 119.258547932
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

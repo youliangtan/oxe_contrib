@@ -1,0 +1,26 @@
+citation: "@inproceedings{\n    shah2023mutex,\n    title={{MUTEX}: Learning Unified\
+  \ Policies from Multimodal Task Specifications},\n    author={Rutav Shah and Roberto\
+  \ Mart{'\\i}n-Mart{'\\i}n and Yuke Zhu},\n    booktitle={7th Annual Conference on\
+  \ Robot Learning},\n    year={2023},\n    url={https://openreview.net/forum?id=PwqiqaaEzJ}\n\
+  }"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: utaustin_mutex
+description: Diverse household manipulation tasks
+download:
+- link: gs://gresearch/robotics/utaustin_mutex/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 1500
+schema:
+- TODO: schema_todo
+size_in_gb: 22.326254215
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

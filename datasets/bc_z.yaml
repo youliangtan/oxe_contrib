@@ -1,0 +1,34 @@
+citation: '@inproceedings{jang2021bc,
+
+  title={{BC}-Z: Zero-Shot Task Generalization with Robotic Imitation Learning},
+
+  author={Eric Jang and Alex Irpan and Mohi Khansari and Daniel Kappler and Frederik
+  Ebert and Corey Lynch and Sergey Levine and Chelsea Finn},
+
+  booktitle={5th Annual Conference on Robot Learning},
+
+  year={2021},
+
+  url={https://openreview.net/forum?id=8kbp23tSGYv}}'
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: bc_z
+description: Teleoped Google robot doing mostly pick-place from a table
+download:
+- link: gs://gresearch/robotics/bc_z/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 39350
+- val: 3914
+schema:
+- TODO: schema_todo
+size_in_gb: 86.475802179
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

@@ -1,0 +1,27 @@
+citation: "@inproceedings{gu2023maniskill2,\n  title={ManiSkill2: A Unified Benchmark\
+  \ for Generalizable Manipulation Skills},\n  author={Gu, Jiayuan and Xiang, Fanbo\
+  \ and Li, Xuanlin and Ling, Zhan and Liu, Xiqiang and Mu, Tongzhou and Tang, Yihe\
+  \ and Tao, Stone and Wei, Xinyue and Yao, Yunchao and Yuan, Xiaodi and Xie, Pengwei\
+  \ and Huang, Zhiao and Chen, Rui and Su, Hao},\n  booktitle={International Conference\
+  \ on Learning Representations},\n  year={2023}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: maniskill_dataset_converted_externally_to_rlds
+description: Simulated Franka performing various manipulation tasks
+download:
+- link: gs://gresearch/robotics/maniskill_dataset_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 30213
+schema:
+- TODO: schema_todo
+size_in_gb: 162.191587434
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

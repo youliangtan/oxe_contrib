@@ -1,0 +1,26 @@
+citation: "@software{dass2023jacoplay,\n  author = {Dass, Shivin and Yapeter, Jullian\
+  \ and Zhang, Jesse and Zhang, Jiahui\n            and Pertsch, Karl and Nikolaidis,\
+  \ Stefanos and Lim, Joseph J.},\n  title = {CLVR Jaco Play Dataset},\n  url = {https://github.com/clvrai/clvr_jaco_play_dataset},\n\
+  \  version = {1.0.0},\n  year = {2023}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: jaco_play
+description: Jaco 2 pick place on table top
+download:
+- link: gs://gresearch/robotics/jaco_play/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 976
+- test: 109
+schema:
+- TODO: schema_todo
+size_in_gb: 9.920929426
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

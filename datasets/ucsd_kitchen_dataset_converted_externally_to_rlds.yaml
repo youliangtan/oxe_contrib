@@ -1,0 +1,23 @@
+citation: "@ARTICLE{ucsd_kitchens,\n  author = {Ge Yan, Kris Wu, and Xiaolong Wang},\n\
+  \  title = {{ucsd kitchens Dataset}},\n  year = {2023},\n  month = {August}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: ucsd_kitchen_dataset_converted_externally_to_rlds
+description: xArm interacting with different toy kitchens
+download:
+- link: gs://gresearch/robotics/ucsd_kitchen_dataset_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 150
+schema:
+- TODO: schema_todo
+size_in_gb: 1.423313304
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

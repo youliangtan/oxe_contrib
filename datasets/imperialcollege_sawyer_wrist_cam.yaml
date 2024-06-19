@@ -1,0 +1,22 @@
+citation: --
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: imperialcollege_sawyer_wrist_cam
+description: Sawyer performing table top manipulation
+download:
+- link: gs://gresearch/robotics/imperialcollege_sawyer_wrist_cam/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 170
+schema:
+- TODO: schema_todo
+size_in_gb: 0.085846365
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

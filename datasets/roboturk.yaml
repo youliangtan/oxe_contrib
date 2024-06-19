@@ -1,0 +1,29 @@
+citation: "@inproceedings{mandlekar2019scaling,\n          title={Scaling robot supervision\
+  \ to hundreds of hours with roboturk: Robotic manipulation dataset through human\
+  \ reasoning and dexterity},\n          author={Mandlekar, Ajay and Booher, Jonathan\
+  \ and Spero, Max and Tung, Albert and Gupta, Anchit and Zhu, Yuke and Garg, Animesh\
+  \ and Savarese, Silvio and Fei-Fei, Li},\n          booktitle={2019 IEEE/RSJ International\
+  \ Conference on Intelligent Robots and Systems (IROS)},\n          pages={1048--1055},\n\
+  \          year={2019},\n          organization={IEEE}\n        }"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: roboturk
+description: Cloth folding, bowl stacking
+download:
+- link: gs://gresearch/robotics/roboturk/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 1796
+- test: 199
+schema:
+- TODO: schema_todo
+size_in_gb: 48.732734128
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

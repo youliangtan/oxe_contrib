@@ -1,0 +1,25 @@
+citation: "@InProceedings{Radosavovic2022,\n  title = {Real-World Robot Learning with\
+  \ Masked Visual Pre-training},\n  author = {Ilija Radosavovic and Tete Xiao and\
+  \ Stephen James and Pieter Abbeel and Jitendra Malik and Trevor Darrell},\n  booktitle\
+  \ = {CoRL},\n  year = {2022}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: berkeley_mvp_converted_externally_to_rlds
+description: xArm performing 6 manipulation tasks
+download:
+- link: gs://gresearch/robotics/berkeley_mvp_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 480
+schema:
+- TODO: schema_todo
+size_in_gb: 13.254244966
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

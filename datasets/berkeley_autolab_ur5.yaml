@@ -1,0 +1,25 @@
+citation: "@misc{BerkeleyUR5Website,\n  title = {Berkeley {UR5} Demonstration Dataset},\n\
+  \  author = {Lawrence Yunliang Chen and Simeon Adebola and Ken Goldberg},\n  howpublished\
+  \ = {https://sites.google.com/view/berkeley-ur5/home},\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: berkeley_autolab_ur5
+description: UR5 performing cloth manipulation, pick place etc tasks
+download:
+- link: gs://gresearch/robotics/berkeley_autolab_ur5/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 896
+- test: 104
+schema:
+- TODO: schema_todo
+size_in_gb: 82.022938351
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

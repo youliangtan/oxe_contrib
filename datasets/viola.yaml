@@ -1,0 +1,26 @@
+citation: "@article{zhu2022viola,\n  title={VIOLA: Imitation Learning for Vision-Based\
+  \ Manipulation with Object Proposal Priors},\n  author={Zhu, Yifeng and Joshi, Abhishek\
+  \ and Stone, Peter and Zhu, Yuke},\n  journal={6th Annual Conference on Robot Learning\
+  \ (CoRL)},\n  year={2022}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: viola
+description: Franka robot interacting with stylized kitchen tasks
+download:
+- link: gs://gresearch/robotics/viola/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 135
+- test: 15
+schema:
+- TODO: schema_todo
+size_in_gb: 11.167069601
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

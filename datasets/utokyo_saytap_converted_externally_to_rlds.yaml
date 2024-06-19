@@ -1,0 +1,26 @@
+citation: "@article{saytap2023,\n  author = {Yujin Tang and Wenhao Yu and Jie Tan\
+  \ and Heiga Zen and Aleksandra Faust and\nTatsuya Harada},\n  title  = {SayTap:\
+  \ Language to Quadrupedal Locomotion},\n  eprint = {arXiv:2306.07580},\n  url  \
+  \  = {https://saytap.github.io},\n  note   = \"{https://saytap.github.io}\",\n \
+  \ year   = {2023}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: utokyo_saytap_converted_externally_to_rlds
+description: A1 walking, no RGB
+download:
+- link: gs://gresearch/robotics/utokyo_saytap_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 20
+schema:
+- TODO: schema_todo
+size_in_gb: 0.058024866
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

@@ -1,0 +1,26 @@
+citation: "@inproceedings{haldar2023watch,\n  title={Watch and match: Supercharging\
+  \ imitation with regularized optimal transport},\n  author={Haldar, Siddhant and\
+  \ Mathur, Vaibhav and Yarats, Denis and Pinto, Lerrel},\n  booktitle={Conference\
+  \ on Robot Learning},\n  pages={32--43},\n  year={2023},\n  organization={PMLR}\n\
+  }"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: nyu_rot_dataset_converted_externally_to_rlds
+description: xArm short-horizon table-top tasks
+download:
+- link: gs://gresearch/robotics/nyu_rot_dataset_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 14
+schema:
+- TODO: schema_todo
+size_in_gb: 0.005593987
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

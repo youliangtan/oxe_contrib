@@ -1,0 +1,27 @@
+citation: "@article{luo2023multistage,\n  author    = {Jianlan Luo and Charles Xu\
+  \ and Xinyang Geng and Gilbert Feng and Kuan Fang and Liam Tan and Stefan Schaal\
+  \ and Sergey Levine},\n  title     = {Multi-Stage Cable Routing through Hierarchical\
+  \ Imitation Learning},\n  journal   = {arXiv pre-print},\n  year      = {2023},\n\
+  \  url       = {https://arxiv.org/abs/2307.08927},\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: berkeley_cable_routing
+description: Routing cable into clamps on table top
+download:
+- link: gs://gresearch/robotics/berkeley_cable_routing/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 1482
+- test: 165
+schema:
+- TODO: schema_todo
+size_in_gb: 5.012241866
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

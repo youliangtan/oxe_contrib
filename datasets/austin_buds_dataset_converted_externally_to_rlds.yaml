@@ -1,0 +1,26 @@
+citation: "@article{zhu2022bottom,\n  title={Bottom-Up Skill Discovery From Unsegmented\
+  \ Demonstrations for Long-Horizon Robot Manipulation},\n  author={Zhu, Yifeng and\
+  \ Stone, Peter and Zhu, Yuke},\n  journal={IEEE Robotics and Automation Letters},\n\
+  \  volume={7},\n  number={2},\n  pages={4126--4133},\n  year={2022},\n  publisher={IEEE}\n\
+  }"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: austin_buds_dataset_converted_externally_to_rlds
+description: Franka stylized kitchen tasks
+download:
+- link: gs://gresearch/robotics/austin_buds_dataset_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 50
+schema:
+- TODO: schema_todo
+size_in_gb: 1.604210665
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

@@ -1,0 +1,30 @@
+citation: "@inproceedings{zhou2023modularity,\n  title={Modularity through Attention:\
+  \ Efficient Training and Transfer of Language-Conditioned Policies for Robot Manipulation},\n\
+  \  author={Zhou, Yifan and Sonawani, Shubham and Phielipp, Mariano and Stepputtis,\
+  \ Simon and Amor, Heni},\n  booktitle={Conference on Robot Learning},\n  pages={1684--1695},\n\
+  \  year={2023},\n  organization={PMLR}\n}\n@article{zhou2023learning,\n  title={Learning\
+  \ modular language-conditioned robot policies through attention},\n  author={Zhou,\
+  \ Yifan and Sonawani, Shubham and Phielipp, Mariano and Ben Amor, Heni and Stepputtis,\
+  \ Simon},\n  journal={Autonomous Robots},\n  pages={1--21},\n  year={2023},\n  publisher={Springer}\n\
+  }"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: asu_table_top_converted_externally_to_rlds
+description: UR5 performing table-top pick/place/rotate tasks
+download:
+- link: gs://gresearch/robotics/asu_table_top_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 110
+schema:
+- TODO: schema_todo
+size_in_gb: 0.773431435
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

@@ -1,0 +1,24 @@
+citation: "@article{belkhale2023hydra,\n title={HYDRA: Hybrid Robot Actions for Imitation\
+  \ Learning},\n author={Belkhale, Suneel and Cui, Yuchen and Sadigh, Dorsa},\n journal={arxiv},\n\
+  \ year={2023}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: stanford_hydra_dataset_converted_externally_to_rlds
+description: Franka solving long-horizon tasks
+download:
+- link: gs://gresearch/robotics/stanford_hydra_dataset_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 570
+schema:
+- TODO: schema_todo
+size_in_gb: 77.828067211
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

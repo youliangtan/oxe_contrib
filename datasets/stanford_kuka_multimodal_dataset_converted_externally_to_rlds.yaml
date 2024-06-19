@@ -1,0 +1,27 @@
+citation: "@inproceedings{lee2019icra,\n  title={Making sense of vision and touch:\
+  \ Self-supervised learning of multimodal representations for contact-rich tasks},\n\
+  \  author={Lee, Michelle A and Zhu, Yuke and Srinivasan, Krishnan and Shah, Parth\
+  \ and Savarese, Silvio and Fei-Fei, Li and  Garg, Animesh and Bohg, Jeannette},\n\
+  \  booktitle={2019 IEEE International Conference on Robotics and Automation (ICRA)},\n\
+  \  year={2019},\n  url={https://arxiv.org/abs/1810.10191}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: stanford_kuka_multimodal_dataset_converted_externally_to_rlds
+description: Kuka iiwa peg insertion with force feedback
+download:
+- link: gs://gresearch/robotics/stanford_kuka_multimodal_dataset_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 3000
+schema:
+- TODO: schema_todo
+size_in_gb: 34.334163403
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

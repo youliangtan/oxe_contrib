@@ -1,0 +1,25 @@
+citation: "@inproceedings{nasiriany2022sailor,\n      title={Learning and Retrieval\
+  \ from Prior Data for Skill-based Imitation Learning},\n      author={Soroush Nasiriany\
+  \ and Tian Gao and Ajay Mandlekar and Yuke Zhu},\n      booktitle={Conference on\
+  \ Robot Learning (CoRL)},\n      year={2022}\n    }"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: austin_sailor_dataset_converted_externally_to_rlds
+description: Franka tablesetting tasks
+download:
+- link: gs://gresearch/robotics/austin_sailor_dataset_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 240
+schema:
+- TODO: schema_todo
+size_in_gb: 20.235912513
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

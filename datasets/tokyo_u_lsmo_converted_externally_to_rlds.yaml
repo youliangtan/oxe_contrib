@@ -1,0 +1,25 @@
+citation: "@Article{Osa22,\n  author  = {Takayuki Osa},\n  journal = {The International\
+  \ Journal of Robotics Research},\n  title   = {Motion Planning by Learning the Solution\
+  \ Manifold in Trajectory Optimization},\n  year    = {2022},\n  number  = {3},\n\
+  \  pages   = {291--311},\n  volume  = {41},\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: tokyo_u_lsmo_converted_externally_to_rlds
+description: motion planning trajectory of pick place tasks
+download:
+- link: gs://gresearch/robotics/tokyo_u_lsmo_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 50
+schema:
+- TODO: schema_todo
+size_in_gb: 0.352017875
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

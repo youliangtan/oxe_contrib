@@ -1,0 +1,22 @@
+citation: ''
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: language_table
+description: ''
+download:
+- link: gs://gresearch/robotics/language_table/0.0.1
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 442226
+schema:
+- TODO: schema_todo
+size_in_gb: 428.665067806
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.0.1

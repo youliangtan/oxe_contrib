@@ -1,0 +1,25 @@
+citation: "@article{shi2023robocook,\n  title={RoboCook: Long-Horizon Elasto-Plastic\
+  \ Object Manipulation with Diverse Tools},\n  author={Shi, Haochen and Xu, Huazhe\
+  \ and Clarke, Samuel and Li, Yunzhu and Wu, Jiajun},\n  journal={arXiv preprint\
+  \ arXiv:2306.14447},\n  year={2023}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: stanford_robocook_converted_externally_to_rlds
+description: Franka preparing dumplings with various tools
+download:
+- link: gs://gresearch/robotics/stanford_robocook_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 2460
+schema:
+- TODO: schema_todo
+size_in_gb: 133.807555717
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

@@ -1,0 +1,26 @@
+citation: "@article{kimpre,\n  title={Pre-and post-contact policy decomposition for\
+  \ non-prehensile manipulation with zero-shot sim-to-real transfer},\n  author={Kim,\
+  \ Minchan and Han, Junhyek and Kim, Jaehyung and Kim, Beomjoon},\n  booktitle={2023\
+  \ IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},\n\
+  \  year={2023},\n  organization={IEEE}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: kaist_nonprehensile_converted_externally_to_rlds
+description: Franka manipulating ungraspable objects
+download:
+- link: gs://gresearch/robotics/kaist_nonprehensile_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 201
+schema:
+- TODO: schema_todo
+size_in_gb: 12.571320337
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

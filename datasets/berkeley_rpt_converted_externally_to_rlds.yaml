@@ -1,0 +1,25 @@
+citation: "@article{Radosavovic2023,\n  title={Robot Learning with Sensorimotor Pre-training},\n\
+  \  author={Ilija Radosavovic and Baifeng Shi and Letian Fu and Ken Goldberg and\
+  \ Trevor Darrell and Jitendra Malik},\n  year={2023},\n  journal={arXiv:2306.10007}\n\
+  }"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: berkeley_rpt_converted_externally_to_rlds
+description: Franka performing tabletop pick place tasks
+download:
+- link: gs://gresearch/robotics/berkeley_rpt_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 908
+schema:
+- TODO: schema_todo
+size_in_gb: 43.634683218
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

@@ -1,0 +1,25 @@
+citation: "@inproceedings{liu2022robot,\n    title = {Robot Learning on the Job: Human-in-the-Loop\
+  \ Autonomy and Learning During Deployment},\n    author = {Huihan Liu and Soroush\
+  \ Nasiriany and Lance Zhang and Zhiyao Bao and Yuke Zhu},\n    booktitle = {Robotics:\
+  \ Science and Systems (RSS)},\n    year = {2023}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: austin_sirius_dataset_converted_externally_to_rlds
+description: Franka tabletop manipulation tasks
+download:
+- link: gs://gresearch/robotics/austin_sirius_dataset_converted_externally_to_rlds/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 559
+schema:
+- TODO: schema_todo
+size_in_gb: 7.031670062
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

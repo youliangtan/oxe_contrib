@@ -1,0 +1,25 @@
+citation: "@article{hirose2023sacson,\n  title={SACSoN: Scalable Autonomous Data Collection\
+  \ for Social Navigation},\n  author={Hirose, Noriaki and Shah, Dhruv and Sridhar,\
+  \ Ajay and Levine, Sergey},\n  journal={arXiv preprint arXiv:2306.01874},\n  year={2023}\n\
+  }"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: berkeley_gnm_sac_son
+description: office navigation
+download:
+- link: gs://gresearch/robotics/berkeley_gnm_sac_son/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 2955
+schema:
+- TODO: schema_todo
+size_in_gb: 7.519422595
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

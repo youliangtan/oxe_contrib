@@ -1,0 +1,34 @@
+citation: "@inproceedings{dasari2019robonet,\n    title={RoboNet: Large-Scale Multi-Robot\
+  \ Learning},\n    author={Sudeep Dasari and Frederik Ebert and Stephen Tian and\
+  \ Suraj Nair and Bernadette Bucher and Karl Schmeckpeper and Siddharth Singh and\
+  \ Sergey Levine and Chelsea Finn},\n    year={2019},\n    eprint={1910.11215},\n\
+  \    archivePrefix={arXiv},\n    primaryClass={cs.RO},\n    booktitle={CoRL 2019:\
+  \ Volume 100 Proceedings of Machine Learning Research}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: robo_net
+description: 'This is an excerpt of the [RoboNet](https://github.com/SudeepDasari/RoboNet)
+  dataset.
+
+
+
+  Data from 5 robots randomly interacting with a bin using the AutoGrasp primitive.
+  The action/state space is shared across all robots, and camera observations were
+  taken using 3 synced camera images.'
+download:
+- link: gs://gresearch/robotics/robo_net/1.0.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 82775
+schema:
+- TODO: schema_todo
+size_in_gb: 858.898919692
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 1.0.0

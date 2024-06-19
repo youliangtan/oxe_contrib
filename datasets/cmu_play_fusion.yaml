@@ -1,0 +1,27 @@
+citation: "@inproceedings{chen2023playfusion,\n  title={PlayFusion: Skill Acquisition\
+  \ via Diffusion from Language-Annotated Play},\n  author={Chen, Lili and Bahl, Shikhar\
+  \ and Pathak, Deepak},\n  booktitle={CoRL},\n  year={2023}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: cmu_play_fusion
+description: 'The robot plays with 3 complex scenes: a grill with many cooking objects
+  like toaster, pan, etc. It has to pick, open, place, close. It  has to set a table,
+  move plates, cups, utensils. And it has to place dishes in the sink, dishwasher,
+  hand cups etc.'
+download:
+- link: gs://gresearch/robotics/cmu_play_fusion/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 576
+schema:
+- TODO: schema_todo
+size_in_gb: 7.167257294
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0

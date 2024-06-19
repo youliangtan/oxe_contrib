@@ -1,0 +1,36 @@
+citation: '@inproceedings{
+
+  shah2021rapid,
+
+  title={{Rapid Exploration for Open-World Navigation with Latent Goal Models}},
+
+  author={Dhruv Shah and Benjamin Eysenbach and Nicholas Rhinehart and Sergey Levine},
+
+  booktitle={5th Annual Conference on Robot Learning },
+
+  year={2021},
+
+  url={https://openreview.net/forum?id=d_SWJhyKfVw}
+
+  }'
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: berkeley_gnm_recon
+description: off-road navigation
+download:
+- link: gs://gresearch/robotics/berkeley_gnm_recon/0.1.0
+  source: google_bucket
+intended_level_of_support: 4
+link: TODO
+number_of_trajectories:
+- train: 11834
+schema:
+- TODO: schema_todo
+size_in_gb: 20.107714869
+tag:
+- open-x
+- manipulation
+- single-arm
+- parallel-jaw-gripper
+version: 0.1.0
