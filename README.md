@@ -1,11 +1,11 @@
 
-    # Open Embodiment Datasets
+# Open Embodiment Datasets
 
-    This is an auto-generated README file at time 2024-06-19 01:41:19
+This is an auto-generated README file at time 2024-06-19 01:51:18
 
-    ## Dataset 
+## Dataset 
 
-    | dataset_name                                                  | description                                                                                                                                                                                                                                                  | tag                                                              | download                                                                                                                             | curation                      |   intended_level_of_support | copyright   | number_of_trajectories             |   size_in_gb |
+| dataset_name                                                  | description                                                                                                                                                                                                                                                  | tag                                                              | download                                                                                                                             | curation                      |   intended_level_of_support | copyright   | number_of_trajectories             |   size_in_gb |
 |:--------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------|:------------------------------|----------------------------:|:------------|:-----------------------------------|-------------:|
 | berkeley_mvp_converted_externally_to_rlds                     | xArm performing 6 manipulation tasks                                                                                                                                                                                                                         | ['open-x', 'manipulation', 'single-arm', 'parallel-jaw-gripper'] | [{'link': 'gs://gresearch/robotics/berkeley_mvp_converted_externally_to_rlds/0.1.0', 'source': 'google_bucket'}]                     | [{'open_x_embodiment': True}] |                           4 | Copyright   | [{'train': 480}]                   |  13.2542     |
 | berkeley_fanuc_manipulation                                   | Fanuc robot performing various manipulation tasks                                                                                                                                                                                                            | ['open-x', 'manipulation', 'single-arm', 'parallel-jaw-gripper'] | [{'link': 'gs://gresearch/robotics/berkeley_fanuc_manipulation/0.1.0', 'source': 'google_bucket'}]                                   | [{'open_x_embodiment': True}] |                           4 | Copyright   | [{'train': 415}]                   |   9.50406    |
@@ -64,7 +64,7 @@
 | austin_buds_dataset_converted_externally_to_rlds              | Franka stylized kitchen tasks                                                                                                                                                                                                                                | ['open-x', 'manipulation', 'single-arm', 'parallel-jaw-gripper'] | [{'link': 'gs://gresearch/robotics/austin_buds_dataset_converted_externally_to_rlds/0.1.0', 'source': 'google_bucket'}]              | [{'open_x_embodiment': True}] |                           4 | Copyright   | [{'train': 50}]                    |   1.60421    |
 | stanford_kuka_multimodal_dataset_converted_externally_to_rlds | Kuka iiwa peg insertion with force feedback                                                                                                                                                                                                                  | ['open-x', 'manipulation', 'single-arm', 'parallel-jaw-gripper'] | [{'link': 'gs://gresearch/robotics/stanford_kuka_multimodal_dataset_converted_externally_to_rlds/0.1.0', 'source': 'google_bucket'}] | [{'open_x_embodiment': True}] |                           4 | Copyright   | [{'train': 3000}]                  |  34.3342     |
 
-    ## Contributing
+## Contributing
 
-    Explain how to contribute here.
+Explain how to contribute here.
     

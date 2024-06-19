@@ -47,17 +47,17 @@ def generate_readme_from_yaml(yaml_dir):
 
 def generate_readme():
     content = f"""
-    # Open Embodiment Datasets
+# Open Embodiment Datasets
 
-    This is an auto-generated README file at time {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+This is an auto-generated README file at time {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
 
-    ## Dataset 
+## Dataset 
 
-    {generate_readme_from_yaml(yaml_directory)}
+{generate_readme_from_yaml(yaml_directory)}
 
-    ## Contributing
+## Contributing
 
-    Explain how to contribute here.
+Explain how to contribute here.
     """
 
     with open(output_readme, "w") as readme_file:
@@ -65,6 +65,6 @@ def generate_readme():
         
 
 if __name__ == "__main__":
-    yaml_directory = '../datasets'
-    output_readme = '../README.md'
+    yaml_directory = 'datasets'
+    output_readme = 'README.md'
     generate_readme()
