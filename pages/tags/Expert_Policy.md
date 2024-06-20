@@ -1,8 +1,8 @@
 # Expert_Policy
 
-- [CoryHall](https://github.com/KeplerC/oed-playground/tree/main/pages/datasets/berkeley_gnm_cory_h.md): Small mobile robot navigates hallways in an office building using a learned policy.
+- [CoryHall](https://github.com/KeplerC/oed-playground/tree/main/pages/datasets/berkeley_gnm_cory_hall.md): Small mobile robot navigates hallways in an office building using a learned policy.
 - [CMU_Stretch](https://github.com/KeplerC/oed-playground/tree/main/pages/datasets/cmu_stretch.md): Robot interacting with different household environments.
-- [QT-Opt](https://github.com/KeplerC/oed-playground/tree/main/pages/datasets/kuk.md): Kuka robot picking objects in a bin.
+- [QT-Opt](https://github.com/KeplerC/oed-playground/tree/main/pages/datasets/kuka.md): Kuka robot picking objects in a bin.
 - [UCSD_Pick_Place](https://github.com/KeplerC/oed-playground/tree/main/pages/datasets/ucsd_pick_and_place_dataset_converted_externally_to_rlds.md): The robot performs pick and place tasks in table top and kitchen scenes. The dataset contains a variety of visual variations.
 - [DLR_Sara_Grid_Clamp_Dataset](https://github.com/KeplerC/oed-playground/tree/main/pages/datasets/dlr_sara_grid_clamp_converted_externally_to_rlds.md): The robot learns to place the grid clamp in the grids on the table.
 - [Stanford_Kuka_Multimodal](https://github.com/KeplerC/oed-playground/tree/main/pages/datasets/stanford_kuka_multimodal_dataset_converted_externally_to_rlds.md): The robot learns to insert differently-shaped pegs into differently-shaped holes with low tolerances (~2mm).
