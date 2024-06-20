@@ -7,8 +7,8 @@ import pandas as pd
 DATASET_DIR = "./datasets"
 OUTPUT_TAG_PAGE_DIR = "./pages/tags"
 OUTPUT_DATASET_PAGE_DIR = "./pages/datasets"
-URL_DATASET_PAGE_DIR = "oed-playground/tree/master/pages/datasets"
-URL_TAG_PAGE_DIR = "oed-playground/tree/master/pages/tags"
+URL_DATASET_PAGE_DIR = "https://github.com/KeplerC/oed-playground/tree/main/pages/datasets"
+URL_TAG_PAGE_DIR = "https://github.com/KeplerC/oed-playground/tree/main/pages/tags"
 TEMPLATE_DIR = "pages/templates"
 
 
