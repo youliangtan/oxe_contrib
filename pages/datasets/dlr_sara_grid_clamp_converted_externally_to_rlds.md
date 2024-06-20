@@ -2,7 +2,7 @@
 
 The robot learns to place the grid clamp in the grids on the table.
 
-**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:DLR_SARA](./pages/tags/Robot:DLR_SARA.md), [Single_Arm](./pages/tags/Single_Arm.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md), [Scene:Workshop_environment](./pages/tags/Scene:Workshop_environment.md)
+**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:DLR_SARA](oed-playground/tree/master/pages/tags/Robot:DLR_SARA.md), [Single_Arm](oed-playground/tree/master/pages/tags/Single_Arm.md), [Expert_Policy](oed-playground/tree/master/pages/tags/Expert_Policy.md), [Scene:Table_Top](oed-playground/tree/master/pages/tags/Scene:Table_Top.md), [Scene:Workshop_environment](oed-playground/tree/master/pages/tags/Scene:Workshop_environment.md)
 
 ## Sampled Visualization
 

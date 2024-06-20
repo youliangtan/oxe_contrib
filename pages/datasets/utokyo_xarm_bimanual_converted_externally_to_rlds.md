@@ -2,7 +2,7 @@
 
 The robots reach a towel on the table. They also unfold a wrinkled towel.
 
-**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:xArm_Bimanual](./pages/tags/Robot:xArm_Bimanual.md), [Bi-Manual](./pages/tags/Bi-Manual.md), [Human_Puppeteering](./pages/tags/Human_Puppeteering.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
+**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:xArm_Bimanual](oed-playground/tree/master/pages/tags/Robot:xArm_Bimanual.md), [Bi-Manual](oed-playground/tree/master/pages/tags/Bi-Manual.md), [Human_Puppeteering](oed-playground/tree/master/pages/tags/Human_Puppeteering.md), [Scene:Table_Top](oed-playground/tree/master/pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

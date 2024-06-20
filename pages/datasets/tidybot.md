@@ -2,7 +2,7 @@
 
 The robot puts each object into the appropriate receptacle based on user preferences
 
-**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:TidyBot](./pages/tags/Robot:TidyBot.md), [Mobile_Manipulator](./pages/tags/Mobile_Manipulator.md), [Human_writes_preferred_object_placements_in_text_form](./pages/tags/Human_writes_preferred_object_placements_in_text_form.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](./pages/tags/Scene:Other_Household_environments.md), [Scene:living_room](./pages/tags/Scene:living_room.md), [Scene:bedroom](./pages/tags/Scene:bedroom.md), [Scene:kitchen](./pages/tags/Scene:kitchen.md), [Scene:pantry_room](./pages/tags/Scene:pantry_room.md)
+**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:TidyBot](oed-playground/tree/master/pages/tags/Robot:TidyBot.md), [Mobile_Manipulator](oed-playground/tree/master/pages/tags/Mobile_Manipulator.md), [Human_writes_preferred_object_placements_in_text_form](oed-playground/tree/master/pages/tags/Human_writes_preferred_object_placements_in_text_form.md), [Scene:Kitchen](oed-playground/tree/master/pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](oed-playground/tree/master/pages/tags/Scene:Other_Household_environments.md), [Scene:living_room](oed-playground/tree/master/pages/tags/Scene:living_room.md), [Scene:bedroom](oed-playground/tree/master/pages/tags/Scene:bedroom.md), [Scene:kitchen](oed-playground/tree/master/pages/tags/Scene:kitchen.md), [Scene:pantry_room](oed-playground/tree/master/pages/tags/Scene:pantry_room.md)
 
 ## Sampled Visualization
 

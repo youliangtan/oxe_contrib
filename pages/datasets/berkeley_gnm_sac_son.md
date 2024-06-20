@@ -2,7 +2,7 @@
 
 Mobile robot navigates pedestrian-rich environments (e.g. offices, school buildings etc.) and runs a learned policy that may interact with the pedestrians.
 
-**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:TurtleBot_2](./pages/tags/Robot:TurtleBot_2.md), [Wheeled_Robot](./pages/tags/Wheeled_Robot.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Hallways](./pages/tags/Scene:Hallways.md)
+**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:TurtleBot_2](oed-playground/tree/master/pages/tags/Robot:TurtleBot_2.md), [Wheeled_Robot](oed-playground/tree/master/pages/tags/Wheeled_Robot.md), [Expert_Policy](oed-playground/tree/master/pages/tags/Expert_Policy.md), [Scene:Hallways](oed-playground/tree/master/pages/tags/Scene:Hallways.md)
 
 ## Sampled Visualization
 

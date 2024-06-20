@@ -2,7 +2,7 @@
 
 The robot arm performs diverse manipulation tasks on a tabletop such an box opening, cup stacking, and pouring, among others. 
 
-**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:xArm](./pages/tags/Robot:xArm.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_Joystick](./pages/tags/Human_Joystick.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
+**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:xArm](oed-playground/tree/master/pages/tags/Robot:xArm.md), [Single_Arm](oed-playground/tree/master/pages/tags/Single_Arm.md), [Human_Joystick](oed-playground/tree/master/pages/tags/Human_Joystick.md), [Scene:Table_Top](oed-playground/tree/master/pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

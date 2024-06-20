@@ -7,6 +7,8 @@ import pandas as pd
 DATASET_DIR = "./datasets"
 OUTPUT_TAG_PAGE_DIR = "./pages/tags"
 OUTPUT_DATASET_PAGE_DIR = "./pages/datasets"
+URL_DATASET_PAGE_DIR = "oed-playground/tree/master/pages/datasets"
+URL_TAG_PAGE_DIR = "oed-playground/tree/master/pages/tags"
 TEMPLATE_DIR = "pages/templates"
 
 
@@ -17,7 +19,7 @@ def dataset_name_to_url_string(dataset_name, dataset_path_name):
     dataset_path_name (str): the dataset path (example: "berkeley_cable_routing")
     """
     dataset_name = dataset_name.replace(" ", "_")
-    return f"[{dataset_name}]({OUTPUT_DATASET_PAGE_DIR}/{dataset_path_name}.md)"
+    return f"[{dataset_name}]({URL_DATASET_PAGE_DIR}/{dataset_path_name}.md)"
     
 
 def tag_list_to_url_string(tag_list):
@@ -25,7 +27,7 @@ def tag_list_to_url_string(tag_list):
     str = ""
     for tag in tag_list:
         no_space_tag = tag.replace(" ", "_")
-        str += f"[{no_space_tag}]({OUTPUT_TAG_PAGE_DIR}/{no_space_tag}.md)"
+        str += f"[{no_space_tag}]({URL_TAG_PAGE_DIR}/{no_space_tag}.md)"
         if tag != tag_list[-1]:
             str += ", "
     return str
@@ -163,7 +165,38 @@ def generate_index_page():
                   replacements = replacements)
 
 
+def generate_tag_page():
+    tag_pages = {}
+    for filename in os.listdir(DATASET_DIR):
+        file_path = os.path.join(DATASET_DIR, filename)
+        with open(file_path, 'r') as file:
+            dataset_info = yaml.safe_load(file)
+        
+        tags = dataset_info.get("tag", [])
+        dataset_name = dataset_info.get("dataset_name", "")
+        dataset_description = dataset_info.get("description", "")
+        dataset_path_name = filename.strip(".yaml")
+        for tag in tags:
+            no_space_tag = tag.replace(" ", "_")
+            tag_file_path = f"{OUTPUT_TAG_PAGE_DIR}/{no_space_tag}.md"
+            if tag_file_path not in tag_pages:
+                tag_pages[tag_file_path] = []
+            ds_record = f"- {dataset_name_to_url_string(dataset_name, dataset_path_name)}: {dataset_description}"
+            tag_pages[tag_file_path].append(ds_record)
+
+    for tag_file_path, datasets in tag_pages.items():
+        # use the template
+        with open(f"{TEMPLATE_DIR}/tag.md", 'r') as file:
+            content = file.read()
+        tag = os.path.basename(tag_file_path).replace(".md", "")
+
+        content = content.replace("{tag}", tag)
+        content = content.replace("{tag_list}", "\n".join(datasets))
+        with open(tag_file_path, 'w') as file:
+            file.write(content)
+
 
 if __name__ == "__main__":
     generate_index_page()
     generate_project_pages()
+    generate_tag_page()

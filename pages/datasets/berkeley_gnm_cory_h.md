@@ -2,7 +2,7 @@
 
 Small mobile robot navigates hallways in an office building using a learned policy.
 
-**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:RC_Car](./pages/tags/Robot:RC_Car.md), [Wheeled_Robot](./pages/tags/Wheeled_Robot.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Hallways](./pages/tags/Scene:Hallways.md)
+**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:RC_Car](oed-playground/tree/master/pages/tags/Robot:RC_Car.md), [Wheeled_Robot](oed-playground/tree/master/pages/tags/Wheeled_Robot.md), [Expert_Policy](oed-playground/tree/master/pages/tags/Expert_Policy.md), [Scene:Hallways](oed-playground/tree/master/pages/tags/Scene:Hallways.md)
 
 ## Sampled Visualization
 

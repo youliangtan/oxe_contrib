@@ -2,7 +2,7 @@
 
 A Unitree Go1 robot follows human command in natural language (e.g., "trot forward slowly")
 
-**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Unitree_A1](./pages/tags/Robot:Unitree_A1.md), [Quadrupedal_Robot](./pages/tags/Quadrupedal_Robot.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Indoor](./pages/tags/Scene:Indoor.md), [Scene:on_a_flat_floor](./pages/tags/Scene:on_a_flat_floor.md)
+**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:Unitree_A1](oed-playground/tree/master/pages/tags/Robot:Unitree_A1.md), [Quadrupedal_Robot](oed-playground/tree/master/pages/tags/Quadrupedal_Robot.md), [Expert_Policy](oed-playground/tree/master/pages/tags/Expert_Policy.md), [Scene:Indoor](oed-playground/tree/master/pages/tags/Scene:Indoor.md), [Scene:on_a_flat_floor](oed-playground/tree/master/pages/tags/Scene:on_a_flat_floor.md)
 
 ## Sampled Visualization
 
