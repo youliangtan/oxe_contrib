@@ -1,8 +1,8 @@
-# [Tokyo_PR2_Fridge_Opening](././pages/datasets/utokyo_pr2_opening_fridge_converted_externally_to_rlds.md)
+# Tokyo PR2 Fridge Opening
 
 The PR2 robot opens fridge.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:PR2](./pages/tags/Robot:PR2.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md)
 
 ## Sampled Visualization
 

@@ -1,8 +1,8 @@
-# [USC_Cloth_Sim](././pages/datasets/usc_cloth_sim_converted_externally_to_rlds.md)
+# USC Cloth Sim
 
 The robot manipulates a deformable object (cloth on a tabletop) along a diagonal.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Scripted](./pages/tags/Scripted.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md)
 
 ## Sampled Visualization
 

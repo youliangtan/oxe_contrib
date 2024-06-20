@@ -1,8 +1,8 @@
-# [Stanford_HYDRA](././pages/datasets/stanford_hydra_dataset_converted_externally_to_rlds.md)
+# Stanford HYDRA
 
 The robot performs the following tasks in corresponding environment: making a cup of coffee using the keurig machine; making a toast using the oven; sorting dishes onto the dish rack.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md)
 
 ## Sampled Visualization
 

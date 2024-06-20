@@ -1,8 +1,8 @@
-# [RT-1_Robot_Action](././pages/datasets/fractal20220817_dat.md)
+# RT-1 Robot Action
 
 Robot picks, places and moves 17 objects from the google micro kitchens.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Google_Robot](./pages/tags/Robot:Google_Robot.md), [Mobile_Manipulator](./pages/tags/Mobile_Manipulator.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md)
 
 ## Sampled Visualization
 

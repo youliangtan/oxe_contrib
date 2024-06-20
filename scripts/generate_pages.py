@@ -7,7 +7,7 @@ import pandas as pd
 DATASET_DIR = "./datasets"
 OUTPUT_TAG_PAGE_DIR = "./pages/tags"
 OUTPUT_DATASET_PAGE_DIR = "./pages/datasets"
-TEMPLATE_DIR = "./pages/templates"
+TEMPLATE_DIR = "pages/templates"
 
 
 def dataset_name_to_url_string(dataset_name, dataset_path_name):
@@ -17,7 +17,7 @@ def dataset_name_to_url_string(dataset_name, dataset_path_name):
     dataset_path_name (str): the dataset path (example: "berkeley_cable_routing")
     """
     dataset_name = dataset_name.replace(" ", "_")
-    return f"[{dataset_name}](./{OUTPUT_DATASET_PAGE_DIR}/{dataset_path_name}.md)"
+    return f"[{dataset_name}]({OUTPUT_DATASET_PAGE_DIR}/{dataset_path_name}.md)"
     
 
 def tag_list_to_url_string(tag_list):
@@ -108,6 +108,11 @@ def generate_table_from_dataset_yamls():
     # convert tag to a markdown link
     df["tag"] = df["tag"].apply(tag_list_to_url_string)
 
+    # re-order rows by level_of_support and dataset_name
+    # descending by level_of_support
+    # ascending by dataset_name
+    df = df.sort_values(by=["level_of_support", "dataset_name"], ascending=[False, True])
+
     df = df[columns]
 
     # rename column names 
@@ -127,20 +132,16 @@ def generate_project_pages():
         dataset_path_name = filename.strip(".yaml")
         with open(file_path, 'r') as file:
             dataset_info = yaml.safe_load(file)
-        
-        dataset_name = dataset_name_to_url_string(
-                dataset_info.get("dataset_name", ""), 
-                dataset_path_name,
-            )
-        tag = tag_list_to_url_string(dataset_info.get("tag", ""))
+
+        tags = tag_list_to_url_string(dataset_info.get("tag", ""))
         description = dataset_info.get("description", "")
         download = download_list_to_download_method(dataset_info.get("download", ""))
         visualization = dataset_info.get("visualization", "")
         citation = dataset_info.get("citation", "")
 
         replacements = {
-            "dataset_name": dataset_name,
-            "tag": tag,
+            "dataset_name": dataset_info.get("dataset_name", ""),
+            "tags": tags,
             "description": description,
             "download": download,
             "visualization": visualization,

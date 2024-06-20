@@ -1,8 +1,8 @@
-# [NYU_VINN](././pages/datasets/nyu_door_opening_surprising_effectiveness.md)
+# NYU VINN
 
 The robot opens cabinet doors for a variety of cabinets.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Hello_Stretch](./pages/tags/Robot:Hello_Stretch.md), [Mobile_Manipulator](./pages/tags/Mobile_Manipulator.md), [Human_Kinesthetic](./pages/tags/Human_Kinesthetic.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](./pages/tags/Scene:Other_Household_environments.md)
 
 ## Sampled Visualization
 

@@ -1,8 +1,8 @@
-# [CMU_Franka_Pick-Insert_Data](././pages/datasets/iamlab_cmu_pickup_insert_converted_externally_to_rlds.md)
+# CMU Franka Pick-Insert Data
 
 The robot tries to pick up different shaped objects placed in front of it. It also tries to insert particular objects into a cylindrical peg.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

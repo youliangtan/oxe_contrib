@@ -1,8 +1,8 @@
-# [UTokyo_xArm_PickPlace](././pages/datasets/utokyo_xarm_pick_and_place_converted_externally_to_rlds.md)
+# UTokyo xArm PickPlace
 
 The robot picks up a white plate, and then places it on the red plate.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:xArm](./pages/tags/Robot:xArm.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_Puppeteering](./pages/tags/Human_Puppeteering.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

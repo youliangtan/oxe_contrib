@@ -1,8 +1,8 @@
-# [Berkeley_Bridge](././pages/datasets/bridge.md)
+# Berkeley Bridge
 
 The robot interacts with household environments including kitchens, sinks, and tabletops. Skills include object rearrangement, sweeping, stacking, folding, and opening/closing doors and drawers. 
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:WidowX](./pages/tags/Robot:WidowX.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](./pages/tags/Scene:Other_Household_environments.md)
 
 ## Sampled Visualization
 

@@ -1,8 +1,8 @@
-# [MobileALOHA](././pages/datasets/obilealoh.md)
+# MobileALOHA
 
 The robot interacts with diverse appliances in a real kitchen and indoor environments. It wipes spilled wine, stores a heavy pot to be inside wall cabinets, calls an elevator, pushes chairs, and cooks shrimp.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:MobileALOHA](./pages/tags/Robot:MobileALOHA.md), [Mobile_Manipulator](./pages/tags/Mobile_Manipulator.md), [Human_Puppeteering](./pages/tags/Human_Puppeteering.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](./pages/tags/Scene:Other_Household_environments.md), [Scene:Hallways](./pages/tags/Scene:Hallways.md)
 
 ## Sampled Visualization
 

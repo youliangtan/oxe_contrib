@@ -1,8 +1,8 @@
-# [Austin_BUDS](././pages/datasets/ustin_buds_dataset_converted_externally_to_rlds.md)
+# Austin BUDS
 
 The robot is trying to solve a long-horizon kitchen task by picking up pot, placing the pot in a plate, and push them together using a picked-up tool.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_Spacemouse](./pages/tags/Human_Spacemouse.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

@@ -1,8 +1,8 @@
-# [Maniskill](././pages/datasets/niskill_dataset_converted_externally_to_rlds.md)
+# Maniskill
 
 The robot interacts with different objects placed on the plane (ground). The tasks include picking an isolated object or an object from the clutter up and moving it to a goal position, stacking a red cube onto a green cube, inserting a peg into the box, assembling kits, plugging a charger into the outlet on the wall, turning on a faucet.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Scripted](./pages/tags/Scripted.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

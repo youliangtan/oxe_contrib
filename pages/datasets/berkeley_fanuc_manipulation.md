@@ -1,8 +1,8 @@
-# [Berkeley_Fanuc_Manipulation](././pages/datasets/berkeley_fanuc_manipulation.md)
+# Berkeley Fanuc Manipulation
 
 A Fanuc robot performs various manipulation tasks. For example, it opens drawers, picks up objects, closes doors, closes computers, and pushes objects to desired locations.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Fanuc_Mate](./pages/tags/Robot:Fanuc_Mate.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

@@ -1,8 +1,8 @@
-# [KAIST_Nonprehensile_Objects](././pages/datasets/kaist_nonprehensile_converted_externally_to_rlds.md)
+# KAIST Nonprehensile Objects
 
 The robot performs various non-prehensile manipulation tasks in a tabletop environment. It translates and reorients diverse real-world and 3d-printed objects to a target 6dof pose.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

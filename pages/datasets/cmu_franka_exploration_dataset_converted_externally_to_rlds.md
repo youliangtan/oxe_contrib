@@ -1,8 +1,8 @@
-# [CMU_Franka_Exploration](././pages/datasets/cmu_franka_exploration_dataset_converted_externally_to_rlds.md)
+# CMU Franka Exploration
 
 Franka exploring kitchen environment, lifting knife and vegetable and opening cabinet.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md)
 
 ## Sampled Visualization
 

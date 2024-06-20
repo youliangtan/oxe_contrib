@@ -1,8 +1,8 @@
-# [TOTO_Benchmark](././pages/datasets/toto.md)
+# TOTO Benchmark
 
 The TOTO Benchmark Dataset contains trajectories of two tasks: scooping and pouring. For scooping, the objective is to scoop material from a bowl into the spoon. For pouring, the goal is to pour some material into a target cup on the table. 
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [The_dataset_is_collected_in_3_ways:_Human_teleoperation_--_VR_Teleop,_trained_state-based_BC_policies,_and_trajectory_replay_with_noise](./pages/tags/The_dataset_is_collected_in_3_ways:_Human_teleoperation_--_VR_Teleop,_trained_state-based_BC_policies,_and_trajectory_replay_with_noise.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

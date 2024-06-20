@@ -1,8 +1,8 @@
-# [Berkeley_Cable_Routing](././pages/datasets/berkeley_cable_routing.md)
+# Berkeley Cable Routing
 
 The robot routes cable through a number of tight-fitting clips mounted on the table.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

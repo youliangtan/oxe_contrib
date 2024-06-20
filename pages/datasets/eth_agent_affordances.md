@@ -1,8 +1,8 @@
-# [ETH_Agent_Affordances](././pages/datasets/eth_agent_affordances.md)
+# ETH Agent Affordances
 
 The robot opens and closes an oven, starting from different initial positions and door angles.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Mobile_Manipulator](./pages/tags/Mobile_Manipulator.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md)
 
 ## Sampled Visualization
 

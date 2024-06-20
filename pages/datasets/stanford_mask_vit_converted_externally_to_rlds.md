@@ -1,8 +1,8 @@
-# [Stanford_MaskVIT_Data](././pages/datasets/stanford_mask_vit_converted_externally_to_rlds.md)
+# Stanford MaskVIT Data
 
 The robot randomly pushes and picks objects in a bin, which include stuffed toys, plastic cups and toys, etc, and are periodically shuffled.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Sawyer](./pages/tags/Robot:Sawyer.md), [Single_Arm](./pages/tags/Single_Arm.md), [Scripted](./pages/tags/Scripted.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

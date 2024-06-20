@@ -1,8 +1,8 @@
-# [QT-Opt](././pages/datasets/kuk.md)
+# QT-Opt
 
 Kuka robot picking objects in a bin.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Kuka_iiwa](./pages/tags/Robot:Kuka_iiwa.md), [Single_Arm](./pages/tags/Single_Arm.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

@@ -1,8 +1,8 @@
-# [Furniture_Bench](././pages/datasets/furniture_bench_dataset_converted_externally_to_rlds.md)
+# Furniture Bench
 
 The robot assembles one of 9 3D-printed furniture models on the table, which requires grasping, inserting, and screwing.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

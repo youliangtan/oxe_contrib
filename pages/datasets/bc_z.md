@@ -1,8 +1,8 @@
-# [BC-Z](././pages/datasets/bc_z.md)
+# BC-Z
 
 The robot attempts picking, wiping, and placing tasks on a diverse set of objects on a tabletop, along with a few challenging tasks like stacking cups on top of each other.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Google_Robot](./pages/tags/Robot:Google_Robot.md), [Mobile_Manipulator](./pages/tags/Mobile_Manipulator.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

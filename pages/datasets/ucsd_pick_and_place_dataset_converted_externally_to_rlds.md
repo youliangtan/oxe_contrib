@@ -1,8 +1,8 @@
-# [UCSD_Pick_Place](././pages/datasets/ucsd_pick_and_place_dataset_converted_externally_to_rlds.md)
+# UCSD Pick Place
 
 The robot performs pick and place tasks in table top and kitchen scenes. The dataset contains a variety of visual variations.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:xArm](./pages/tags/Robot:xArm.md), [Single_Arm](./pages/tags/Single_Arm.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md)
 
 ## Sampled Visualization
 

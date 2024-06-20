@@ -1,8 +1,8 @@
-# [CMU_Play_Fusion](././pages/datasets/cmu_play_fusion.md)
+# CMU Play Fusion
 
 The robot plays with 3 complex scenes: a grill with many cooking objects like toaster, pan, etc. It has to pick, open, place, close. It  has to set a table, move plates, cups, utensils. And it has to place dishes in the sink, dishwasher, hand cups etc. 
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md)
 
 ## Sampled Visualization
 

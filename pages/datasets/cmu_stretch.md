@@ -1,8 +1,8 @@
-# [CMU_Stretch](././pages/datasets/cmu_stretch.md)
+# CMU Stretch
 
 Robot interacting with different household environments.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Hello_Stretch](./pages/tags/Robot:Hello_Stretch.md), [Mobile_Manipulator](./pages/tags/Mobile_Manipulator.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](./pages/tags/Scene:Other_Household_environments.md)
 
 ## Sampled Visualization
 

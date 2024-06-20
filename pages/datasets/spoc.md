@@ -1,8 +1,8 @@
-# [SPOC](././pages/datasets/spoc.md)
+# SPOC
 
 The robot navigates in the environment and performs pick and place with open vocabulary descriptions.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Hello_Stretch](./pages/tags/Robot:Hello_Stretch.md), [Single_Arm](./pages/tags/Single_Arm.md), [Scripted](./pages/tags/Scripted.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](./pages/tags/Scene:Other_Household_environments.md), [Scene:Hallways](./pages/tags/Scene:Hallways.md), [Scene:multi_room_environments](./pages/tags/Scene:multi_room_environments.md)
 
 ## Sampled Visualization
 

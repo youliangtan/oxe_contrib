@@ -1,8 +1,8 @@
-# [ASU_TableTop_Manipulation](././pages/datasets/su_table_top_converted_externally_to_rlds.md)
+# ASU TableTop Manipulation
 
 The robot interacts with a few objects on a table. It picks up, pushes forward, or rotates the objects.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:UR5](./pages/tags/Robot:UR5.md), [Single_Arm](./pages/tags/Single_Arm.md), [Scripted](./pages/tags/Scripted.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

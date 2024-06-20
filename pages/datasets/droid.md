@@ -1,8 +1,8 @@
-# [DROID](././pages/datasets/droid.md)
+# DROID
 
 Various household manipulation tasks
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](./pages/tags/Scene:Other_Household_environments.md), [Scene:Hallways](./pages/tags/Scene:Hallways.md)
 
 ## Sampled Visualization
 

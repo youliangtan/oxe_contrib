@@ -1,8 +1,8 @@
-# [DLR_Sara_Pour_Dataset](././pages/datasets/dlr_sara_pour_converted_externally_to_rlds.md)
+# DLR Sara Pour Dataset
 
 The robot learns to pour ping-pong balls from a cup held in the end-effector into the cup placed on the table.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:DLR_SARA](./pages/tags/Robot:DLR_SARA.md), [Single_Arm](./pages/tags/Single_Arm.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md), [Scene:Household_objects](./pages/tags/Scene:Household_objects.md)
 
 ## Sampled Visualization
 

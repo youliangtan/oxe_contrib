@@ -1,8 +1,8 @@
-# [LSMO_Dataset](././pages/datasets/tokyo_u_lsmo_converted_externally_to_rlds.md)
+# LSMO Dataset
 
 The robot avoids obstacle on the table and reaches the target object.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Cobotta](./pages/tags/Robot:Cobotta.md), [Single_Arm](./pages/tags/Single_Arm.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

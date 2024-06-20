@@ -1,8 +1,8 @@
-# [MPI_Muscular_Proprioception](././pages/datasets/pi_muscular_proprioception.md)
+# MPI Muscular Proprioception
 
 There is no task that the robot solves. It executes a combination of random multisine signals of target pressures, as well as fixed target pressures.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:PAMY2](./pages/tags/Robot:PAMY2.md), [Single_Arm](./pages/tags/Single_Arm.md), [Scripted](./pages/tags/Scripted.md), [Scene:The_robot_is_alone_in_the_environment](./pages/tags/Scene:The_robot_is_alone_in_the_environment.md), [Scene:there_are_no_other_objects_in_the_workspace.](./pages/tags/Scene:there_are_no_other_objects_in_the_workspace..md)
 
 ## Sampled Visualization
 

@@ -1,8 +1,8 @@
-# [Berkeley_RPT_Data](././pages/datasets/berkeley_rpt_converted_externally_to_rlds.md)
+# Berkeley RPT Data
 
 Picking, stacking, destacking, and bin picking with variations in objects.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Scripted](./pages/tags/Scripted.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

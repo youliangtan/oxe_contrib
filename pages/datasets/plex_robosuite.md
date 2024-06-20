@@ -1,8 +1,8 @@
-# [Plex_RoboSuite](././pages/datasets/plex_robosuite.md)
+# Plex RoboSuite
 
 Opening a door, stacking 2 cubes, picking and placing various objects to specially designated areas, putting a loop onto a peg.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_Keyboard](./pages/tags/Human_Keyboard.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md), [Scene:Tabletop_with_sections](./pages/tags/Scene:Tabletop_with_sections.md)
 
 ## Sampled Visualization
 

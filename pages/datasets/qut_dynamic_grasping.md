@@ -1,8 +1,8 @@
-# [QUT_Dynamic_Grasping](././pages/datasets/qut_dynamic_grasping.md)
+# QUT Dynamic Grasping
 
 The robot grasps an object that moves around continuously and randomly along the XY plane. 
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Scripted](./pages/tags/Scripted.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

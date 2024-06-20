@@ -1,8 +1,8 @@
-# [SACSoN](././pages/datasets/berkeley_gnm_sac_son.md)
+# SACSoN
 
 Mobile robot navigates pedestrian-rich environments (e.g. offices, school buildings etc.) and runs a learned policy that may interact with the pedestrians.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:TurtleBot_2](./pages/tags/Robot:TurtleBot_2.md), [Wheeled_Robot](./pages/tags/Wheeled_Robot.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Hallways](./pages/tags/Scene:Hallways.md)
 
 ## Sampled Visualization
 

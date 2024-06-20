@@ -1,8 +1,8 @@
-# [Berkeley_MVP_Data](././pages/datasets/berkeley_mvp_converted_externally_to_rlds.md)
+# Berkeley MVP Data
 
 Basic motor control tasks (reach, push, pick) on table top and toy environments (toy kitchen, toy fridge).
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:xArm](./pages/tags/Robot:xArm.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md)
 
 ## Sampled Visualization
 

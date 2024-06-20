@@ -1,8 +1,8 @@
-# [DLR_Sara_Grid_Clamp_Dataset](././pages/datasets/dlr_sara_grid_clamp_converted_externally_to_rlds.md)
+# DLR Sara Grid Clamp Dataset
 
 The robot learns to place the grid clamp in the grids on the table.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:DLR_SARA](./pages/tags/Robot:DLR_SARA.md), [Single_Arm](./pages/tags/Single_Arm.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md), [Scene:Workshop_environment](./pages/tags/Scene:Workshop_environment.md)
 
 ## Sampled Visualization
 

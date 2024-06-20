@@ -1,8 +1,8 @@
-# [NYU_ROT](././pages/datasets/nyu_rot_dataset_converted_externally_to_rlds.md)
+# NYU ROT
 
 The robot arm performs diverse manipulation tasks on a tabletop such an box opening, cup stacking, and pouring, among others. 
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:xArm](./pages/tags/Robot:xArm.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_Joystick](./pages/tags/Human_Joystick.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

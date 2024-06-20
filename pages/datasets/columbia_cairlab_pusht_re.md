@@ -1,8 +1,8 @@
-# [Columbia_PushT_Dataset](././pages/datasets/columbia_cairlab_pusht_re.md)
+# Columbia PushT Dataset
 
 The robot pushes a T-shaped block into a fixed goal pose, and then move to an fixed exit zone.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:UR5](./pages/tags/Robot:UR5.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

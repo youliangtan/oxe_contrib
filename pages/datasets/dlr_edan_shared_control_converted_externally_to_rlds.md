@@ -1,8 +1,8 @@
-# [DLR_Wheelchair_Shared_Control](././pages/datasets/dlr_edan_shared_control_converted_externally_to_rlds.md)
+# DLR Wheelchair Shared Control
 
 The robot grasps a set of different objects in a table top and a shelf. 
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:DLR_EDAN](./pages/tags/Robot:DLR_EDAN.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_teleoperation_using_Shared_Control_Templates](./pages/tags/Human_teleoperation_using_Shared_Control_Templates.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md), [Scene:shelf](./pages/tags/Scene:shelf.md)
 
 ## Sampled Visualization
 

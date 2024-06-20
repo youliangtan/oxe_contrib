@@ -1,8 +1,8 @@
-# [RECON](././pages/datasets/berkeley_gnm_recon.md)
+# RECON
 
 Mobile robot explores outdoor environments using a scripted policy
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Jackal](./pages/tags/Robot:Jackal.md), [Wheeled_Robot](./pages/tags/Wheeled_Robot.md), [Scripted](./pages/tags/Scripted.md), [Scene:Outdoors](./pages/tags/Scene:Outdoors.md)
 
 ## Sampled Visualization
 

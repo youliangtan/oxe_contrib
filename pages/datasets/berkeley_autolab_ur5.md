@@ -1,8 +1,8 @@
-# [Berkeley_Autolab_UR5](././pages/datasets/berkeley_autolab_ur5.md)
+# Berkeley Autolab UR5
 
 The data consists of 4 robot manipulation tasks: simple pick-and-place of a stuffed animal between containers, sweeping a cloth, stacking cups, and a more difficult pick-and-place of a bottle that requires precise grasp and 6DOF rotation
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:UR5](./pages/tags/Robot:UR5.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_Spacemouse](./pages/tags/Human_Spacemouse.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

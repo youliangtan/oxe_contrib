@@ -1,8 +1,8 @@
-# [CoryHall](././pages/datasets/berkeley_gnm_cory_h.md)
+# CoryHall
 
 Small mobile robot navigates hallways in an office building using a learned policy.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:RC_Car](./pages/tags/Robot:RC_Car.md), [Wheeled_Robot](./pages/tags/Wheeled_Robot.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Hallways](./pages/tags/Scene:Hallways.md)
 
 ## Sampled Visualization
 

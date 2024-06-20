@@ -2,7 +2,7 @@
 
 {description}
 
-**Tags**: 
+**Tags**: {tags}
 
 ## Sampled Visualization
 

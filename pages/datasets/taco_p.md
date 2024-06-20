@@ -1,8 +1,8 @@
-# [Freiburg_Franka_Play](././pages/datasets/taco_p.md)
+# Freiburg Franka Play
 
 "The robot interacts with toy blocks, it pick and places them, stacks them, unstacks them, opens drawers, sliding doors and turrns on LED lights by pushing buttons."
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Franka](./pages/tags/Robot:Franka.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

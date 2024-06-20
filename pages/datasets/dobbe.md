@@ -1,8 +1,8 @@
-# [DobbE](././pages/datasets/dobbe.md)
+# DobbE
 
 The demo collector uses the Stick to collect data from 7 tasks, including door/drawer opening/closing, handle grasping, pick and place, and random play data.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Hello_Stretch](./pages/tags/Robot:Hello_Stretch.md), [Mobile_Manipulator](./pages/tags/Mobile_Manipulator.md), [Human_collection_using_tools](./pages/tags/Human_collection_using_tools.md), [Scene:Kitchen](./pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](./pages/tags/Scene:Other_Household_environments.md), [Scene:Hallways](./pages/tags/Scene:Hallways.md)
 
 ## Sampled Visualization
 

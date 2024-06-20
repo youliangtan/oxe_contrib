@@ -1,8 +1,8 @@
-# [Stanford_Kuka_Multimodal](././pages/datasets/stanford_kuka_multimodal_dataset_converted_externally_to_rlds.md)
+# Stanford Kuka Multimodal
 
 The robot learns to insert differently-shaped pegs into differently-shaped holes with low tolerances (~2mm).
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Kuka_iiwa](./pages/tags/Robot:Kuka_iiwa.md), [Single_Arm](./pages/tags/Single_Arm.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

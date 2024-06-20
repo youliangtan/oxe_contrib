@@ -1,8 +1,8 @@
-# [Robonet](././pages/datasets/robo_net.md)
+# Robonet
 
 The robot interacts with the objects in a bin placed in front of it
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Multi-Robot](./pages/tags/Robot:Multi-Robot.md), [Single_Arm](./pages/tags/Single_Arm.md), [Scripted](./pages/tags/Scripted.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

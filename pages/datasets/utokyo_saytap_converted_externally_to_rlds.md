@@ -1,8 +1,8 @@
-# [Saytap](././pages/datasets/utokyo_saytap_converted_externally_to_rlds.md)
+# Saytap
 
 A Unitree Go1 robot follows human command in natural language (e.g., "trot forward slowly")
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Unitree_A1](./pages/tags/Robot:Unitree_A1.md), [Quadrupedal_Robot](./pages/tags/Quadrupedal_Robot.md), [Expert_Policy](./pages/tags/Expert_Policy.md), [Scene:Indoor](./pages/tags/Scene:Indoor.md), [Scene:on_a_flat_floor](./pages/tags/Scene:on_a_flat_floor.md)
 
 ## Sampled Visualization
 

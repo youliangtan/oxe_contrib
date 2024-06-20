@@ -1,8 +1,8 @@
-# [Tokyo_PR2_Tabletop_Manipulation](././pages/datasets/utokyo_pr2_tabletop_manipulation_converted_externally_to_rlds.md)
+# Tokyo PR2 Tabletop Manipulation
 
 The PR2 robot conducts manipulation for table top object. It conducts pick-and-place of bread and grape and folds cloth.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:PR2](./pages/tags/Robot:PR2.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

@@ -1,8 +1,8 @@
-# [Roboturk](././pages/datasets/roboturk.md)
+# Roboturk
 
 Sawyer robots flattens laundry, builds towers from bowls and searches objects.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:Sawyer](./pages/tags/Robot:Sawyer.md), [Single_Arm](./pages/tags/Single_Arm.md), [Human_VR](./pages/tags/Human_VR.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

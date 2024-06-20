@@ -1,8 +1,8 @@
-# [ALOHA](././pages/datasets/oh.md)
+# ALOHA
 
 Bi-manual robot performing complex, dexterous tasks like unwrapping candy and putting on shoes.
 
-**Tags**: 
+**Tags**: [Open-X-Embodiment](./pages/tags/Open-X-Embodiment.md), [Robot:ViperX_Bimanual](./pages/tags/Robot:ViperX_Bimanual.md), [Bi-Manual](./pages/tags/Bi-Manual.md), [Human_Puppeteering](./pages/tags/Human_Puppeteering.md), [Scene:Table_Top](./pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 
