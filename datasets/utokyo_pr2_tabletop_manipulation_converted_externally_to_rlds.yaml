@@ -4,6 +4,7 @@ citation: "@misc{oh2023pr2utokyodatasets,\n  author={Jihoon Oh and Naoaki Kanaza
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: utokyo_pr2_tabletop_manipulation_converted_externally_to_rlds
 dataset_name: Tokyo PR2 Tabletop Manipulation
 description: The PR2 robot conducts manipulation for table top object. It conducts
   pick-and-place of bread and grape and folds cloth.
@@ -20,6 +21,7 @@ schema:
 size_in_gb: 0.81
 tag:
 - Open-X-Embodiment
+- Robot:PR2
 - Single Arm
 - Human VR
 - Scene:Table Top

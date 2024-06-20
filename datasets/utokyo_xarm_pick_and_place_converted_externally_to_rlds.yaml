@@ -4,6 +4,7 @@ citation: "@misc{matsushima2023weblab,\n  title={Weblab xArm Dataset},\n  author
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: utokyo_xarm_pick_and_place_converted_externally_to_rlds
 dataset_name: UTokyo xArm PickPlace
 description: The robot picks up a white plate, and then places it on the red plate.
 download:
@@ -19,6 +20,7 @@ schema:
 size_in_gb: 1.29
 tag:
 - Open-X-Embodiment
+- Robot:xArm
 - Single Arm
 - Human Puppeteering
 - Scene:Table Top

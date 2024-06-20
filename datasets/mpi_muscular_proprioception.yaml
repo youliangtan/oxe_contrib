@@ -7,6 +7,7 @@ citation: "@article{guist2023robust,\n  title={A Robust Open-source Tendon-drive
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: mpi_muscular_proprioception
 dataset_name: MPI Muscular Proprioception
 description: There is no task that the robot solves. It executes a combination of
   random multisine signals of target pressures, as well as fixed target pressures.
@@ -20,6 +21,7 @@ schema:
 size_in_gb: .nan
 tag:
 - Open-X-Embodiment
+- Robot:PAMY2
 - Single Arm
 - Scripted
 - Scene:The robot is alone in the environment

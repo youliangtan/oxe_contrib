@@ -6,6 +6,7 @@ citation: "@article{lynch2023interactive,\n  title={Interactive language: Talkin
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: language_table
 dataset_name: Language Table
 description: Robot pushed blocks of different geometric shapes on table top.
 download:
@@ -20,6 +21,7 @@ schema:
 size_in_gb: 399.22
 tag:
 - Open-X-Embodiment
+- Robot:xArm
 - Single Arm
 - Human VR
 - Scene:Table Top

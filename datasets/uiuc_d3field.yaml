@@ -5,6 +5,7 @@ citation: "@article{wang2023d3field,\n  title={D^3Field: Dynamic 3D Descriptor F
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: uiuc_d3field
 dataset_name: UIUC D3Field
 description: The robot completes tasks specified by the goal image, including organizing
   utensils, shoes, mugs.
@@ -20,6 +21,7 @@ schema:
 size_in_gb: 15.82
 tag:
 - Open-X-Embodiment
+- Robot:Kinova Gen3
 - Single Arm
 - Scripted
 - Scene:Table Top

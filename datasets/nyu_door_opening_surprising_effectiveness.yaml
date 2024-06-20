@@ -5,6 +5,7 @@ citation: "@misc{pari2021surprising,\n    title={The Surprising Effectiveness of
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: nyu_door_opening_surprising_effectiveness
 dataset_name: NYU VINN
 description: The robot opens cabinet doors for a variety of cabinets.
 download:
@@ -20,6 +21,7 @@ schema:
 size_in_gb: 7.12
 tag:
 - Open-X-Embodiment
+- Robot:Hello Stretch
 - Mobile Manipulator
 - Human Kinesthetic
 - Scene:Kitchen

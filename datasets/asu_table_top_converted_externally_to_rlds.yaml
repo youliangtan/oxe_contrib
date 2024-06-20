@@ -10,6 +10,7 @@ citation: "@inproceedings{zhou2023modularity,\n  title={Modularity through Atten
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: asu_table_top_converted_externally_to_rlds
 dataset_name: ASU TableTop Manipulation
 description: The robot interacts with a few objects on a table. It picks up, pushes
   forward, or rotates the objects.
@@ -25,6 +26,7 @@ schema:
 size_in_gb: 0.72
 tag:
 - Open-X-Embodiment
+- Robot:UR5
 - Single Arm
 - Scripted
 - Scene:Table Top

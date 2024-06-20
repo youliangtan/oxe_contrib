@@ -6,6 +6,7 @@ citation: "@inproceedings{haldar2023watch,\n  title={Watch and match: Supercharg
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: nyu_rot_dataset_converted_externally_to_rlds
 dataset_name: NYU ROT
 description: 'The robot arm performs diverse manipulation tasks on a tabletop such
   an box opening, cup stacking, and pouring, among others. '
@@ -21,6 +22,7 @@ schema:
 size_in_gb: 0.01
 tag:
 - Open-X-Embodiment
+- Robot:xArm
 - Single Arm
 - Human Joystick
 - Scene:Table Top

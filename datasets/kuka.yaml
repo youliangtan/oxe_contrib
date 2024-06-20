@@ -7,6 +7,7 @@ citation: "@article{kalashnikov2018qt,\n  title={Qt-opt: Scalable deep reinforce
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: kuka
 dataset_name: QT-Opt
 description: Kuka robot picking objects in a bin.
 download:
@@ -21,6 +22,7 @@ schema:
 size_in_gb: 778.02
 tag:
 - Open-X-Embodiment
+- Robot:Kuka iiwa
 - Single Arm
 - Expert Policy
 - Scene:Table Top

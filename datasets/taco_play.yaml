@@ -28,6 +28,7 @@ citation: '@inproceedings{rosete2022tacorl,
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: taco_play
 dataset_name: Freiburg Franka Play
 description: '"The robot interacts with toy blocks, it pick and places them, stacks
   them, unstacks them, opens drawers, sliding doors and turrns on LED lights by pushing
@@ -45,6 +46,7 @@ schema:
 size_in_gb: 47.77
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human VR
 - Scene:Table Top

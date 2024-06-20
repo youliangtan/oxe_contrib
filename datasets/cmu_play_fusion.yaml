@@ -4,6 +4,7 @@ citation: "@inproceedings{chen2023playfusion,\n  title={PlayFusion: Skill Acquis
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: cmu_play_fusion
 dataset_name: CMU Play Fusion
 description: 'The robot plays with 3 complex scenes: a grill with many cooking objects
   like toaster, pan, etc. It has to pick, open, place, close. It  has to set a table,
@@ -21,8 +22,9 @@ schema:
 size_in_gb: 6.68
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human VR
 - Scene:Table Top
-- Scene:Kitchen (also toy kitchen)
+- Scene:Kitchen
 version: 0.1.0

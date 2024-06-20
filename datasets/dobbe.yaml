@@ -6,6 +6,7 @@ citation: "@misc{shafiullah2023dobbe,\n    title={On Bringing Robots Home}, \n  
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: dobbe
 dataset_name: DobbE
 description: The demo collector uses the Stick to collect data from 7 tasks, including
   door/drawer opening/closing, handle grasping, pick and place, and random play data.
@@ -20,6 +21,7 @@ schema:
 size_in_gb: 21.1
 tag:
 - Open-X-Embodiment
+- Robot:Hello Stretch
 - Mobile Manipulator
 - Human collection using tools
 - Scene:Kitchen

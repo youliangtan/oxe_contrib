@@ -4,6 +4,7 @@ citation: "@misc{BerkeleyUR5Website,\n  title = {Berkeley {UR5} Demonstration Da
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: berkeley_autolab_ur5
 dataset_name: Berkeley Autolab UR5
 description: 'The data consists of 4 robot manipulation tasks: simple pick-and-place
   of a stuffed animal between containers, sweeping a cloth, stacking cups, and a more
@@ -21,6 +22,7 @@ schema:
 size_in_gb: 76.39
 tag:
 - Open-X-Embodiment
+- Robot:UR5
 - Single Arm
 - Human Spacemouse
 - Scene:Table Top

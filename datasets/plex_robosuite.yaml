@@ -6,6 +6,7 @@ citation: "@inproceedings{thomas2023plex,\n    title={PLEX: Making the Most of t
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: plex_robosuite
 dataset_name: Plex RoboSuite
 description: Opening a door, stacking 2 cubes, picking and placing various objects
   to specially designated areas, putting a loop onto a peg.
@@ -20,6 +21,7 @@ schema:
 size_in_gb: 1.26
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human Keyboard
 - Scene:Table Top

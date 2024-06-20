@@ -26,6 +26,7 @@ citation: "@article{khazatsky2024droid,\n    title   = {DROID: A Large-Scale In-
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: droid
 dataset_name: DROID
 description: Various household manipulation tasks
 download: []
@@ -39,10 +40,11 @@ schema:
 size_in_gb: 1670.0
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human VR
 - Scene:Table Top
-- Scene:Kitchen (also toy kitchen)
+- Scene:Kitchen
 - Scene:Other Household environments
 - Scene:Hallways
 version: 0.0.0

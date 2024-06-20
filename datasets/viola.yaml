@@ -5,6 +5,7 @@ citation: "@article{zhu2022viola,\n  title={VIOLA: Imitation Learning for Vision
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: viola
 dataset_name: Austin VIOLA
 description: 'The robot performs various household-like tasks, such as setting up
   the table, or making coffee using a coffee machine. '
@@ -21,6 +22,7 @@ schema:
 size_in_gb: 10.4
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human Spacemouse
 - Scene:Table Top

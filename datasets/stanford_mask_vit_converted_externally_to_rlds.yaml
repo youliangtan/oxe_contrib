@@ -5,6 +5,7 @@ citation: "@inproceedings{gupta2022maskvit,\n  title={MaskViT: Masked Visual Pre
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: stanford_mask_vit_converted_externally_to_rlds
 dataset_name: Stanford MaskVIT Data
 description: The robot randomly pushes and picks objects in a bin, which include stuffed
   toys, plastic cups and toys, etc, and are periodically shuffled.
@@ -21,6 +22,7 @@ schema:
 size_in_gb: 76.17
 tag:
 - Open-X-Embodiment
+- Robot:Sawyer
 - Single Arm
 - Scripted
 - Scene:Table Top

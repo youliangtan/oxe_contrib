@@ -8,6 +8,7 @@ citation: '@misc{ceola2023lhmanip,
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: qut_dexterous_manpulation
 dataset_name: QUT Dexterous Manpulation
 description: The robot performs some tasks in a tabletop setting. It sorts dishes
   and objects, cooks and serves food, sets the table, throws away trash paper, rolls
@@ -22,6 +23,7 @@ schema:
 size_in_gb: .nan
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Mobile Manipulator
 - Human VR
 - Scene:Table Top

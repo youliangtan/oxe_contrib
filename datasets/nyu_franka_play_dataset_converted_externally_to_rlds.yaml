@@ -5,6 +5,7 @@ citation: "@article{cui2022play,\n  title   = {From Play to Policy: Conditional 
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: nyu_franka_play_dataset_converted_externally_to_rlds
 dataset_name: NYU Franka Play
 description: The robot interacts with a toy kitchen doing arbitrary tasks. It opens/closes
   the microwave door, opens/closes the oven door, turns the stove knobs, and moves
@@ -22,6 +23,7 @@ schema:
 size_in_gb: 5.18
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human VR
 - Scene:Kitchen

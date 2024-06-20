@@ -14,6 +14,7 @@ citation: '@inproceedings{saxena2023multiresolution,
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: iamlab_cmu_pickup_insert_converted_externally_to_rlds
 dataset_name: CMU Franka Pick-Insert Data
 description: The robot tries to pick up different shaped objects placed in front of
   it. It also tries to insert particular objects into a cylindrical peg.
@@ -29,6 +30,7 @@ schema:
 size_in_gb: 50.29
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human VR
 - Scene:Table Top

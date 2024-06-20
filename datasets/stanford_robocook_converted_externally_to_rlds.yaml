@@ -5,6 +5,7 @@ citation: "@article{shi2023robocook,\n  title={RoboCook: Long-Horizon Elasto-Pla
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: stanford_robocook_converted_externally_to_rlds
 dataset_name: Stanford Robocook
 description: In the first task, the robot pinches the dough with an asymmetric gripper
   / two-rod symmetric gripper / two-plane symmetric gripper. In the second task, the
@@ -23,8 +24,9 @@ schema:
 size_in_gb: 124.62
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Scripted
 - Scene:Table Top
-- Scene:Kitchen (also toy kitchen)
+- Scene:Kitchen
 version: 0.1.0

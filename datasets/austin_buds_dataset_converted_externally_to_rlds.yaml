@@ -6,6 +6,7 @@ citation: "@article{zhu2022bottom,\n  title={Bottom-Up Skill Discovery From Unse
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: austin_buds_dataset_converted_externally_to_rlds
 dataset_name: Austin BUDS
 description: The robot is trying to solve a long-horizon kitchen task by picking up
   pot, placing the pot in a plate, and push them together using a picked-up tool.
@@ -21,6 +22,7 @@ schema:
 size_in_gb: 1.49
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human Spacemouse
 - Scene:Table Top

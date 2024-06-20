@@ -6,6 +6,7 @@ citation: "@article{saytap2023,\n  author = {Yujin Tang and Wenhao Yu and Jie Ta
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: utokyo_saytap_converted_externally_to_rlds
 dataset_name: Saytap
 description: A Unitree Go1 robot follows human command in natural language (e.g.,
   "trot forward slowly")
@@ -21,6 +22,7 @@ schema:
 size_in_gb: 0.05
 tag:
 - Open-X-Embodiment
+- Robot:Unitree A1
 - Quadrupedal Robot
 - Expert Policy
 - Scene:Indoor

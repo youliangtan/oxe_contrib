@@ -6,6 +6,7 @@ citation: "@inproceedings{chi2023diffusionpolicy,\n\ttitle={Diffusion Policy: Vi
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: columbia_cairlab_pusht_real
 dataset_name: Columbia PushT Dataset
 description: The robot pushes a T-shaped block into a fixed goal pose, and then move
   to an fixed exit zone.
@@ -22,6 +23,7 @@ schema:
 size_in_gb: 2.8
 tag:
 - Open-X-Embodiment
+- Robot:UR5
 - Single Arm
 - Human VR
 - Scene:Table Top

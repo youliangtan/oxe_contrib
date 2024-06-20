@@ -6,6 +6,7 @@ citation: "@inproceedings{sawhney2021playing,\n  title={Playing with food: Learn
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: cmu_food_manipulation
 dataset_name: CMU Food Manipulation
 description: Robot interacting with different food items.
 download: []
@@ -18,6 +19,7 @@ schema:
 size_in_gb: 720.0
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Scripted
 - Scene:Table Top

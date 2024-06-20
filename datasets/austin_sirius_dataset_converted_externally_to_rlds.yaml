@@ -5,6 +5,7 @@ citation: "@inproceedings{liu2022robot,\n    title = {Robot Learning on the Job:
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: austin_sirius_dataset_converted_externally_to_rlds
 dataset_name: Austin Sirius
 description: The dataset comprises two tasks, kcup and gear. The kcup task requires
   opening the kcup holder, inserting the kcup into the holder, and closing the holder.
@@ -22,6 +23,7 @@ schema:
 size_in_gb: 6.55
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human Spacemouse
 - Scene:Table Top

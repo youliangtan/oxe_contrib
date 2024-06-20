@@ -4,6 +4,7 @@ citation: "@preprint{Feng2023Finetuning,\n\ttitle={Finetuning Offline World Mode
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: ucsd_pick_and_place_dataset_converted_externally_to_rlds
 dataset_name: UCSD Pick Place
 description: The robot performs pick and place tasks in table top and kitchen scenes.
   The dataset contains a variety of visual variations.
@@ -19,8 +20,9 @@ schema:
 size_in_gb: 3.53
 tag:
 - Open-X-Embodiment
+- Robot:xArm
 - Single Arm
 - Expert Policy
 - Scene:Table Top
-- Scene:Kitchen (also toy kitchen)
+- Scene:Kitchen
 version: 0.1.0

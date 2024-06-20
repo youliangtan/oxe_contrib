@@ -7,6 +7,7 @@ citation: "@inproceedings{gu2023maniskill2,\n  title={ManiSkill2: A Unified Benc
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: maniskill_dataset_converted_externally_to_rlds
 dataset_name: Maniskill
 description: The robot interacts with different objects placed on the plane (ground).
   The tasks include picking an isolated object or an object from the clutter up and
@@ -25,6 +26,7 @@ schema:
 size_in_gb: 151.05
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Scripted
 - Scene:Table Top

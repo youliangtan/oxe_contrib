@@ -14,6 +14,7 @@ citation: '@inproceedings{shah2021rapid,
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: berkeley_gnm_recon
 dataset_name: RECON
 description: Mobile robot explores outdoor environments using a scripted policy
 download:
@@ -28,6 +29,7 @@ schema:
 size_in_gb: 18.73
 tag:
 - Open-X-Embodiment
+- Robot:Jackal
 - Wheeled Robot
 - Scripted
 - Scene:Outdoors

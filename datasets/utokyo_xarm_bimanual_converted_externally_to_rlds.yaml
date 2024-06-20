@@ -4,6 +4,7 @@ citation: "@misc{matsushima2023weblab,\n  title={Weblab xArm Dataset},\n  author
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: utokyo_xarm_bimanual_converted_externally_to_rlds
 dataset_name: UTokyo xArm Bimanual
 description: The robots reach a towel on the table. They also unfold a wrinkled towel.
 download:
@@ -19,6 +20,7 @@ schema:
 size_in_gb: 0.14
 tag:
 - Open-X-Embodiment
+- Robot:xArm Bimanual
 - Bi-Manual
 - Human Puppeteering
 - Scene:Table Top

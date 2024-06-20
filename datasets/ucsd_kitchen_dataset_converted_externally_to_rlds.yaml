@@ -3,6 +3,7 @@ citation: "@ARTICLE{ucsd_kitchens,\n  author = {Ge Yan, Kris Wu, and Xiaolong Wa
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: ucsd_kitchen_dataset_converted_externally_to_rlds
 dataset_name: UCSD Kitchen
 description: The dataset offers a comprehensive set of real-world robotic interactions,
   involving natural language instructions and complex manipulations with kitchen objects.
@@ -18,6 +19,7 @@ schema:
 size_in_gb: 1.33
 tag:
 - Open-X-Embodiment
+- Robot:xArm
 - Single Arm
 - Human VR
 - Scene:Kitchen

@@ -6,6 +6,7 @@ citation: "@article{padalkar2023guided,\n  title={A guided reinforcement learnin
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: dlr_sara_grid_clamp_converted_externally_to_rlds
 dataset_name: DLR Sara Grid Clamp Dataset
 description: The robot learns to place the grid clamp in the grids on the table.
 download:
@@ -20,6 +21,7 @@ schema:
 size_in_gb: 1.65
 tag:
 - Open-X-Embodiment
+- Robot:DLR SARA
 - Single Arm
 - Expert Policy
 - Scene:Table Top

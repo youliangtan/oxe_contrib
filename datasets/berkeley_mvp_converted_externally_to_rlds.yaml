@@ -5,6 +5,7 @@ citation: "@InProceedings{Radosavovic2022,\n  title = {Real-World Robot Learning
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: berkeley_mvp_converted_externally_to_rlds
 dataset_name: Berkeley MVP Data
 description: Basic motor control tasks (reach, push, pick) on table top and toy environments
   (toy kitchen, toy fridge).
@@ -20,8 +21,9 @@ schema:
 size_in_gb: 12.34
 tag:
 - Open-X-Embodiment
+- Robot:xArm
 - Single Arm
 - Human VR
 - Scene:Table Top
-- Scene:Kitchen (also toy kitchen)
+- Scene:Kitchen
 version: 0.1.0

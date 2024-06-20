@@ -5,6 +5,7 @@ citation: "@inproceedings{heo2023furniturebench,\n  title={FurnitureBench: Repro
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: furniture_bench_dataset_converted_externally_to_rlds
 dataset_name: Furniture Bench
 description: The robot assembles one of 9 3D-printed furniture models on the table,
   which requires grasping, inserting, and screwing.
@@ -20,6 +21,7 @@ schema:
 size_in_gb: 110.0
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human VR
 - Scene:Table Top

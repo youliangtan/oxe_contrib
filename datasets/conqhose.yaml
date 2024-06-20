@@ -12,6 +12,7 @@ citation: '@misc{ConqHoseManipData,
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: conqhose
 dataset_name: ConqHose
 description: The robot grabs, lifts, and drags the end of a vacuum hose around in
   an office environment.
@@ -26,6 +27,7 @@ schema:
 size_in_gb: 2.71
 tag:
 - Open-X-Embodiment
+- Robot:Spot
 - Mobile Manipulator
 - Scripted
 - Scene:Other Household environments

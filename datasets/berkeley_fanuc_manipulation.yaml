@@ -5,6 +5,7 @@ citation: "@article{fanuc_manipulation2023,\n  title={Fanuc Manipulation: A Data
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: berkeley_fanuc_manipulation
 dataset_name: Berkeley Fanuc Manipulation
 description: A Fanuc robot performs various manipulation tasks. For example, it opens
   drawers, picks up objects, closes doors, closes computers, and pushes objects to
@@ -21,6 +22,7 @@ schema:
 size_in_gb: 8.85
 tag:
 - Open-X-Embodiment
+- Robot:Fanuc Mate
 - Single Arm
 - Human VR
 - Scene:Table Top

@@ -5,6 +5,7 @@ citation: "@article{hirose2023sacson,\n  title={SACSoN: Scalable Autonomous Data
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: berkeley_gnm_sac_son
 dataset_name: SACSoN
 description: Mobile robot navigates pedestrian-rich environments (e.g. offices, school
   buildings etc.) and runs a learned policy that may interact with the pedestrians.
@@ -20,6 +21,7 @@ schema:
 size_in_gb: 7.0
 tag:
 - Open-X-Embodiment
+- Robot:TurtleBot 2
 - Wheeled Robot
 - Expert Policy
 - Scene:Hallways

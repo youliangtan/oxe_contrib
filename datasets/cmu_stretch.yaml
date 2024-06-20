@@ -7,6 +7,7 @@ citation: "@inproceedings{bahl2023affordances,\n  title={Affordances from Human 
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: cmu_stretch
 dataset_name: CMU Stretch
 description: Robot interacting with different household environments.
 download:
@@ -21,6 +22,7 @@ schema:
 size_in_gb: 0.71
 tag:
 - Open-X-Embodiment
+- Robot:Hello Stretch
 - Mobile Manipulator
 - Expert Policy
 - Scene:Kitchen

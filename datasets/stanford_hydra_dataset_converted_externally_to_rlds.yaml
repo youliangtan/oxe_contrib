@@ -4,6 +4,7 @@ citation: "@article{belkhale2023hydra,\n title={HYDRA: Hybrid Robot Actions for 
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: stanford_hydra_dataset_converted_externally_to_rlds
 dataset_name: Stanford HYDRA
 description: 'The robot performs the following tasks in corresponding environment:
   making a cup of coffee using the keurig machine; making a toast using the oven;
@@ -20,8 +21,9 @@ schema:
 size_in_gb: 72.48
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human VR
 - Scene:Table Top
-- Scene:Kitchen (also toy kitchen)
+- Scene:Kitchen
 version: 0.1.0

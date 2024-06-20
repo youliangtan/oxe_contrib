@@ -5,6 +5,7 @@ citation: "@inproceedings{fu2024mobile,\n  author    = {Fu, Zipeng and Zhao, Ton
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: mobilealoha
 dataset_name: MobileALOHA
 description: The robot interacts with diverse appliances in a real kitchen and indoor
   environments. It wipes spilled wine, stores a heavy pot to be inside wall cabinets,
@@ -20,10 +21,11 @@ schema:
 size_in_gb: 47.83
 tag:
 - Open-X-Embodiment
+- Robot:MobileALOHA
 - Mobile Manipulator
 - Human Puppeteering
 - Scene:Table Top
-- Scene:Kitchen (also toy kitchen)
+- Scene:Kitchen
 - Scene:Other Household environments
 - Scene:Hallways
 version: 0.0.0

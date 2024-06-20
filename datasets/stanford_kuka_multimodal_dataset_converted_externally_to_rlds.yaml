@@ -7,6 +7,7 @@ citation: "@inproceedings{lee2019icra,\n  title={Making sense of vision and touc
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: stanford_kuka_multimodal_dataset_converted_externally_to_rlds
 dataset_name: Stanford Kuka Multimodal
 description: The robot learns to insert differently-shaped pegs into differently-shaped
   holes with low tolerances (~2mm).
@@ -22,6 +23,7 @@ schema:
 size_in_gb: 31.98
 tag:
 - Open-X-Embodiment
+- Robot:Kuka iiwa
 - Single Arm
 - Expert Policy
 - Scene:Table Top

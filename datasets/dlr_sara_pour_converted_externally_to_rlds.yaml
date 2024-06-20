@@ -7,6 +7,7 @@ citation: "@inproceedings{padalkar2023guiding,\n  title={Guiding Reinforcement L
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: dlr_sara_pour_converted_externally_to_rlds
 dataset_name: DLR Sara Pour Dataset
 description: The robot learns to pour ping-pong balls from a cup held in the end-effector
   into the cup placed on the table.
@@ -22,6 +23,7 @@ schema:
 size_in_gb: 2.92
 tag:
 - Open-X-Embodiment
+- Robot:DLR SARA
 - Single Arm
 - Expert Policy
 - Scene:Table Top

@@ -6,6 +6,7 @@ citation: "@article{wu2023tidybot,\n  title = {TidyBot: Personalized Robot Assis
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: tidybot
 dataset_name: TidyBot
 description: The robot puts each object into the appropriate receptacle based on user
   preferences
@@ -20,6 +21,7 @@ schema:
 size_in_gb: 0.02
 tag:
 - Open-X-Embodiment
+- Robot:TidyBot
 - Mobile Manipulator
 - Human writes preferred object placements in text form
 - Scene:Kitchen

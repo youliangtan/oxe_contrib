@@ -5,6 +5,7 @@ citation: "@inproceedings{nasiriany2022sailor,\n      title={Learning and Retrie
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: austin_sailor_dataset_converted_externally_to_rlds
 dataset_name: Austin Sailor
 description: The robot interacts with diverse objects in a toy kitchen. It picks and
   places food items, a pan, and pot.
@@ -20,8 +21,9 @@ schema:
 size_in_gb: 18.85
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human Spacemouse
 - Scene:Table Top
-- Scene:Kitchen (also toy kitchen)
+- Scene:Kitchen
 version: 0.1.0

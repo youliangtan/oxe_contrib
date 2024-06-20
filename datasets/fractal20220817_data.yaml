@@ -6,6 +6,7 @@ citation: "@article{brohan2022rt,\n  title={Rt-1: Robotics transformer for real-
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: fractal20220817_data
 dataset_name: RT-1 Robot Action
 description: Robot picks, places and moves 17 objects from the google micro kitchens.
 download:
@@ -20,8 +21,9 @@ schema:
 size_in_gb: 111.06
 tag:
 - Open-X-Embodiment
+- Robot:Google Robot
 - Mobile Manipulator
 - Human VR
 - Scene:Table Top
-- Scene:Kitchen (also toy kitchen)
+- Scene:Kitchen
 version: 0.1.0

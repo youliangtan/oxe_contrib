@@ -6,6 +6,7 @@ citation: "@article{kimpre,\n  title={Pre-and post-contact policy decomposition 
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: kaist_nonprehensile_converted_externally_to_rlds
 dataset_name: KAIST Nonprehensile Objects
 description: The robot performs various non-prehensile manipulation tasks in a tabletop
   environment. It translates and reorients diverse real-world and 3d-printed objects
@@ -22,6 +23,7 @@ schema:
 size_in_gb: 11.71
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Expert Policy
 - Scene:Table Top

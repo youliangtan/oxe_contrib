@@ -6,6 +6,7 @@ citation: "@inproceedings{shah2023mutex,\n    title={{MUTEX}: Learning Unified P
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: utaustin_mutex
 dataset_name: Austin Mutex
 description: The Mutex dataset involves a diverse range of tasks in a home environment,
   encompassing pick and place tasks like "putting bread on a plate," as well as contact-rich
@@ -23,6 +24,7 @@ schema:
 size_in_gb: 20.79
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human Spacemouse
 - Scene:Table Top

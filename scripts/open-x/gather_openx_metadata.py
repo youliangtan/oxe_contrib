@@ -2,9 +2,13 @@ from dataclasses import dataclass, field
 from typing import List, Union, Optional
 from pydantic import BaseModel, validator, ValidationError
 import yaml
+import numpy as np
+import tensorflow_datasets as tfds
+import pandas as pd
 
 class ConfigSchema(BaseModel):
     dataset_name: str
+    dataset_file_name: str
     description: str
     tag: List[str]
     citation: str
@@ -52,6 +56,7 @@ class ConfigSchema(BaseModel):
 @dataclass
 class Config:
     dataset_name: str
+    dataset_file_name: str
     description: str
     level_of_support: int 
     copyright: str 
@@ -78,9 +83,6 @@ class Config:
 
 
 
-import numpy as np
-import tensorflow_datasets as tfds
-
 def dataset2path(dataset_name):
   if dataset_name == 'robo_net':
     version = '1.0.0'
@@ -91,8 +93,8 @@ def dataset2path(dataset_name):
   return f'gs://gresearch/robotics/{dataset_name}/{version}'
 
 # read csv "scripts/Open X-Embodiment Dataset Overview - Dataset Overview.csv"
-import pandas as pd
-with open("scripts/Open X-Embodiment Dataset Overview - Dataset Overview.csv") as f:
+
+with open("scripts/open-x/Open X-Embodiment Dataset Overview - Dataset Overview.csv") as f:
     # remove the first 15 lines and read as csv
     df = pd.read_csv(f, skiprows=14)
     print(df.columns)
@@ -113,19 +115,23 @@ for i, row in df.iterrows():
     number_of_trajectories = [{split_name: ds_info.splits[split_name].num_examples} for split_name in ds_info.splits]
     
     tags = ["Open-X-Embodiment"]
+    if row["Robot"] and str(row["Robot"]) != "nan":
+        tags.append("Robot:" + row["Robot"])
     if row["Robot Morphology"] and str(row["Robot Morphology"]) != "nan":
         tags.append(row["Robot Morphology"])
     if row["Data Collect Method"] and str(row["Data Collect Method"]) != "nan":
         tags.append(row["Data Collect Method"])
     if row["Scene Type"] and str(row["Scene Type"]) != "nan":
         for tag in row["Scene Type"].strip().split(","):
-            if tag == 'Kitchen (also toy kitchen)':
+            if "Kitchen" in tag:
                 tag = 'Kitchen'
             tags.append("Scene:" + tag.strip())
+
     print(tags)
     
     config = Config(
         dataset_name= row['Dataset'],
+        dataset_file_name= dataset_name,
         version= version,
         description= row['Description'],
         tag=tags,

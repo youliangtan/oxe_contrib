@@ -8,6 +8,7 @@ citation: "@article{spoc2023,        \n        author    = {Kiana Ehsani, Tanmay
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: spoc
 dataset_name: SPOC
 description: The robot navigates in the environment and performs pick and place with
   open vocabulary descriptions.
@@ -22,6 +23,7 @@ schema:
 size_in_gb: 765.0
 tag:
 - Open-X-Embodiment
+- Robot:Hello Stretch
 - Single Arm
 - Scripted
 - Scene:Kitchen

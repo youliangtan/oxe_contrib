@@ -6,6 +6,7 @@ citation: "@article{wang2023mimicplay,\n    title={Mimicplay: Long-horizon imita
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: mimicplay
 dataset_name: MimicPlay
 description: The robot interacts with various appliances in five different scenes,
   including a kitchen with an oven; a study desk with a bookshelf and lamp; flowers
@@ -22,6 +23,7 @@ schema:
 size_in_gb: 7.13
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human VR
 - Scene:Table Top

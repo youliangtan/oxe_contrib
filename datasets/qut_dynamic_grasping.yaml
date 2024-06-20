@@ -4,6 +4,7 @@ citation: "@misc{rana2023dgrasp,\nauthor = {Krishan Rana, Ben Burgess-Limerick, 
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: qut_dynamic_grasping
 dataset_name: QUT Dynamic Grasping
 description: 'The robot grasps an object that moves around continuously and randomly
   along the XY plane. '
@@ -17,6 +18,7 @@ schema:
 size_in_gb: .nan
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Scripted
 - Scene:Table Top

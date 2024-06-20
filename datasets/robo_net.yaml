@@ -7,6 +7,7 @@ citation: "@inproceedings{dasari2019robonet,\n    title={RoboNet: Large-Scale Mu
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: robo_net
 dataset_name: Robonet
 description: The robot interacts with the objects in a bin placed in front of it
 download:
@@ -21,6 +22,7 @@ schema:
 size_in_gb: 799.91
 tag:
 - Open-X-Embodiment
+- Robot:Multi-Robot
 - Single Arm
 - Scripted
 - Scene:Table Top

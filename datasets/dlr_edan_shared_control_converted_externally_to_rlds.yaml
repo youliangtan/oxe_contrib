@@ -14,6 +14,7 @@ citation: "@inproceedings{vogel_edan_2020,\n        title = {EDAN - an EMG-Contr
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: dlr_edan_shared_control_converted_externally_to_rlds
 dataset_name: DLR Wheelchair Shared Control
 description: 'The robot grasps a set of different objects in a table top and a shelf. '
 download:
@@ -28,6 +29,7 @@ schema:
 size_in_gb: 3.09
 tag:
 - Open-X-Embodiment
+- Robot:DLR EDAN
 - Single Arm
 - Human teleoperation using Shared Control Templates
 - Scene:Table Top

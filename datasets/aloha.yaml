@@ -5,6 +5,7 @@ citation: "@article{Zhao2023LearningFB,\n  title={Learning Fine-Grained Bimanual
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: aloha
 dataset_name: ALOHA
 description: Bi-manual robot performing complex, dexterous tasks like unwrapping candy
   and putting on shoes.
@@ -19,6 +20,7 @@ schema:
 size_in_gb: .nan
 tag:
 - Open-X-Embodiment
+- Robot:ViperX Bimanual
 - Bi-Manual
 - Human Puppeteering
 - Scene:Table Top

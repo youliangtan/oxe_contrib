@@ -13,6 +13,7 @@ citation: '@inproceedings{jang2021bc,
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: bc_z
 dataset_name: BC-Z
 description: The robot attempts picking, wiping, and placing tasks on a diverse set
   of objects on a tabletop, along with a few challenging tasks like stacking cups
@@ -30,6 +31,7 @@ schema:
 size_in_gb: 80.54
 tag:
 - Open-X-Embodiment
+- Robot:Google Robot
 - Mobile Manipulator
 - Human VR
 - Scene:Table Top

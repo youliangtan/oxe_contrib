@@ -6,6 +6,7 @@ citation: "@article{luo2023multistage,\n  author    = {Jianlan Luo and Charles X
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: berkeley_cable_routing
 dataset_name: Berkeley Cable Routing
 description: The robot routes cable through a number of tight-fitting clips mounted
   on the table.
@@ -22,6 +23,7 @@ schema:
 size_in_gb: 4.67
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human VR
 - Scene:Table Top

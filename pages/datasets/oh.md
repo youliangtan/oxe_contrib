@@ -1,0 +1,24 @@
+# [ALOHA](././pages/datasets/oh.md)
+
+Bi-manual robot performing complex, dexterous tasks like unwrapping candy and putting on shoes.
+
+**Tags**: 
+
+## Sampled Visualization
+
+
+
+## Download
+
+
+
+## Citation
+
+@article{Zhao2023LearningFB,
+  title={Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware},
+  author={Tony Zhao and Vikash Kumar and Sergey Levine and Chelsea Finn},
+  journal={RSS},
+  year={2023},
+  volume={abs/2304.13705},
+  url={https://arxiv.org/abs/2304.13705}
+}

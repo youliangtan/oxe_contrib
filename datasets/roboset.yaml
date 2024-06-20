@@ -8,6 +8,7 @@ citation: "@misc{bharadhwaj2023roboagent,\n                            title={Ro
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: roboset
 dataset_name: RoboSet
 description: '"The robot interacts with different objects in kitchen scenes. It performs
   articulated object manipulation of objects with prismatic joints and hinges. It
@@ -24,9 +25,10 @@ schema:
 size_in_gb: 178.65
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Human VR
 - Scene:Table Top
-- Scene:Kitchen (also toy kitchen)
+- Scene:Kitchen
 - Scene:Other Household environments
 version: 0.0.0

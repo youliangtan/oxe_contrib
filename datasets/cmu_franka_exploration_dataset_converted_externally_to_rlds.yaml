@@ -5,6 +5,7 @@ citation: "@inproceedings{mendonca2023structured,\n              title={Structur
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: cmu_franka_exploration_dataset_converted_externally_to_rlds
 dataset_name: CMU Franka Exploration
 description: Franka exploring kitchen environment, lifting knife and vegetable and
   opening cabinet.
@@ -20,6 +21,7 @@ schema:
 size_in_gb: 0.59
 tag:
 - Open-X-Embodiment
+- Robot:Franka
 - Single Arm
 - Expert Policy
 - Scene:Kitchen

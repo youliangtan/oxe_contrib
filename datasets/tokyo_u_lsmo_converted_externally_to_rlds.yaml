@@ -5,6 +5,7 @@ citation: "@Article{Osa22,\n  author  = {Takayuki Osa},\n  journal = {The Intern
 copyright: Copyright
 curation:
 - open_x_embodiment: true
+dataset_file_name: tokyo_u_lsmo_converted_externally_to_rlds
 dataset_name: LSMO Dataset
 description: The robot avoids obstacle on the table and reaches the target object.
 download:
@@ -19,6 +20,7 @@ schema:
 size_in_gb: 0.33
 tag:
 - Open-X-Embodiment
+- Robot:Cobotta
 - Single Arm
 - Expert Policy
 - Scene:Table Top
