@@ -2,7 +2,7 @@
 
 The robot interacts with different objects placed on the plane (ground). The tasks include picking an isolated object or an object from the clutter up and moving it to a goal position, stacking a red cube onto a green cube, inserting a peg into the box, assembling kits, plugging a charger into the outlet on the wall, turning on a faucet.
 
-**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:Franka](oed-playground/tree/master/pages/tags/Robot:Franka.md), [Single_Arm](oed-playground/tree/master/pages/tags/Single_Arm.md), [Scripted](oed-playground/tree/master/pages/tags/Scripted.md), [Scene:Table_Top](oed-playground/tree/master/pages/tags/Scene:Table_Top.md)
+**Tags**: [Open-X-Embodiment](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Open-X-Embodiment.md), [Robot:Franka](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Robot:Franka.md), [Single_Arm](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Single_Arm.md), [Scripted](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scripted.md), [Scene:Table_Top](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

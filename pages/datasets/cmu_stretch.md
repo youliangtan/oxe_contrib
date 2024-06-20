@@ -2,7 +2,7 @@
 
 Robot interacting with different household environments.
 
-**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:Hello_Stretch](oed-playground/tree/master/pages/tags/Robot:Hello_Stretch.md), [Mobile_Manipulator](oed-playground/tree/master/pages/tags/Mobile_Manipulator.md), [Expert_Policy](oed-playground/tree/master/pages/tags/Expert_Policy.md), [Scene:Kitchen](oed-playground/tree/master/pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](oed-playground/tree/master/pages/tags/Scene:Other_Household_environments.md)
+**Tags**: [Open-X-Embodiment](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Open-X-Embodiment.md), [Robot:Hello_Stretch](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Robot:Hello_Stretch.md), [Mobile_Manipulator](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Mobile_Manipulator.md), [Expert_Policy](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Expert_Policy.md), [Scene:Kitchen](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Other_Household_environments.md)
 
 ## Sampled Visualization
 

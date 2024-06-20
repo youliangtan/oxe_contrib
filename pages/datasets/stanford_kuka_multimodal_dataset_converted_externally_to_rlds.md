@@ -2,7 +2,7 @@
 
 The robot learns to insert differently-shaped pegs into differently-shaped holes with low tolerances (~2mm).
 
-**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:Kuka_iiwa](oed-playground/tree/master/pages/tags/Robot:Kuka_iiwa.md), [Single_Arm](oed-playground/tree/master/pages/tags/Single_Arm.md), [Expert_Policy](oed-playground/tree/master/pages/tags/Expert_Policy.md), [Scene:Table_Top](oed-playground/tree/master/pages/tags/Scene:Table_Top.md)
+**Tags**: [Open-X-Embodiment](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Open-X-Embodiment.md), [Robot:Kuka_iiwa](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Robot:Kuka_iiwa.md), [Single_Arm](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Single_Arm.md), [Expert_Policy](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Expert_Policy.md), [Scene:Table_Top](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

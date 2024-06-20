@@ -2,7 +2,7 @@
 
 The robot navigates in the environment and performs pick and place with open vocabulary descriptions.
 
-**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:Hello_Stretch](oed-playground/tree/master/pages/tags/Robot:Hello_Stretch.md), [Single_Arm](oed-playground/tree/master/pages/tags/Single_Arm.md), [Scripted](oed-playground/tree/master/pages/tags/Scripted.md), [Scene:Kitchen](oed-playground/tree/master/pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](oed-playground/tree/master/pages/tags/Scene:Other_Household_environments.md), [Scene:Hallways](oed-playground/tree/master/pages/tags/Scene:Hallways.md), [Scene:multi_room_environments](oed-playground/tree/master/pages/tags/Scene:multi_room_environments.md)
+**Tags**: [Open-X-Embodiment](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Open-X-Embodiment.md), [Robot:Hello_Stretch](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Robot:Hello_Stretch.md), [Single_Arm](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Single_Arm.md), [Scripted](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scripted.md), [Scene:Kitchen](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Other_Household_environments.md), [Scene:Hallways](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Hallways.md), [Scene:multi_room_environments](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:multi_room_environments.md)
 
 ## Sampled Visualization
 

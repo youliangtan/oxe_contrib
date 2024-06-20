@@ -2,7 +2,7 @@
 
 The robot opens cabinet doors for a variety of cabinets.
 
-**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:Hello_Stretch](oed-playground/tree/master/pages/tags/Robot:Hello_Stretch.md), [Mobile_Manipulator](oed-playground/tree/master/pages/tags/Mobile_Manipulator.md), [Human_Kinesthetic](oed-playground/tree/master/pages/tags/Human_Kinesthetic.md), [Scene:Kitchen](oed-playground/tree/master/pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](oed-playground/tree/master/pages/tags/Scene:Other_Household_environments.md)
+**Tags**: [Open-X-Embodiment](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Open-X-Embodiment.md), [Robot:Hello_Stretch](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Robot:Hello_Stretch.md), [Mobile_Manipulator](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Mobile_Manipulator.md), [Human_Kinesthetic](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Human_Kinesthetic.md), [Scene:Kitchen](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Kitchen.md), [Scene:Other_Household_environments](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Other_Household_environments.md)
 
 ## Sampled Visualization
 

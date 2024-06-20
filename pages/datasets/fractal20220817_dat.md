@@ -2,7 +2,7 @@
 
 Robot picks, places and moves 17 objects from the google micro kitchens.
 
-**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:Google_Robot](oed-playground/tree/master/pages/tags/Robot:Google_Robot.md), [Mobile_Manipulator](oed-playground/tree/master/pages/tags/Mobile_Manipulator.md), [Human_VR](oed-playground/tree/master/pages/tags/Human_VR.md), [Scene:Table_Top](oed-playground/tree/master/pages/tags/Scene:Table_Top.md), [Scene:Kitchen](oed-playground/tree/master/pages/tags/Scene:Kitchen.md)
+**Tags**: [Open-X-Embodiment](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Open-X-Embodiment.md), [Robot:Google_Robot](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Robot:Google_Robot.md), [Mobile_Manipulator](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Mobile_Manipulator.md), [Human_VR](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Human_VR.md), [Scene:Table_Top](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Table_Top.md), [Scene:Kitchen](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Kitchen.md)
 
 ## Sampled Visualization
 

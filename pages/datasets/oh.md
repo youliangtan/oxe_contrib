@@ -2,7 +2,7 @@
 
 Bi-manual robot performing complex, dexterous tasks like unwrapping candy and putting on shoes.
 
-**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:ViperX_Bimanual](oed-playground/tree/master/pages/tags/Robot:ViperX_Bimanual.md), [Bi-Manual](oed-playground/tree/master/pages/tags/Bi-Manual.md), [Human_Puppeteering](oed-playground/tree/master/pages/tags/Human_Puppeteering.md), [Scene:Table_Top](oed-playground/tree/master/pages/tags/Scene:Table_Top.md)
+**Tags**: [Open-X-Embodiment](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Open-X-Embodiment.md), [Robot:ViperX_Bimanual](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Robot:ViperX_Bimanual.md), [Bi-Manual](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Bi-Manual.md), [Human_Puppeteering](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Human_Puppeteering.md), [Scene:Table_Top](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

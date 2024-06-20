@@ -2,7 +2,7 @@
 
 The robot learns to pour ping-pong balls from a cup held in the end-effector into the cup placed on the table.
 
-**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:DLR_SARA](oed-playground/tree/master/pages/tags/Robot:DLR_SARA.md), [Single_Arm](oed-playground/tree/master/pages/tags/Single_Arm.md), [Expert_Policy](oed-playground/tree/master/pages/tags/Expert_Policy.md), [Scene:Table_Top](oed-playground/tree/master/pages/tags/Scene:Table_Top.md), [Scene:Household_objects](oed-playground/tree/master/pages/tags/Scene:Household_objects.md)
+**Tags**: [Open-X-Embodiment](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Open-X-Embodiment.md), [Robot:DLR_SARA](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Robot:DLR_SARA.md), [Single_Arm](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Single_Arm.md), [Expert_Policy](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Expert_Policy.md), [Scene:Table_Top](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Table_Top.md), [Scene:Household_objects](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Household_objects.md)
 
 ## Sampled Visualization
 

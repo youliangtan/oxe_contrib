@@ -1,6 +1,6 @@
 # Robot:UR5
 
-- [Berkeley_Autolab_UR5](oed-playground/tree/master/pages/datasets/berkeley_autolab_ur5.md): The data consists of 4 robot manipulation tasks: simple pick-and-place of a stuffed animal between containers, sweeping a cloth, stacking cups, and a more difficult pick-and-place of a bottle that requires precise grasp and 6DOF rotation
-- [Columbia_PushT_Dataset](oed-playground/tree/master/pages/datasets/columbia_cairlab_pusht_re.md): The robot pushes a T-shaped block into a fixed goal pose, and then move to an fixed exit zone.
-- [VIMA](oed-playground/tree/master/pages/datasets/vi.md): The robot is conditioned on multimodal prompts (mixture of texts, images, and video frames) to conduct tabletop manipulation tasks, ranging from rearrangement to one-shot imitation.
-- [ASU_TableTop_Manipulation](oed-playground/tree/master/pages/datasets/su_table_top_converted_externally_to_rlds.md): The robot interacts with a few objects on a table. It picks up, pushes forward, or rotates the objects.
+- [Columbia_PushT_Dataset](https://github.com/KeplerC/oed-playground/tree/main/pages/datasets/columbia_cairlab_pusht_re.md): The robot pushes a T-shaped block into a fixed goal pose, and then move to an fixed exit zone.
+- [VIMA](https://github.com/KeplerC/oed-playground/tree/main/pages/datasets/vi.md): The robot is conditioned on multimodal prompts (mixture of texts, images, and video frames) to conduct tabletop manipulation tasks, ranging from rearrangement to one-shot imitation.
+- [ASU_TableTop_Manipulation](https://github.com/KeplerC/oed-playground/tree/main/pages/datasets/su_table_top_converted_externally_to_rlds.md): The robot interacts with a few objects on a table. It picks up, pushes forward, or rotates the objects.
+- [Berkeley_Autolab_UR5](https://github.com/KeplerC/oed-playground/tree/main/pages/datasets/berkeley_autolab_ur5.md): The data consists of 4 robot manipulation tasks: simple pick-and-place of a stuffed animal between containers, sweeping a cloth, stacking cups, and a more difficult pick-and-place of a bottle that requires precise grasp and 6DOF rotation

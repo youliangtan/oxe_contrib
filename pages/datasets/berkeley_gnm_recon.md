@@ -2,7 +2,7 @@
 
 Mobile robot explores outdoor environments using a scripted policy
 
-**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:Jackal](oed-playground/tree/master/pages/tags/Robot:Jackal.md), [Wheeled_Robot](oed-playground/tree/master/pages/tags/Wheeled_Robot.md), [Scripted](oed-playground/tree/master/pages/tags/Scripted.md), [Scene:Outdoors](oed-playground/tree/master/pages/tags/Scene:Outdoors.md)
+**Tags**: [Open-X-Embodiment](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Open-X-Embodiment.md), [Robot:Jackal](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Robot:Jackal.md), [Wheeled_Robot](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Wheeled_Robot.md), [Scripted](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scripted.md), [Scene:Outdoors](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Outdoors.md)
 
 ## Sampled Visualization
 

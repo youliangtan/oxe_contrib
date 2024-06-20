@@ -2,7 +2,7 @@
 
 There is no task that the robot solves. It executes a combination of random multisine signals of target pressures, as well as fixed target pressures.
 
-**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:PAMY2](oed-playground/tree/master/pages/tags/Robot:PAMY2.md), [Single_Arm](oed-playground/tree/master/pages/tags/Single_Arm.md), [Scripted](oed-playground/tree/master/pages/tags/Scripted.md), [Scene:The_robot_is_alone_in_the_environment](oed-playground/tree/master/pages/tags/Scene:The_robot_is_alone_in_the_environment.md), [Scene:there_are_no_other_objects_in_the_workspace.](oed-playground/tree/master/pages/tags/Scene:there_are_no_other_objects_in_the_workspace..md)
+**Tags**: [Open-X-Embodiment](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Open-X-Embodiment.md), [Robot:PAMY2](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Robot:PAMY2.md), [Single_Arm](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Single_Arm.md), [Scripted](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scripted.md), [Scene:The_robot_is_alone_in_the_environment](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:The_robot_is_alone_in_the_environment.md), [Scene:there_are_no_other_objects_in_the_workspace.](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:there_are_no_other_objects_in_the_workspace..md)
 
 ## Sampled Visualization
 

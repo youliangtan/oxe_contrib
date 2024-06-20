@@ -2,7 +2,7 @@
 
 The TOTO Benchmark Dataset contains trajectories of two tasks: scooping and pouring. For scooping, the objective is to scoop material from a bowl into the spoon. For pouring, the goal is to pour some material into a target cup on the table. 
 
-**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:Franka](oed-playground/tree/master/pages/tags/Robot:Franka.md), [Single_Arm](oed-playground/tree/master/pages/tags/Single_Arm.md), [The_dataset_is_collected_in_3_ways:_Human_teleoperation_--_VR_Teleop,_trained_state-based_BC_policies,_and_trajectory_replay_with_noise](oed-playground/tree/master/pages/tags/The_dataset_is_collected_in_3_ways:_Human_teleoperation_--_VR_Teleop,_trained_state-based_BC_policies,_and_trajectory_replay_with_noise.md), [Scene:Table_Top](oed-playground/tree/master/pages/tags/Scene:Table_Top.md)
+**Tags**: [Open-X-Embodiment](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Open-X-Embodiment.md), [Robot:Franka](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Robot:Franka.md), [Single_Arm](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Single_Arm.md), [The_dataset_is_collected_in_3_ways:_Human_teleoperation_--_VR_Teleop,_trained_state-based_BC_policies,_and_trajectory_replay_with_noise](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/The_dataset_is_collected_in_3_ways:_Human_teleoperation_--_VR_Teleop,_trained_state-based_BC_policies,_and_trajectory_replay_with_noise.md), [Scene:Table_Top](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Table_Top.md)
 
 ## Sampled Visualization
 

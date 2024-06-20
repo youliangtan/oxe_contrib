@@ -2,7 +2,7 @@
 
 The robot grabs, lifts, and drags the end of a vacuum hose around in an office environment.
 
-**Tags**: [Open-X-Embodiment](oed-playground/tree/master/pages/tags/Open-X-Embodiment.md), [Robot:Spot](oed-playground/tree/master/pages/tags/Robot:Spot.md), [Mobile_Manipulator](oed-playground/tree/master/pages/tags/Mobile_Manipulator.md), [Scripted](oed-playground/tree/master/pages/tags/Scripted.md), [Scene:Other_Household_environments](oed-playground/tree/master/pages/tags/Scene:Other_Household_environments.md), [Scene:Hallways](oed-playground/tree/master/pages/tags/Scene:Hallways.md)
+**Tags**: [Open-X-Embodiment](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Open-X-Embodiment.md), [Robot:Spot](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Robot:Spot.md), [Mobile_Manipulator](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Mobile_Manipulator.md), [Scripted](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scripted.md), [Scene:Other_Household_environments](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Other_Household_environments.md), [Scene:Hallways](https://github.com/KeplerC/oed-playground/tree/main/pages/tags/Scene:Hallways.md)
 
 ## Sampled Visualization
 
