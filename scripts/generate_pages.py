@@ -131,7 +131,7 @@ def generate_table_from_dataset_yamls():
 def generate_project_pages():
     for filename in os.listdir(DATASET_DIR):
         file_path = os.path.join(DATASET_DIR, filename)
-        dataset_path_name = filename.strip(".yaml")
+        dataset_path_name = filename.removesuffix(".yaml")
         with open(file_path, 'r') as file:
             dataset_info = yaml.safe_load(file)
 
@@ -175,7 +175,7 @@ def generate_tag_page():
         tags = dataset_info.get("tag", [])
         dataset_name = dataset_info.get("dataset_name", "")
         dataset_description = dataset_info.get("description", "")
-        dataset_path_name = filename.strip(".yaml")
+        dataset_path_name = filename.removesuffix(".yaml")
         for tag in tags:
             no_space_tag = tag.replace(" ", "_")
             tag_file_path = f"{OUTPUT_TAG_PAGE_DIR}/{no_space_tag}.md"
