@@ -1,11 +1,22 @@
 import datetime
-
-
 import yaml
 import os
 import pandas as pd
 
-def generate_readme_from_yaml(yaml_dir):
+
+def create_readme(template_path, output_path, replacements):
+    with open(template_path, 'r') as file:
+        content = file.read()
+        
+    for key, value in replacements.items():
+        placeholder = "{" + key + "}"
+        content = content.replace(placeholder, value)
+    
+    with open(output_path, 'w') as file:
+        file.write(content)
+
+
+def generate_table_from_dataset_yamls(yaml_dir):
     """
     Generate a README.md table from YAML files in the specified directory.
 
@@ -29,10 +40,9 @@ def generate_readme_from_yaml(yaml_dir):
     
     # Define the columns we want to include in the Markdown table
     columns = [
-        "dataset_name", "description", "tag",
-        "download", "curation", 
-        "intended_level_of_support", "copyright",
-        "number_of_trajectories", "size_in_gb"
+        "dataset_name", "tag", "description", 
+        "download",
+        "number_of_trajectories",
     ]
 
     # Ensure all specified columns are present in the DataFrame
@@ -46,23 +56,14 @@ def generate_readme_from_yaml(yaml_dir):
     return markdown_table
 
 def generate_readme():
-    content = f"""
-# Open Embodiment Datasets
+    replacements = {
+        "dataset_table": generate_table_from_dataset_yamls(yaml_directory)
+    }
 
-This is an auto-generated README file at time {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+    create_readme(template_path = "./templates/index.md", 
+                  output_path = "./README.md", 
+                  replacements = replacements)
 
-## Dataset 
-
-{generate_readme_from_yaml(yaml_directory)}
-
-## Contributing
-
-Explain how to contribute here.
-    """
-
-    with open(output_readme, "w") as readme_file:
-        readme_file.write(content)
-        
 
 if __name__ == "__main__":
     yaml_directory = 'datasets'
