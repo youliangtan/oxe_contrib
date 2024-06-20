@@ -13,22 +13,24 @@ citation: '@inproceedings{jang2021bc,
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: bc_z
-description: Teleoped Google robot doing mostly pick-place from a table
+dataset_name: BC-Z
+description: The robot attempts picking, wiping, and placing tasks on a diverse set
+  of objects on a tabletop, along with a few challenging tasks like stacking cups
+  on top of each other.
 download:
 - link: gs://gresearch/robotics/bc_z/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 39350
 - val: 3914
 schema:
 - TODO: schema_todo
-size_in_gb: 86.475802179
+size_in_gb: 80.54
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Mobile Manipulator
+- Human VR
+- Scene:Table Top
 version: 0.1.0

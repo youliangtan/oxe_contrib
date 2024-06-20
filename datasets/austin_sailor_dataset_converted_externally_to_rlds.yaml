@@ -5,21 +5,23 @@ citation: "@inproceedings{nasiriany2022sailor,\n      title={Learning and Retrie
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: austin_sailor_dataset_converted_externally_to_rlds
-description: Franka tablesetting tasks
+dataset_name: Austin Sailor
+description: The robot interacts with diverse objects in a toy kitchen. It picks and
+  places food items, a pan, and pot.
 download:
 - link: gs://gresearch/robotics/austin_sailor_dataset_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 240
 schema:
 - TODO: schema_todo
-size_in_gb: 20.235912513
+size_in_gb: 18.85
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human Spacemouse
+- Scene:Table Top
+- Scene:Kitchen (also toy kitchen)
 version: 0.1.0

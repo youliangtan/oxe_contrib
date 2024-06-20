@@ -1,6 +1,4 @@
-citation: '@inproceedings{
-
-  shah2021rapid,
+citation: '@inproceedings{shah2021rapid,
 
   title={{Rapid Exploration for Open-World Navigation with Latent Goal Models}},
 
@@ -16,21 +14,21 @@ citation: '@inproceedings{
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: berkeley_gnm_recon
-description: off-road navigation
+dataset_name: RECON
+description: Mobile robot explores outdoor environments using a scripted policy
 download:
 - link: gs://gresearch/robotics/berkeley_gnm_recon/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 11834
 schema:
 - TODO: schema_todo
-size_in_gb: 20.107714869
+size_in_gb: 18.73
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Wheeled Robot
+- Scripted
+- Scene:Outdoors
 version: 0.1.0

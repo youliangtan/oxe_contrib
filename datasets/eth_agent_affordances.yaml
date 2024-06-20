@@ -7,21 +7,22 @@ citation: "@inproceedings{schiavi2023learning,\n  title={Learning agent-aware af
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: eth_agent_affordances
-description: Franka opening ovens -- point cloud + proprio only
+dataset_name: ETH Agent Affordances
+description: The robot opens and closes an oven, starting from different initial positions
+  and door angles.
 download:
 - link: gs://gresearch/robotics/eth_agent_affordances/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 118
 schema:
 - TODO: schema_todo
-size_in_gb: 18.546670748
+size_in_gb: 17.27
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Mobile Manipulator
+- Expert Policy
+- Scene:Kitchen
 version: 0.1.0

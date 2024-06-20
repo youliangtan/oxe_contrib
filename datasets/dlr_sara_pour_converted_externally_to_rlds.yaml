@@ -1,27 +1,29 @@
 citation: "@inproceedings{padalkar2023guiding,\n  title={Guiding Reinforcement Learning\
   \ with Shared Control Templates},\n  author={Padalkar, Abhishek and Quere, Gabriel\
-  \ and Steinmetz, Franz and Raffin, Antonin and Nieuwenhuisen, Matthias and Silv{'e}rio,\
-  \ Jo{\\~a}o and Stulp, Freek},\n  booktitle={40th IEEE International Conference\
+  \ and Steinmetz, Franz and Raffin, Antonin and Nieuwenhuisen, Matthias and Silv{\\\
+  'e}rio, Jo{\\~a}o and Stulp, Freek},\n  booktitle={40th IEEE International Conference\
   \ on Robotics and Automation, ICRA 2023},\n  year={2023},\n  organization={IEEE}\n\
   }"
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: dlr_sara_pour_converted_externally_to_rlds
-description: pouring liquid from a bottle into a mug
+dataset_name: DLR Sara Pour Dataset
+description: The robot learns to pour ping-pong balls from a cup held in the end-effector
+  into the cup placed on the table.
 download:
 - link: gs://gresearch/robotics/dlr_sara_pour_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 100
 schema:
 - TODO: schema_todo
-size_in_gb: 3.138354739
+size_in_gb: 2.92
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Expert Policy
+- Scene:Table Top
+- Scene:Household objects
 version: 0.1.0

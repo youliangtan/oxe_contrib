@@ -7,21 +7,21 @@ citation: "@article{kalashnikov2018qt,\n  title={Qt-opt: Scalable deep reinforce
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: kuka
-description: Bin picking and rearrangement tasks
+dataset_name: QT-Opt
+description: Kuka robot picking objects in a bin.
 download:
 - link: gs://gresearch/robotics/kuka/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 580392
 schema:
 - TODO: schema_todo
-size_in_gb: 835.396339557
+size_in_gb: 778.02
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Expert Policy
+- Scene:Table Top
 version: 0.1.0

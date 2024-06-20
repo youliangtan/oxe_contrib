@@ -7,21 +7,25 @@ citation: "@inproceedings{gu2023maniskill2,\n  title={ManiSkill2: A Unified Benc
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: maniskill_dataset_converted_externally_to_rlds
-description: Simulated Franka performing various manipulation tasks
+dataset_name: Maniskill
+description: The robot interacts with different objects placed on the plane (ground).
+  The tasks include picking an isolated object or an object from the clutter up and
+  moving it to a goal position, stacking a red cube onto a green cube, inserting a
+  peg into the box, assembling kits, plugging a charger into the outlet on the wall,
+  turning on a faucet.
 download:
 - link: gs://gresearch/robotics/maniskill_dataset_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 30213
 schema:
 - TODO: schema_todo
-size_in_gb: 162.191587434
+size_in_gb: 151.05
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Scripted
+- Scene:Table Top
 version: 0.1.0

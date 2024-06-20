@@ -5,21 +5,22 @@ citation: "@article{wang2023d3field,\n  title={D^3Field: Dynamic 3D Descriptor F
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: uiuc_d3field
-description: Organizing office desk, utensils etc
+dataset_name: UIUC D3Field
+description: The robot completes tasks specified by the goal image, including organizing
+  utensils, shoes, mugs.
 download:
 - link: gs://gresearch/robotics/uiuc_d3field/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 192
 schema:
 - TODO: schema_todo
-size_in_gb: 16.981828242
+size_in_gb: 15.82
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Scripted
+- Scene:Table Top
 version: 0.1.0

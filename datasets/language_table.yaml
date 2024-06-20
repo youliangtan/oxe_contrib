@@ -1,22 +1,26 @@
-citation: ''
+citation: "@article{lynch2023interactive,\n  title={Interactive language: Talking\
+  \ to robots in real time},\n  author={Lynch, Corey and Wahid, Ayzaan and Tompson,\
+  \ Jonathan and Ding, Tianli and Betker, James and Baruch, Robert and Armstrong,\
+  \ Travis and Florence, Pete},\n  journal={IEEE Robotics and Automation Letters},\n\
+  \  year={2023},\n  publisher={IEEE}\n}"
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: language_table
-description: ''
+dataset_name: Language Table
+description: Robot pushed blocks of different geometric shapes on table top.
 download:
 - link: gs://gresearch/robotics/language_table/0.0.1
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 442226
 schema:
 - TODO: schema_todo
-size_in_gb: 428.665067806
+size_in_gb: 399.22
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Table Top
 version: 0.0.1

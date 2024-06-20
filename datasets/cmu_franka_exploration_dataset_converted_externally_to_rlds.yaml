@@ -5,21 +5,22 @@ citation: "@inproceedings{mendonca2023structured,\n              title={Structur
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: cmu_franka_exploration_dataset_converted_externally_to_rlds
-description: Franka exploring toy kitchens
+dataset_name: CMU Franka Exploration
+description: Franka exploring kitchen environment, lifting knife and vegetable and
+  opening cabinet.
 download:
 - link: gs://gresearch/robotics/cmu_franka_exploration_dataset_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 199
 schema:
 - TODO: schema_todo
-size_in_gb: 0.631489461
+size_in_gb: 0.59
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Expert Policy
+- Scene:Kitchen
 version: 0.1.0

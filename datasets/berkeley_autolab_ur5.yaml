@@ -4,22 +4,24 @@ citation: "@misc{BerkeleyUR5Website,\n  title = {Berkeley {UR5} Demonstration Da
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: berkeley_autolab_ur5
-description: UR5 performing cloth manipulation, pick place etc tasks
+dataset_name: Berkeley Autolab UR5
+description: 'The data consists of 4 robot manipulation tasks: simple pick-and-place
+  of a stuffed animal between containers, sweeping a cloth, stacking cups, and a more
+  difficult pick-and-place of a bottle that requires precise grasp and 6DOF rotation'
 download:
 - link: gs://gresearch/robotics/berkeley_autolab_ur5/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 896
 - test: 104
 schema:
 - TODO: schema_todo
-size_in_gb: 82.022938351
+size_in_gb: 76.39
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human Spacemouse
+- Scene:Table Top
 version: 0.1.0

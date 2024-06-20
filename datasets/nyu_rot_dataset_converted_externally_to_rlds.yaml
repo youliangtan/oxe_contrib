@@ -6,21 +6,22 @@ citation: "@inproceedings{haldar2023watch,\n  title={Watch and match: Supercharg
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: nyu_rot_dataset_converted_externally_to_rlds
-description: xArm short-horizon table-top tasks
+dataset_name: NYU ROT
+description: 'The robot arm performs diverse manipulation tasks on a tabletop such
+  an box opening, cup stacking, and pouring, among others. '
 download:
 - link: gs://gresearch/robotics/nyu_rot_dataset_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 14
 schema:
 - TODO: schema_todo
-size_in_gb: 0.005593987
+size_in_gb: 0.01
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human Joystick
+- Scene:Table Top
 version: 0.1.0

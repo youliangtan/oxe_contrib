@@ -4,21 +4,23 @@ citation: "@preprint{Feng2023Finetuning,\n\ttitle={Finetuning Offline World Mode
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: ucsd_pick_and_place_dataset_converted_externally_to_rlds
-description: xArm picking and placing objects with distractors
+dataset_name: UCSD Pick Place
+description: The robot performs pick and place tasks in table top and kitchen scenes.
+  The dataset contains a variety of visual variations.
 download:
 - link: gs://gresearch/robotics/ucsd_pick_and_place_dataset_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 1355
 schema:
 - TODO: schema_todo
-size_in_gb: 3.78805222
+size_in_gb: 3.53
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Expert Policy
+- Scene:Table Top
+- Scene:Kitchen (also toy kitchen)
 version: 0.1.0

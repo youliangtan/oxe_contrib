@@ -1,0 +1,28 @@
+citation: "@article{wang2023mimicplay,\n    title={Mimicplay: Long-horizon imitation\
+  \ learning by watching human play},\n    author={Wang, Chen and Fan, Linxi and Sun,\
+  \ Jiankai and Zhang, Ruohan and Fei-Fei, Li and Xu, Danfei and Zhu, Yuke and\n \
+  \   Anandkumar, Anima},\n    journal={arXiv preprint arXiv:2302.12422},\n    year={2023}\n\
+  } "
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: MimicPlay
+description: The robot interacts with various appliances in five different scenes,
+  including a kitchen with an oven; a study desk with a bookshelf and lamp; flowers
+  and a vase; toy sandwich making; and cloth folding. It opens the microwave and drawers;
+  places a book on the shelf; inserts a flower into the vase; and assembles a sandwich.
+download: []
+level_of_support: 0
+link: TODO
+number_of_trajectories:
+- train: 3331523
+- test: 3774
+schema:
+- TODO: schema_todo
+size_in_gb: 7.13
+tag:
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Table Top
+version: 0.0.0

@@ -6,21 +6,22 @@ citation: "@article{zhu2022bottom,\n  title={Bottom-Up Skill Discovery From Unse
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: austin_buds_dataset_converted_externally_to_rlds
-description: Franka stylized kitchen tasks
+dataset_name: Austin BUDS
+description: The robot is trying to solve a long-horizon kitchen task by picking up
+  pot, placing the pot in a plate, and push them together using a picked-up tool.
 download:
 - link: gs://gresearch/robotics/austin_buds_dataset_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 50
 schema:
 - TODO: schema_todo
-size_in_gb: 1.604210665
+size_in_gb: 1.49
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human Spacemouse
+- Scene:Table Top
 version: 0.1.0

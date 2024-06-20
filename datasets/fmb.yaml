@@ -1,0 +1,26 @@
+citation: "@article{luo2024fmb,\n  title={FMB: a Functional Manipulation Benchmark\
+  \ for Generalizable Robotic Learning},\n  author={Luo, Jianlan and Xu, Charles and\
+  \ Liu, Fangchen and Tan, Liam and Lin, Zipeng and Wu, Jeffrey and Abbeel, Pieter\
+  \ and Levine, Sergey},\n  journal={arXiv preprint arXiv:2401.08553},\n  year={2024}\n\
+  }"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: FMB
+description: The robot interacts with diverse 3D printed objects, pick them up, reposition,
+  and assemble them
+download: []
+level_of_support: 0
+link: TODO
+number_of_trajectories:
+- train: 3331523
+- test: 3774
+schema:
+- TODO: schema_todo
+size_in_gb: 356.5
+tag:
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Table Top
+version: 0.0.0

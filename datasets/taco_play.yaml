@@ -28,22 +28,24 @@ citation: '@inproceedings{rosete2022tacorl,
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: taco_play
-description: Franka arm interacting with kitchen
+dataset_name: Freiburg Franka Play
+description: '"The robot interacts with toy blocks, it pick and places them, stacks
+  them, unstacks them, opens drawers, sliding doors and turrns on LED lights by pushing
+  buttons."'
 download:
 - link: gs://gresearch/robotics/taco_play/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 3242
 - test: 361
 schema:
 - TODO: schema_todo
-size_in_gb: 51.288923948
+size_in_gb: 47.77
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Table Top
 version: 0.1.0

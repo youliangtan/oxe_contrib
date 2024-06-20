@@ -5,21 +5,26 @@ citation: "@article{shi2023robocook,\n  title={RoboCook: Long-Horizon Elasto-Pla
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: stanford_robocook_converted_externally_to_rlds
-description: Franka preparing dumplings with various tools
+dataset_name: Stanford Robocook
+description: In the first task, the robot pinches the dough with an asymmetric gripper
+  / two-rod symmetric gripper / two-plane symmetric gripper. In the second task, the
+  robot presses the dough with a circle press / square press / circle punch / square
+  punch. In the third task, the robot rolls the dough with a large roller / small
+  roller.
 download:
 - link: gs://gresearch/robotics/stanford_robocook_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 2460
 schema:
 - TODO: schema_todo
-size_in_gb: 133.807555717
+size_in_gb: 124.62
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Scripted
+- Scene:Table Top
+- Scene:Kitchen (also toy kitchen)
 version: 0.1.0

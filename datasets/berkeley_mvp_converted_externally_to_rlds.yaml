@@ -5,21 +5,23 @@ citation: "@InProceedings{Radosavovic2022,\n  title = {Real-World Robot Learning
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: berkeley_mvp_converted_externally_to_rlds
-description: xArm performing 6 manipulation tasks
+dataset_name: Berkeley MVP Data
+description: Basic motor control tasks (reach, push, pick) on table top and toy environments
+  (toy kitchen, toy fridge).
 download:
 - link: gs://gresearch/robotics/berkeley_mvp_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 480
 schema:
 - TODO: schema_todo
-size_in_gb: 13.254244966
+size_in_gb: 12.34
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Table Top
+- Scene:Kitchen (also toy kitchen)
 version: 0.1.0

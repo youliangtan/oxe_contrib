@@ -6,21 +6,23 @@ citation: "@article{kimpre,\n  title={Pre-and post-contact policy decomposition 
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: kaist_nonprehensile_converted_externally_to_rlds
-description: Franka manipulating ungraspable objects
+dataset_name: KAIST Nonprehensile Objects
+description: The robot performs various non-prehensile manipulation tasks in a tabletop
+  environment. It translates and reorients diverse real-world and 3d-printed objects
+  to a target 6dof pose.
 download:
 - link: gs://gresearch/robotics/kaist_nonprehensile_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 201
 schema:
 - TODO: schema_todo
-size_in_gb: 12.571320337
+size_in_gb: 11.71
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Expert Policy
+- Scene:Table Top
 version: 0.1.0

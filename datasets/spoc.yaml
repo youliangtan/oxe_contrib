@@ -1,0 +1,31 @@
+citation: "@article{spoc2023,        \n        author    = {Kiana Ehsani, Tanmay Gupta,\
+  \ Rose Hendrix, Jordi Salvador, Luca Weihs, Kuo-Hao Zeng, Kunal Pratap Singh, Yejin\
+  \ Kim, Winson Han, Alvaro Herrasti, Ranjay Krishna, Dustin Schwenk, Eli VanderBilt,\
+  \ Aniruddha Kembhavi},\n        title     = {Imitating Shortest Paths in Simulation\
+  \ Enables Effective Navigation and Manipulation in the Real World},\n        journal\
+  \   = {arXiv},\n        year      = {2023},\n        eprint    = {2312.02976},\n\
+  }"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: SPOC
+description: The robot navigates in the environment and performs pick and place with
+  open vocabulary descriptions.
+download: []
+level_of_support: 0
+link: TODO
+number_of_trajectories:
+- train: 3331523
+- test: 3774
+schema:
+- TODO: schema_todo
+size_in_gb: 765.0
+tag:
+- Open-X-Embodiment
+- Single Arm
+- Scripted
+- Scene:Kitchen
+- Scene:Other Household environments
+- Scene:Hallways
+- Scene:multi room environments
+version: 0.0.0

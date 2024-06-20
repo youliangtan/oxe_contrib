@@ -7,28 +7,21 @@ citation: "@inproceedings{dasari2019robonet,\n    title={RoboNet: Large-Scale Mu
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: robo_net
-description: 'This is an excerpt of the [RoboNet](https://github.com/SudeepDasari/RoboNet)
-  dataset.
-
-
-
-  Data from 5 robots randomly interacting with a bin using the AutoGrasp primitive.
-  The action/state space is shared across all robots, and camera observations were
-  taken using 3 synced camera images.'
+dataset_name: Robonet
+description: The robot interacts with the objects in a bin placed in front of it
 download:
 - link: gs://gresearch/robotics/robo_net/1.0.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 82775
 schema:
 - TODO: schema_todo
-size_in_gb: 858.898919692
+size_in_gb: 799.91
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Scripted
+- Scene:Table Top
 version: 1.0.0

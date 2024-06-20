@@ -8,22 +8,23 @@ citation: "@inproceedings{mandlekar2019scaling,\n          title={Scaling robot 
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: roboturk
-description: Cloth folding, bowl stacking
+dataset_name: Roboturk
+description: Sawyer robots flattens laundry, builds towers from bowls and searches
+  objects.
 download:
 - link: gs://gresearch/robotics/roboturk/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 1796
 - test: 199
 schema:
 - TODO: schema_todo
-size_in_gb: 48.732734128
+size_in_gb: 45.39
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Table Top
 version: 0.1.0

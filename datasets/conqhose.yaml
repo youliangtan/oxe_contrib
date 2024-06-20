@@ -1,0 +1,33 @@
+citation: '@misc{ConqHoseManipData,
+
+  author={Peter Mitrano and Dmitry Berenson},
+
+  title={Conq Hose Manipulation Dataset, v1.15.0},
+
+  year={2024},
+
+  howpublished={https://sites.google.com/view/conq-hose-manipulation-dataset}
+
+  }'
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: ConqHose
+description: The robot grabs, lifts, and drags the end of a vacuum hose around in
+  an office environment.
+download: []
+level_of_support: 0
+link: TODO
+number_of_trajectories:
+- train: 3331523
+- test: 3774
+schema:
+- TODO: schema_todo
+size_in_gb: 2.71
+tag:
+- Open-X-Embodiment
+- Mobile Manipulator
+- Scripted
+- Scene:Other Household environments
+- Scene:Hallways
+version: 0.0.0

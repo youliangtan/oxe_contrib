@@ -5,21 +5,21 @@ citation: "@Article{Osa22,\n  author  = {Takayuki Osa},\n  journal = {The Intern
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: tokyo_u_lsmo_converted_externally_to_rlds
-description: motion planning trajectory of pick place tasks
+dataset_name: LSMO Dataset
+description: The robot avoids obstacle on the table and reaches the target object.
 download:
 - link: gs://gresearch/robotics/tokyo_u_lsmo_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 50
 schema:
 - TODO: schema_todo
-size_in_gb: 0.352017875
+size_in_gb: 0.33
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Expert Policy
+- Scene:Table Top
 version: 0.1.0

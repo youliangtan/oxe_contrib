@@ -5,21 +5,22 @@ citation: "@article{hirose2023sacson,\n  title={SACSoN: Scalable Autonomous Data
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: berkeley_gnm_sac_son
-description: office navigation
+dataset_name: SACSoN
+description: Mobile robot navigates pedestrian-rich environments (e.g. offices, school
+  buildings etc.) and runs a learned policy that may interact with the pedestrians.
 download:
 - link: gs://gresearch/robotics/berkeley_gnm_sac_son/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 2955
 schema:
 - TODO: schema_todo
-size_in_gb: 7.519422595
+size_in_gb: 7.0
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Wheeled Robot
+- Expert Policy
+- Scene:Hallways
 version: 0.1.0

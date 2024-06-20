@@ -6,22 +6,24 @@ citation: "@article{salhotra2022dmfd,\n    author={Salhotra, Gautam and Liu, I-C
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: usc_cloth_sim_converted_externally_to_rlds
-description: Franka cloth interaction tasks
+dataset_name: USC Cloth Sim
+description: The robot manipulates a deformable object (cloth on a tabletop) along
+  a diagonal.
 download:
 - link: gs://gresearch/robotics/usc_cloth_sim_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 800
 - val: 200
 schema:
 - TODO: schema_todo
-size_in_gb: 0.26687866
+size_in_gb: 0.25
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Scripted
+- Scene:Table Top
+- Scene:Kitchen (also toy kitchen)
 version: 0.1.0

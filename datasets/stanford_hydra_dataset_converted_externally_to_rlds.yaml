@@ -4,21 +4,24 @@ citation: "@article{belkhale2023hydra,\n title={HYDRA: Hybrid Robot Actions for 
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: stanford_hydra_dataset_converted_externally_to_rlds
-description: Franka solving long-horizon tasks
+dataset_name: Stanford HYDRA
+description: 'The robot performs the following tasks in corresponding environment:
+  making a cup of coffee using the keurig machine; making a toast using the oven;
+  sorting dishes onto the dish rack.'
 download:
 - link: gs://gresearch/robotics/stanford_hydra_dataset_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 570
 schema:
 - TODO: schema_todo
-size_in_gb: 77.828067211
+size_in_gb: 72.48
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Table Top
+- Scene:Kitchen (also toy kitchen)
 version: 0.1.0

@@ -5,22 +5,23 @@ citation: "@inproceedings{gupta2022maskvit,\n  title={MaskViT: Masked Visual Pre
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: stanford_mask_vit_converted_externally_to_rlds
-description: Sawyer pushing and picking objects in a bin
+dataset_name: Stanford MaskVIT Data
+description: The robot randomly pushes and picks objects in a bin, which include stuffed
+  toys, plastic cups and toys, etc, and are periodically shuffled.
 download:
 - link: gs://gresearch/robotics/stanford_mask_vit_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 9109
 - val: 91
 schema:
 - TODO: schema_todo
-size_in_gb: 81.783915174
+size_in_gb: 76.17
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Scripted
+- Scene:Table Top
 version: 0.1.0

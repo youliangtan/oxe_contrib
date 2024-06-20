@@ -1,0 +1,24 @@
+citation: "@inproceedings{sawhney2021playing,\n  title={Playing with food: Learning\
+  \ food item representations through interactive exploration},\n  author={Sawhney,\
+  \ Amrita and Lee, Steven and Zhang, Kevin and Veloso, Manuela and Kroemer, Oliver},\n\
+  \  booktitle={Experimental Robotics: The 17th International Symposium},\n  pages={309--322},\n\
+  \  year={2021},\n  organization={Springer}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: CMU Food Manipulation
+description: Robot interacting with different food items.
+download: []
+level_of_support: 0
+link: TODO
+number_of_trajectories:
+- train: 415
+schema:
+- TODO: schema_todo
+size_in_gb: 720.0
+tag:
+- Open-X-Embodiment
+- Single Arm
+- Scripted
+- Scene:Table Top
+version: 0.0.0

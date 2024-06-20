@@ -6,22 +6,23 @@ citation: "@inproceedings{chi2023diffusionpolicy,\n\ttitle={Diffusion Policy: Vi
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: columbia_cairlab_pusht_real
-description: UR5 planar pushing tasks
+dataset_name: Columbia PushT Dataset
+description: The robot pushes a T-shaped block into a fixed goal pose, and then move
+  to an fixed exit zone.
 download:
 - link: gs://gresearch/robotics/columbia_cairlab_pusht_real/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 122
 - test: 14
 schema:
 - TODO: schema_todo
-size_in_gb: 3.010524125
+size_in_gb: 2.8
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Table Top
 version: 0.1.0

@@ -1,0 +1,27 @@
+citation: "@article{guist2023robust,\n  title={A Robust Open-source Tendon-driven\
+  \ Robot Arm for Learning Control of Dynamic Motions},\n  author={Guist, Simon and\
+  \ Schneider, Jan and Ma, Hao and Berenz, Vincent and Martus, Julian and Gr{\\\"\
+  u}ninger, Felix and M{\\\"u}hlebach, Michael and Fiene, Jonathan and Sch{\\\"o}lkopf,\
+  \ Bernhard and B{\\\"u}chler, Dieter},\n  journal={arXiv preprint arXiv:2307.02654},\n\
+  \  year={2023}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: MPI Muscular Proprioception
+description: There is no task that the robot solves. It executes a combination of
+  random multisine signals of target pressures, as well as fixed target pressures.
+download: []
+level_of_support: 0
+link: TODO
+number_of_trajectories:
+- train: 631
+schema:
+- TODO: schema_todo
+size_in_gb: .nan
+tag:
+- Open-X-Embodiment
+- Single Arm
+- Scripted
+- Scene:The robot is alone in the environment
+- Scene:there are no other objects in the workspace.
+version: 0.0.0

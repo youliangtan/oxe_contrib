@@ -1,23 +1,26 @@
-citation: tbd
+citation: "@misc{oh2023pr2utokyodatasets,\n  author={Jihoon Oh and Naoaki Kanazawa\
+  \ and Kento Kawaharazuka},\n  title={X-Embodiment U-Tokyo PR2 Datasets},\n  year={2023},\n\
+  \  url={https://github.com/ojh6404/rlds_dataset_builder},\n}"
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: utokyo_pr2_tabletop_manipulation_converted_externally_to_rlds
-description: tbd
+dataset_name: Tokyo PR2 Tabletop Manipulation
+description: The PR2 robot conducts manipulation for table top object. It conducts
+  pick-and-place of bread and grape and folds cloth.
 download:
 - link: gs://gresearch/robotics/utokyo_pr2_tabletop_manipulation_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 192
 - val: 48
 schema:
 - TODO: schema_todo
-size_in_gb: 0.8696573
+size_in_gb: 0.81
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Table Top
 version: 0.1.0

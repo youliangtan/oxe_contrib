@@ -6,21 +6,22 @@ citation: "@inproceedings{kahn2018self,\n  title={Self-supervised deep reinforce
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: berkeley_gnm_cory_hall
-description: hallway navigation
+dataset_name: CoryHall
+description: Small mobile robot navigates hallways in an office building using a learned
+  policy.
 download:
 - link: gs://gresearch/robotics/berkeley_gnm_cory_hall/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 7331
 schema:
 - TODO: schema_todo
-size_in_gb: 1.49002426
+size_in_gb: 1.39
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Wheeled Robot
+- Expert Policy
+- Scene:Hallways
 version: 0.1.0

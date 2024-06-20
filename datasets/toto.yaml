@@ -7,22 +7,25 @@ citation: "@inproceedings{zhou2023train,\n  author={Zhou, Gaoyue and Dean, Victo
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: toto
-description: Franka scooping and pouring tasks
+dataset_name: TOTO Benchmark
+description: 'The TOTO Benchmark Dataset contains trajectories of two tasks: scooping
+  and pouring. For scooping, the objective is to scoop material from a bowl into the
+  spoon. For pouring, the goal is to pour some material into a target cup on the table. '
 download:
 - link: gs://gresearch/robotics/toto/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 902
 - test: 101
 schema:
 - TODO: schema_todo
-size_in_gb: 137.070999885
+size_in_gb: 127.66
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- 'The dataset is collected in 3 ways: Human teleoperation -- VR Teleop, trained state-based
+  BC policies, and trajectory replay with noise'
+- Scene:Table Top
 version: 0.1.0

@@ -10,21 +10,22 @@ citation: "@inproceedings{zhou2023modularity,\n  title={Modularity through Atten
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: asu_table_top_converted_externally_to_rlds
-description: UR5 performing table-top pick/place/rotate tasks
+dataset_name: ASU TableTop Manipulation
+description: The robot interacts with a few objects on a table. It picks up, pushes
+  forward, or rotates the objects.
 download:
 - link: gs://gresearch/robotics/asu_table_top_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 110
 schema:
 - TODO: schema_todo
-size_in_gb: 0.773431435
+size_in_gb: 0.72
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Scripted
+- Scene:Table Top
 version: 0.1.0

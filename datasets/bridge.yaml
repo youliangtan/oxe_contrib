@@ -7,22 +7,26 @@ citation: "@inproceedings{walke2023bridgedata,\n    title={BridgeData V2: A Data
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: bridge
-description: WidowX interacting with toy kitchens
+dataset_name: Berkeley Bridge
+description: 'The robot interacts with household environments including kitchens,
+  sinks, and tabletops. Skills include object rearrangement, sweeping, stacking, folding,
+  and opening/closing doors and drawers. '
 download:
 - link: gs://gresearch/robotics/bridge/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 25460
 - test: 3475
 schema:
 - TODO: schema_todo
-size_in_gb: 416.066673212
+size_in_gb: 387.49
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Table Top
+- Scene:Kitchen (also toy kitchen)
+- Scene:Other Household environments
 version: 0.1.0

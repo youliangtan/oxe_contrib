@@ -6,21 +6,23 @@ citation: "@article{saytap2023,\n  author = {Yujin Tang and Wenhao Yu and Jie Ta
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: utokyo_saytap_converted_externally_to_rlds
-description: A1 walking, no RGB
+dataset_name: Saytap
+description: A Unitree Go1 robot follows human command in natural language (e.g.,
+  "trot forward slowly")
 download:
 - link: gs://gresearch/robotics/utokyo_saytap_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 20
 schema:
 - TODO: schema_todo
-size_in_gb: 0.058024866
+size_in_gb: 0.05
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Quadrupedal Robot
+- Expert Policy
+- Scene:Indoor
+- Scene:on a flat floor
 version: 0.1.0

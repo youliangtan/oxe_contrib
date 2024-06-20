@@ -5,22 +5,24 @@ citation: "@article{cui2022play,\n  title   = {From Play to Policy: Conditional 
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: nyu_franka_play_dataset_converted_externally_to_rlds
-description: Franka interacting with toy kitchens
+dataset_name: NYU Franka Play
+description: The robot interacts with a toy kitchen doing arbitrary tasks. It opens/closes
+  the microwave door, opens/closes the oven door, turns the stove knobs, and moves
+  the pot between the stove and the sink.
 download:
 - link: gs://gresearch/robotics/nyu_franka_play_dataset_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 365
 - val: 91
 schema:
 - TODO: schema_todo
-size_in_gb: 5.564940763
+size_in_gb: 5.18
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Kitchen
 version: 0.1.0

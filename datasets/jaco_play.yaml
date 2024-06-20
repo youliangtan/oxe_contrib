@@ -5,22 +5,25 @@ citation: "@software{dass2023jacoplay,\n  author = {Dass, Shivin and Yapeter, Ju
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: jaco_play
-description: Jaco 2 pick place on table top
+dataset_name: USC Jaco Play
+description: The robot performs pick-place tasks in a tabletop toy kitchen environment.
+  Some examples of the task include, "Pick up the orange fruit.", "Put the black bowl
+  in the sink."
 download:
 - link: gs://gresearch/robotics/jaco_play/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 976
 - test: 109
 schema:
 - TODO: schema_todo
-size_in_gb: 9.920929426
+size_in_gb: 9.24
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Table Top
+- Scene:Kitchen (also toy kitchen)
 version: 0.1.0

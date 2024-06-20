@@ -7,21 +7,22 @@ citation: "@inproceedings{lee2019icra,\n  title={Making sense of vision and touc
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: stanford_kuka_multimodal_dataset_converted_externally_to_rlds
-description: Kuka iiwa peg insertion with force feedback
+dataset_name: Stanford Kuka Multimodal
+description: The robot learns to insert differently-shaped pegs into differently-shaped
+  holes with low tolerances (~2mm).
 download:
 - link: gs://gresearch/robotics/stanford_kuka_multimodal_dataset_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 3000
 schema:
 - TODO: schema_todo
-size_in_gb: 34.334163403
+size_in_gb: 31.98
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Expert Policy
+- Scene:Table Top
 version: 0.1.0

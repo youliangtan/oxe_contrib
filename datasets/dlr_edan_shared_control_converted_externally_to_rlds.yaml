@@ -1,33 +1,35 @@
-citation: "@inproceedings{vogel_edan_2020,\n\ttitle = {EDAN - an EMG-Controlled Daily\
-  \ Assistant to Help People with Physical Disabilities},\n\tlanguage = {en},\n\t\
-  booktitle = {2020 {IEEE}/{RSJ} {International} {Conference} on {Intelligent} {Robots}\
-  \ and {Systems} ({IROS})},\n\tauthor = {Vogel, J\xF6rn and Hagengruber, Annette\
-  \ and Iskandar, Maged and Quere, Gabriel and Leipscher, Ulrike and Bustamante, Samuel\
-  \ and Dietrich, Alexander and Hoeppner, Hannes and Leidner, Daniel and Albu-Sch\xE4\
-  ffer, Alin},\n\tyear = {2020}\n}\n@inproceedings{quere_shared_2020,\n\taddress =\
-  \ {Paris, France},\n\ttitle = {Shared {Control} {Templates} for {Assistive} {Robotics}},\n\
-  \tlanguage = {en},\n\tbooktitle = {2020 {IEEE} {International} {Conference} on {Robotics}\
-  \ and {Automation} ({ICRA})},\n\tauthor = {Quere, Gabriel and Hagengruber, Annette\
-  \ and Iskandar, Maged and Bustamante, Samuel and Leidner, Daniel and Stulp, Freek\
-  \ and Vogel, Joern},\n\tyear = {2020},\n\tpages = {7},\n}"
+citation: "@inproceedings{vogel_edan_2020,\n        title = {EDAN - an EMG-Controlled\
+  \ Daily Assistant to Help People with Physical Disabilities},\n        language\
+  \ = {en},\n        booktitle = {2020 {IEEE}/{RSJ} {International} {Conference} on\
+  \ {Intelligent} {Robots} and {Systems} ({IROS})},\n        author = {Vogel, J\xF6\
+  rn and Hagengruber, Annette and Iskandar, Maged and Quere, Gabriel and Leipscher,\
+  \ Ulrike and Bustamante, Samuel and Dietrich, Alexander and Hoeppner, Hannes and\
+  \ Leidner, Daniel and Albu-Sch\xE4ffer, Alin},\n        year = {2020}\n}\n@inproceedings{quere_shared_2020,\n\
+  \        address = {Paris, France},\n        title = {Shared {Control} {Templates}\
+  \ for {Assistive} {Robotics}},\n        language = {en},\n        booktitle = {2020\
+  \ {IEEE} {International} {Conference} on {Robotics} and {Automation} ({ICRA})},\n\
+  \        author = {Quere, Gabriel and Hagengruber, Annette and Iskandar, Maged and\
+  \ Bustamante, Samuel and Leidner, Daniel and Stulp, Freek and Vogel, Joern},\n \
+  \       year = {2020},\n        pages = {7},\n}"
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: dlr_edan_shared_control_converted_externally_to_rlds
-description: wheelchair with arm performing shelf pick tasks
+dataset_name: DLR Wheelchair Shared Control
+description: 'The robot grasps a set of different objects in a table top and a shelf. '
 download:
 - link: gs://gresearch/robotics/dlr_edan_shared_control_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 104
 schema:
 - TODO: schema_todo
-size_in_gb: 3.316378421
+size_in_gb: 3.09
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human teleoperation using Shared Control Templates
+- Scene:Table Top
+- Scene:shelf
 version: 0.1.0

@@ -4,22 +4,22 @@ citation: "@misc{oh2023pr2utokyodatasets,\n  author={Jihoon Oh and Naoaki Kanaza
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: utokyo_pr2_opening_fridge_converted_externally_to_rlds
-description: PR2 opening fridge doors
+dataset_name: Tokyo PR2 Fridge Opening
+description: The PR2 robot opens fridge.
 download:
 - link: gs://gresearch/robotics/utokyo_pr2_opening_fridge_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 64
 - val: 16
 schema:
 - TODO: schema_todo
-size_in_gb: 0.378090174
+size_in_gb: 0.35
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Kitchen
 version: 0.1.0

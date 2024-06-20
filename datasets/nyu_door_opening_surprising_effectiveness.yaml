@@ -5,22 +5,23 @@ citation: "@misc{pari2021surprising,\n    title={The Surprising Effectiveness of
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: nyu_door_opening_surprising_effectiveness
-description: Hello robot opening cabinets, microwaves etc
+dataset_name: NYU VINN
+description: The robot opens cabinet doors for a variety of cabinets.
 download:
 - link: gs://gresearch/robotics/nyu_door_opening_surprising_effectiveness/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 435
 - test: 49
 schema:
 - TODO: schema_todo
-size_in_gb: 7.647977663
+size_in_gb: 7.12
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Mobile Manipulator
+- Human Kinesthetic
+- Scene:Kitchen
+- Scene:Other Household environments
 version: 0.1.0

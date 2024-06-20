@@ -7,21 +7,22 @@ citation: "@inproceedings{bahl2023affordances,\n  title={Affordances from Human 
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: cmu_stretch
-description: Hello stretch robot kitchen interactions
+dataset_name: CMU Stretch
+description: Robot interacting with different household environments.
 download:
 - link: gs://gresearch/robotics/cmu_stretch/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 135
 schema:
 - TODO: schema_todo
-size_in_gb: 0.763427877
+size_in_gb: 0.71
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Mobile Manipulator
+- Expert Policy
+- Scene:Kitchen
+- Scene:Other Household environments
 version: 0.1.0

@@ -1,0 +1,32 @@
+citation: "@misc{bharadhwaj2023roboagent,\n                            title={RoboAgent:\
+  \ Generalization and Efficiency in Robot Manipulation via Semantic Augmentations\
+  \ and Action Chunking},\n                            author={Homanga Bharadhwaj\
+  \ and Jay Vakil and Mohit Sharma and Abhinav Gupta and Shubham Tulsiani and Vikash\
+  \ Kumar},\n                            year={2023},\n                          \
+  \  eprint={2309.01918},\n                            archivePrefix={arXiv},\n  \
+  \                          primaryClass={cs.RO}\n                      }"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: RoboSet
+description: '"The robot interacts with different objects in kitchen scenes. It performs
+  articulated object manipulation of objects with prismatic joints and hinges. It
+  wipes tables with cloth. It performs pick and place skills, and skills requiring
+  precision like capping and uncapping."'
+download: []
+level_of_support: 0
+link: TODO
+number_of_trajectories:
+- train: 3331523
+- test: 3774
+schema:
+- TODO: schema_todo
+size_in_gb: 178.65
+tag:
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Table Top
+- Scene:Kitchen (also toy kitchen)
+- Scene:Other Household environments
+version: 0.0.0

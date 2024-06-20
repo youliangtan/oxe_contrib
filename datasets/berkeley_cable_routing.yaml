@@ -6,22 +6,23 @@ citation: "@article{luo2023multistage,\n  author    = {Jianlan Luo and Charles X
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: berkeley_cable_routing
-description: Routing cable into clamps on table top
+dataset_name: Berkeley Cable Routing
+description: The robot routes cable through a number of tight-fitting clips mounted
+  on the table.
 download:
 - link: gs://gresearch/robotics/berkeley_cable_routing/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 1482
 - test: 165
 schema:
 - TODO: schema_todo
-size_in_gb: 5.012241866
+size_in_gb: 4.67
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Single Arm
+- Human VR
+- Scene:Table Top
 version: 0.1.0

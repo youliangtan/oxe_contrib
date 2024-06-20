@@ -1,0 +1,25 @@
+citation: "@article{Zhao2023LearningFB,\n  title={Learning Fine-Grained Bimanual Manipulation\
+  \ with Low-Cost Hardware},\n  author={Tony Zhao and Vikash Kumar and Sergey Levine\
+  \ and Chelsea Finn},\n  journal={RSS},\n  year={2023},\n  volume={abs/2304.13705},\n\
+  \  url={https://arxiv.org/abs/2304.13705}\n}"
+copyright: Copyright
+curation:
+- open_x_embodiment: true
+dataset_name: ALOHA
+description: Bi-manual robot performing complex, dexterous tasks like unwrapping candy
+  and putting on shoes.
+download: []
+level_of_support: 0
+link: TODO
+number_of_trajectories:
+- train: 3331523
+- test: 3774
+schema:
+- TODO: schema_todo
+size_in_gb: .nan
+tag:
+- Open-X-Embodiment
+- Bi-Manual
+- Human Puppeteering
+- Scene:Table Top
+version: 0.0.0

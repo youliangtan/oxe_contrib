@@ -4,22 +4,22 @@ citation: "@misc{matsushima2023weblab,\n  title={Weblab xArm Dataset},\n  author
 copyright: Copyright
 curation:
 - open_x_embodiment: true
-dataset_name: utokyo_xarm_bimanual_converted_externally_to_rlds
-description: xArm bimanual setup folding towel
+dataset_name: UTokyo xArm Bimanual
+description: The robots reach a towel on the table. They also unfold a wrinkled towel.
 download:
 - link: gs://gresearch/robotics/utokyo_xarm_bimanual_converted_externally_to_rlds/0.1.0
   source: google_bucket
-intended_level_of_support: 4
+level_of_support: 4
 link: TODO
 number_of_trajectories:
 - train: 64
 - val: 6
 schema:
 - TODO: schema_todo
-size_in_gb: 0.145165616
+size_in_gb: 0.14
 tag:
-- open-x
-- manipulation
-- single-arm
-- parallel-jaw-gripper
+- Open-X-Embodiment
+- Bi-Manual
+- Human Puppeteering
+- Scene:Table Top
 version: 0.1.0
