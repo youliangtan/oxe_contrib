@@ -36,6 +36,7 @@ jobs:
       run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Action"
+        git branch -D static-page || true
         git checkout -b static-page
         git add .
         git commit -m "Auto-Generate Pages [skip ci]"
