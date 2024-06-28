@@ -4,11 +4,15 @@ import os
 import pandas as pd
 
 
+# TODO: change to your own repo
+# REPO_NAME = KeplerC/oed-playground
+REPO_NAME = "youliangtan/oxe_contrib"
+
 DATASET_DIR = "./datasets"
 OUTPUT_TAG_PAGE_DIR = "./pages/tags"
 OUTPUT_DATASET_PAGE_DIR = "./pages/datasets"
-URL_DATASET_PAGE_DIR = "https://github.com/KeplerC/oed-playground/tree/main/pages/datasets"
-URL_TAG_PAGE_DIR = "https://github.com/KeplerC/oed-playground/tree/main/pages/tags"
+URL_DATASET_PAGE_DIR = f"https://github.com/{REPO_NAME}/tree/main/pages/datasets"
+URL_TAG_PAGE_DIR = f"https://github.com/{REPO_NAME}/tree/main/pages/tags"
 TEMPLATE_DIR = "pages/templates"
 
 
