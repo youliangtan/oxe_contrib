@@ -43,9 +43,3 @@ jobs:
         git push origin static-page --force
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Use jekyll action
-      uses: helaili/jekyll-action@2.0.0
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        src: static-page
-        dest: _site
