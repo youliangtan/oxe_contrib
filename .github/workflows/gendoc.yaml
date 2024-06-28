@@ -27,7 +27,10 @@ jobs:
         pip install pyyaml pandas tabulate
 
     - name: Run README generation script
-      run: python scripts/generate_pages.py
+      run: |
+        mkdir -p pages/datasets
+        mkdir -p pages/tags
+        python scripts/generate_pages.py
 
     - name: Commit and push changes
       run: |
