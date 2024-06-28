@@ -1,4 +1,4 @@
-# Open Robot Datasets
+# Open Cross Embodiment Datasets
 
 ## Datasets 
 
