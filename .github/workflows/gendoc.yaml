@@ -41,7 +41,7 @@ jobs:
         git checkout -b static-page
         git add .
         git commit -m "Auto-Generate Pages [skip ci]"
-        git push origin static-page
+        git push origin static-page --force
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Use jekyll action
