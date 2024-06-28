@@ -34,9 +34,9 @@ jobs:
 
     - name: Commit and push changes
       run: |
+        git pull
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Action"
-        git pull
         git branch -D static-page || true
         git checkout -b static-page
         git add .
@@ -44,3 +44,9 @@ jobs:
         git push origin static-page
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Use jekyll action
+      uses: helaili/jekyll-action@2.0.0
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        src: static-page
+        dest: _site
