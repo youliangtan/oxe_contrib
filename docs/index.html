@@ -13,6 +13,20 @@
             grid-gap: 10px;
         }
         
+        /* Style for h1 with larger font size and center alignment and light blue color banner */
+        h1 {
+            color: darkblue;
+            font-size: 3em;
+            text-align: center;
+            background-color: #f0f8ff;
+        }
+
+        /* Style for h2 with smaller font size */
+        h2 {
+            color: #2196F3;
+            font-size: 1.5em;
+        }
+
         /* Ensure higher specificity and force the style */
         table#csvTable thead th {
             background-color: #2196F3 !important; /* Blue fill, forced */
@@ -33,12 +47,11 @@
 </head>
 <body>
     <h1>OXE CSV Viewer</h1>
+    <h2>This is a simple CSV viewer to view the metadata of Open-X-embodiment data</h2>
     <div class="grid-container">
         <table id="csvTable" class="display" width="100%"></table>
     </div>
     
-    <h2>This is a simple CSV viewer to view the metadata of Open-X-embodiment data</h2>
-
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
@@ -52,7 +65,7 @@
                     header: true,
                     dynamicTyping: true
                 });
-    
+
                 var columns = [];
                 for (var key in parsedData.data[0]) {
                     columns.push({ title: key, data: key });
@@ -66,7 +79,7 @@
                     columns: columns,
                     scrollX: true,
                     autoWidth: true,
-                    pageLength: 20, // Set maximum 20 rows per page
+                    pageLength: 15, // Set maximum 20 rows per page
                     language: {
                         emptyTable: "No data available in table"
                     },
