@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Viewer</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <style>
+        /* Adjust the column grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 10px;
+        }
+        
+        /* Ensure higher specificity and force the style */
+        table#csvTable thead th {
+            background-color: #2196F3 !important; /* Blue fill, forced */
+            color: white !important;
+            font-weight: bold !important; /* Bold text */
+        }
+    
+        /* Style for alternate rows */
+        #csvTable tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        /* Hover effect for rows */
+        #csvTable tbody tr:hover {
+            background-color: #ddd;
+        }
+    </style>    
+</head>
+<body>
+    <h1>OXE CSV Viewer</h1>
+    <div class="grid-container">
+        <table id="csvTable" class="display" width="100%"></table>
+    </div>
+    
+    <h2>This is a simple CSV viewer to view the metadata of Open-X-embodiment data</h2>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: 'https://raw.githubusercontent.com/youliangtan/oxe_contrib/main/scripts/open-x/oxe_data_24jul2024.csv',
+                dataType: 'text',
+            }).done(function(data) {
+                var parsedData = Papa.parse(data, {
+                    header: true,
+                    dynamicTyping: true
+                });
+    
+                var columns = [];
+                for (var key in parsedData.data[0]) {
+                    columns.push({ title: key, data: key });
+                }
+        
+                // Suppress all DataTables alerts # NOTE (YL): this is bad
+                $.fn.dataTable.ext.errMode = 'none';
+
+                $('#csvTable').DataTable({
+                    data: parsedData.data,
+                    columns: columns,
+                    scrollX: true,
+                    autoWidth: true,
+                    pageLength: 20, // Set maximum 20 rows per page
+                    language: {
+                        emptyTable: "No data available in table"
+                    },
+                    drawCallback: function (settings) {
+                        // This will run after the table is drawn
+                        $('.dataTables_wrapper .dataTables_paginate').css('display', 'block');
+                    },
+                    // Custom error handler
+                    error: function (xhr, error, thrown) {
+                        console.log('Error occurred: ', error);
+                    }
+                });
+            });
+        });
+    </script>
+</html>

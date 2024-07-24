@@ -27,7 +27,5 @@ tag:
 - Open-X-Embodiment
 - Robot:Franka
 - Single Arm
-- 'The dataset is collected in 3 ways: Human teleoperation -- VR Teleop, trained state-based
-  BC policies, and trajectory replay with noise'
 - Scene:Table Top
 version: 0.1.0
