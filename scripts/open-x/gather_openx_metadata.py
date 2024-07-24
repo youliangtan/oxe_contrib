@@ -92,11 +92,17 @@ def dataset2path(dataset_name):
     version = '0.1.0'
   return f'gs://gresearch/robotics/{dataset_name}/{version}'
 
-# read csv "scripts/Open X-Embodiment Dataset Overview - Dataset Overview.csv"
+# file_path = "scripts/open-x/Open X-Embodiment Dataset Overview - Dataset Overview.csv"
 
-with open("scripts/open-x/Open X-Embodiment Dataset Overview - Dataset Overview.csv") as f:
+# This is manually downloaded from the oxe website:
+# https://docs.google.com/spreadsheets/d/1rPBD77tk60AEIGZrGSODwyyzs5FgCU9Uz3h-3_t2A9g/edit?gid=0#gid=0
+# and removed the top 15 lines
+file_path = "scripts/open-x/oxe_data_24jul2024.csv"
+
+with open(file_path, "r") as f:
     # remove the first 15 lines and read as csv
-    df = pd.read_csv(f, skiprows=14)
+    # df = pd.read_csv(f, skiprows=14)
+    df = pd.read_csv(f)
     print(df.columns)
 
 # iterate over df

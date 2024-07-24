@@ -7,8 +7,7 @@ curation:
 dataset_file_name: stanford_hydra_dataset_converted_externally_to_rlds
 dataset_name: Stanford HYDRA
 description: 'The robot performs the following tasks in corresponding environment:
-  making a cup of coffee using the keurig machine; making a toast using the oven;
-  sorting dishes onto the dish rack.'
+  making a cup of coffee using the keurig machine'
 download:
 - link: gs://gresearch/robotics/stanford_hydra_dataset_converted_externally_to_rlds/0.1.0
   source: google_bucket
