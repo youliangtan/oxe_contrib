@@ -3,60 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSV Viewer</title>
+    <title>OXE CSV Viewer</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
     <style>
-        /* Adjust the column grid */
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            grid-gap: 10px;
-        }
-        
-        /* Style for h1 with larger font size and center alignment and light blue color banner */
-        h1 {
-            color: darkblue;
-            font-size: 3em;
-            text-align: center;
-            background-color: #f0f8ff;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
         }
 
-        /* Style for h2 with smaller font size */
+        .grid-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #1565c0;
+            font-size: 2.5em;
+            text-align: center;
+            background-color: #bbdefb;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
         h2 {
             color: #2196F3;
-            font-size: 1.5em;
+            font-size: 1.3em;
+            text-align: center;
+            margin-bottom: 30px;
         }
 
-        /* Ensure higher specificity and force the style */
+        table#csvTable {
+            width: 100% !important;
+        }
+
         table#csvTable thead th {
-            background-color: #2196F3 !important; /* Blue fill, forced */
+            background-color: #2196F3 !important;
             color: white !important;
-            font-weight: bold !important; /* Bold text */
+            font-weight: bold !important;
+            padding: 12px !important;
         }
-    
-        /* Style for alternate rows */
+
         #csvTable tbody tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #f5f5f5;
         }
-        
-        /* Hover effect for rows */
+
         #csvTable tbody tr:hover {
-            background-color: #ddd;
+            background-color: #e3f2fd;
         }
-    </style>    
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button {
+            padding: 0.5em 1em;
+            margin-left: 2px;
+            border: 1px solid #ddd;
+            border-radius: 2px;
+            background-color: #f9f9f9;
+        }
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+            background-color: #2196F3;
+            color: white !important;
+        }
+    </style>
 </head>
 <body>
     <h1>OXE CSV Viewer</h1>
-    <h2>This is a simple CSV viewer to view the metadata of Open-X-embodiment data</h2>
+    <h2>A simple CSV viewer for Open-X-embodiment metadata</h2>
     <div class="grid-container">
         <table id="csvTable" class="display" width="100%"></table>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <script>
         $(document).ready(function() {
+            $.fn.dataTable.ext.errMode = 'none';
+
             $.ajax({
                 url: 'https://raw.githubusercontent.com/youliangtan/oxe_contrib/main/docs/oxe_data_24jul2024.csv',
                 dataType: 'text',
@@ -66,28 +97,21 @@
                     dynamicTyping: true
                 });
 
-                var columns = [];
-                for (var key in parsedData.data[0]) {
-                    columns.push({ title: key, data: key });
-                }
-        
-                // Suppress all DataTables alerts # NOTE (YL): this is bad
-                $.fn.dataTable.ext.errMode = 'none';
+                var columns = Object.keys(parsedData.data[0]).map(key => ({ title: key, data: key }));
 
                 $('#csvTable').DataTable({
                     data: parsedData.data,
                     columns: columns,
                     scrollX: true,
                     autoWidth: true,
-                    pageLength: 15, // Set maximum 20 rows per page
+                    pageLength: 10,
+                    lengthMenu: [[5, 10, 15, 25, 50, -1], [5, 10, 15, 25, 50, "All"]], // Added 5 as an option
                     language: {
                         emptyTable: "No data available in table"
                     },
                     drawCallback: function (settings) {
-                        // This will run after the table is drawn
                         $('.dataTables_wrapper .dataTables_paginate').css('display', 'block');
                     },
-                    // Custom error handler
                     error: function (xhr, error, thrown) {
                         console.log('Error occurred: ', error);
                     }
@@ -95,4 +119,5 @@
             });
         });
     </script>
+</body>
 </html>
