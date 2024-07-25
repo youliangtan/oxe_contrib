@@ -123,7 +123,9 @@ def verify_oxe_repo(repo_url, branch='main') -> Optional[OXEDatasetConfig]:
     assert len(tfrecord_files) == len(all_shards), "Number of tfrecord files does not match with dataset_info"
 
     ##############################################################################
-    # TODO Check license
+    # Check if LICENSE file exists
+    license_info = repo_reader.find_file('LICENSE')
+    assert license_info, "LICENSE file not found"
 
     return OXEDatasetConfig(
         version=dataset_info['version'],

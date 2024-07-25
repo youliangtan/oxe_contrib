@@ -10,7 +10,6 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
             background-color: #f9f9f9;
@@ -43,6 +42,7 @@
 
         table#csvTable {
             width: 100% !important;
+            font-size: 0.7em; /* Smaller font for DataTables */
         }
 
         table#csvTable thead th {
@@ -72,14 +72,39 @@
             background-color: #2196F3;
             color: white !important;
         }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #bbdefb;
+            color: #1565c0;
+            font-size: 0.7em;
+            margin-top: 30px;
+            flex-shrink: 0;
+        }
+
+        footer a {
+            color: #1565c0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1>OXE CSV Viewer</h1>
+    <h1> 🌎 Open-X-embodiment CSV Viewer 🤖 </h1>
     <h2>A simple CSV viewer for Open-X-embodiment metadata</h2>
     <div class="grid-container">
         <table id="csvTable" class="display" width="100%"></table>
     </div>
+
+    <footer>
+        Hosted on GitHub: <a href="https://github.com/youliangtan/oxe_contrib" target="_blank">https://github.com/youliangtan/oxe_contrib</a>; 
+        Original repository: <a href="https://github.com/google-deepmind/open_x_embodiment" target="_blank">https://github.com/google-deepmind/open_x_embodiment</a>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
