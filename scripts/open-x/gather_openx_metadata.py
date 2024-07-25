@@ -97,7 +97,7 @@ def dataset2path(dataset_name):
 # This is manually downloaded from the oxe website:
 # https://docs.google.com/spreadsheets/d/1rPBD77tk60AEIGZrGSODwyyzs5FgCU9Uz3h-3_t2A9g/edit?gid=0#gid=0
 # and removed the top 15 lines
-file_path = "scripts/open-x/oxe_data_24jul2024.csv"
+file_path = "docs/oxe_data_24jul2024.csv"
 
 with open(file_path, "r") as f:
     # remove the first 15 lines and read as csv

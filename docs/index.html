@@ -58,7 +58,7 @@
     <script>
         $(document).ready(function() {
             $.ajax({
-                url: 'https://raw.githubusercontent.com/youliangtan/oxe_contrib/main/scripts/open-x/oxe_data_24jul2024.csv',
+                url: 'https://raw.githubusercontent.com/youliangtan/oxe_contrib/main/docs/oxe_data_24jul2024.csv',
                 dataType: 'text',
             }).done(function(data) {
                 var parsedData = Papa.parse(data, {
