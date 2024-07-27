@@ -6,6 +6,9 @@ import json
 from typing import Optional, List
 import fnmatch
 from dataclasses import dataclass
+import subprocess
+import wget
+
 
 @dataclass
 class OXEDatasetConfig:
@@ -30,16 +33,20 @@ class GitRepoReader:
 
         # Add the remote
         try:
-            origin = self.repo.create_remote('origin', repo_url)
+            self.origin = self.repo.create_remote('origin', repo_url)
         except GitCommandError:
-            origin = self.repo.remote('origin')
-            origin.set_url(repo_url)
+            self.origin = self.repo.remote('origin')
+            self.origin.set_url(repo_url)
 
         # Get the remote reference and its tree
-        origin.fetch()
-        remote_ref = origin.refs[branch]
+        self.origin.fetch()
+        remote_ref = self.origin.refs[branch]
         self.tree = remote_ref.commit.tree
         self.all_files = list(self.tree.traverse())
+
+        # print repo url
+        self.branch = branch
+        print(f"Repo URL: {self.origin.url}")
 
     def find_file(self, file_name: str) -> Optional[object]:
         """
@@ -68,6 +75,41 @@ class GitRepoReader:
         if blob:
             return json.loads(blob.data_stream.read().decode('utf-8'))
         return None
+
+    def download_file(self, file_name: str, download_path: str) -> bool:
+        blob = self.find_file(file_name)
+        if blob is None:
+            print(f"File '{file_name}' not found in the repository.")
+            return False
+
+        try:
+            # Ensure the download path's directory exists
+            os.makedirs(os.path.dirname(download_path), exist_ok=True)
+
+            # Check if the file is managed by Git LFS
+            if self._is_lfs_pointer(blob):
+                # LFS file
+                self._fetch_lfs_file(blob)
+                assert "huggingface" in self.origin.url, "Only support huggingface LFS"
+                lfs_file_url = f"{self.origin.url}/resolve/{self.branch}/{blob.path}"
+                # download the file
+                wget.download(lfs_file_url, download_path)
+            else:
+                # NON-LFS file
+                with open(download_path, 'wb') as file:
+                    file.write(blob.data_stream.read())
+                print(f"File '{file_name}' has been downloaded to '{download_path}'.")
+        except Exception as e:
+            print(f"Failed to download file '{file_name}': {e}")
+            return False
+        return True
+
+    def _is_lfs_pointer(self, blob) -> bool:
+        """
+        Check if the blob is a Git LFS pointer file.
+        """
+        content = blob.data_stream.read().decode('utf-8')
+        return content.startswith('version https://git-lfs.github.com/spec/')
 
     def __del__(self):
         self.repo.close()
@@ -101,7 +143,7 @@ def verify_oxe_repo(repo_url, branch='main') -> Optional[OXEDatasetConfig]:
     features_file = repo_reader.read_json('features.json')
     assert features_file, "features.json not found"
     print("\n Found Features structure:")
-    
+
     features = features_file["featuresDict"]["features"]["steps"]["sequence"]["feature"]["featuresDict"]["features"]
     features_keys = set(features.keys())
 
@@ -146,10 +188,10 @@ def main():
     parser.add_argument("--branch", default="main", help="Branch to analyze (default: main)")
 
     args = parser.parse_args()
-    
+
     # git based analysis
     config = verify_oxe_repo(args.repo_url, args.branch)
-    
+
     # TODO: download single shard in rlds and try run tensorflow loader
     # 1. try load single shard tfrecord file
     # 2. show the first trajectory
@@ -159,9 +201,10 @@ def main():
     print("\nDataset Configuration:")
     print(config)
 
+
 if __name__ == "__main__":
     main()
 
-# Example: 
+# Example:
 #   python verify_oxe.py https://huggingface.co/datasets/youliangtan/rlds_test_viperx_ds
 #   python verify_oxe.py https://huggingface.co/datasets/youliangtan/bridge_dataset
