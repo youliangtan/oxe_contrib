@@ -88,17 +88,16 @@ class GitRepoReader:
 
             # Check if the file is managed by Git LFS
             if self._is_lfs_pointer(blob):
-                # LFS file
-                self._fetch_lfs_file(blob)
+                # LFS file download
                 assert "huggingface" in self.origin.url, "Only support huggingface LFS"
                 lfs_file_url = f"{self.origin.url}/resolve/{self.branch}/{blob.path}"
                 # download the file
                 wget.download(lfs_file_url, download_path)
             else:
-                # NON-LFS file
+                # NON-LFS file download
+                download_path = os.path.join(download_path, file_name)
                 with open(download_path, 'wb') as file:
                     file.write(blob.data_stream.read())
-                print(f"File '{file_name}' has been downloaded to '{download_path}'.")
         except Exception as e:
             print(f"Failed to download file '{file_name}': {e}")
             return False
