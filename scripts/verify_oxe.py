@@ -88,17 +88,16 @@ class GitRepoReader:
 
             # Check if the file is managed by Git LFS
             if self._is_lfs_pointer(blob):
-                # LFS file
-                self._fetch_lfs_file(blob)
+                # LFS file download
                 assert "huggingface" in self.origin.url, "Only support huggingface LFS"
                 lfs_file_url = f"{self.origin.url}/resolve/{self.branch}/{blob.path}"
                 # download the file
                 wget.download(lfs_file_url, download_path)
             else:
-                # NON-LFS file
+                # NON-LFS file download
+                download_path = os.path.join(download_path, file_name)
                 with open(download_path, 'wb') as file:
                     file.write(blob.data_stream.read())
-                print(f"File '{file_name}' has been downloaded to '{download_path}'.")
         except Exception as e:
             print(f"Failed to download file '{file_name}': {e}")
             return False
@@ -141,7 +140,7 @@ def verify_oxe_repo(repo_url, branch='main') -> Optional[OXEDatasetConfig]:
     ##############################################################################
     # Check for features.json
     features_file = repo_reader.read_json('features.json')
-    assert features_file, "features.json not found"
+    assert features_file, "features.json not found in Dataset"
     print("\n Found Features structure:")
 
     features = features_file["featuresDict"]["features"]["steps"]["sequence"]["feature"]["featuresDict"]["features"]
@@ -156,7 +155,7 @@ def verify_oxe_repo(repo_url, branch='main') -> Optional[OXEDatasetConfig]:
     # oxe observation is stored as feature dict, ensure it is not empty
     obs_keys = set(features["observation"]["featuresDict"]["features"].keys())
     print(f"Observation keys: {obs_keys}")
-    assert len(obs_keys) > 0, "Observation keys should not be empty"
+    assert len(obs_keys) > 0, "Observation keys in features.json should not be empty"
 
     ##############################################################################
     tfrecord_files = repo_reader.find_files('*.tfrecord*')
@@ -191,12 +190,6 @@ def main():
 
     # git based analysis
     config = verify_oxe_repo(args.repo_url, args.branch)
-
-    # TODO: download single shard in rlds and try run tensorflow loader
-    # 1. try load single shard tfrecord file
-    # 2. show the first trajectory
-    # 3. visualize the camera observation in the first trajectory
-    # 4. dump it to a video file and bot show it on PR
 
     print("\nDataset Configuration:")
     print(config)
