@@ -26,13 +26,22 @@ huggingface-cli upload youliangtan/bridge_dataset /path/to/local/bridge_dataset 
 
 Example dataset: https://huggingface.co/datasets/youliangtan/bridge_dataset
 
-### 3. Run verification script (example below)
+### 3. Run verification script and plot the dataset
 
 ```bash
 python scripts/verify_oxe.py https://huggingface.co/datasets/youliangtan/bridge_dataset
 ```
 
 This script will verify if the dataset is in the correct form of RLDS format, with sufficient metadata and correct licensing information.
+
+
+To plot the dataset, run the following script:
+
+```bash
+python scripts/plot_oxe_stats.py --repo_id youliangtan/bridge_dataset
+```
+
+This will download only a single shard, and read a single episode of the data. The plot is saved in `stats/` directory.
 
 ### 4. Open a pull request with the dataset information and wait for review
 

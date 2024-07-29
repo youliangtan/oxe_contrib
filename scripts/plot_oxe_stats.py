@@ -2,7 +2,7 @@ from verify_oxe import GitRepoReader
 import argparse
 import os
 from typing import Optional
-from rlds_reader import read_single_episode
+from rlds_reader import read_single_episode, plot_stats, generate_video
 
 
 class SingleShardReader:
@@ -34,29 +34,31 @@ class SingleShardReader:
         success = self.repo_reader.download_file(file_name, self.save_path)
         return saved_file if success else None
 
-    def get_first_episode(self):
+    def read_first_episode(self, stats_dir=None):
         """
         Read and process TFRecord file using TensorFlow.
         """
-        image_buffer = read_single_episode(self.save_path)
-        # TODO: export to video?
-        return image_buffer
+        image_buffer, other_buffers = read_single_episode(self.save_path)
+        # TODO: impl save_stats method
+        if stats_dir:
+            os.makedirs(stats_dir, exist_ok=True)
+            generate_video(image_buffer, stats_dir)
+            for k, v in other_buffers.items():
+                plot_stats(v, k, stats_dir)
 
 
 def main():
     parser = argparse.ArgumentParser(description="Analyze a Git repository without downloading.")
-    parser.add_argument("repo_id", type=str, default="youliantan/bridge_data",
+    parser.add_argument("--repo_id", type=str, default="youliantan/bridge_data",
                         help="dataset repo id of the Hugging Face hub.")
     parser.add_argument("--branch", default="main", help="Branch to analyze (default: main)")
     parser.add_argument("--tmp_save_dir", default="tmp/", help="Path to save the downloaded TFRecord shard.")
+    parser.add_argument("--stats_dir", default="stats/", help="Path to save the stats of the episode.")
     args = parser.parse_args()
 
 
     # TODO: download single shard in rlds and try run tensorflow loader
     # 1. try load single shard tfrecord file
-    # 2. show the first trajectory
-    # 3. if image: dump it to a video file and bot show it on PR
-    # 4. if generic array: plot the stats 
 
     hugging_face_url = f"https://huggingface.co/datasets/{args.repo_id}"
     repo_reader = GitRepoReader(repo_url=hugging_face_url, branch=args.branch)
@@ -70,15 +72,20 @@ def main():
     file_name = tfrecord_files[0].name  # Get the first tfrecord file
     print(f" trying to download : {file_name}")
 
-    # file_name = "features.json"
-    # save_path = os.path.join(save_path, file_name)
+    # Download the first trajectory
     print(f"  =>> Downloading {file_name} to {args.tmp_save_dir}")
-
     shard_path = downloader.download_shard(file_name)
-
     assert shard_path, f"Failed to download {file_name}"
-    downloader.get_first_episode()
 
+    # Read the single shard and plot the stats
+    # if image: dump it to a video file and show it on 
+    # if generic array: plot the stats 
+    downloader.read_first_episode(stats_dir=args.stats_dir)
+    print(f"Stats saved to {args.stats_dir}")
+    print("Done!")
 
 if __name__ == "__main__":
     main()
+
+# python scripts/plot_oxe_stats.py --repo_id youliangtan/bridge_dataset
+# python scripts/plot_oxe_stats.py --repo_id youliangtan/rlds_test_viperx_ds
