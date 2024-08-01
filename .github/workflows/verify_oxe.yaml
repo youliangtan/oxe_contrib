@@ -50,4 +50,5 @@ jobs:
             ```
             ${{ steps.last_10_lines.outputs.last_10_lines }}
             ```
+            Click on the wandb link above to visualize the stats of the first episode
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
