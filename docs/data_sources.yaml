@@ -6,8 +6,8 @@ dataset:
     source_type: huggingface
     repo_id: youliangtan/bridge_dataset
     branch: main
-  # - name: viperx_rail
-  #   version: 0.1.0
-  #   source_type: huggingface
-  #   repo_id: youliangtan/rlds_test_viperx_ds
-  #   branch: main
+  - name: viperx_rail
+    version: 0.1.0
+    source_type: huggingface
+    repo_id: youliangtan/rlds_test_viperx_ds
+    branch: main
