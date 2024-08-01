@@ -51,7 +51,7 @@ def generate_stats_from_shard(
         print(f"Stats saved to {stats_dir}")
     
     if enable_wandb:
-        print("Stats logged to wandb with url: ", wandb.run.get_url())
+        print("[WANDB] Stats logged to wandb with url: ", wandb.run.get_url())
 
 
 if __name__ == "__main__":

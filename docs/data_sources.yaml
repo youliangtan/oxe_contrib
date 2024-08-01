@@ -1,3 +1,5 @@
+# NOTE: Append the dataset here
+# New dataset is appended sequencially
 dataset:
   - name: bridge_dataset
     version: 1.0.0
@@ -9,4 +11,3 @@ dataset:
   #   source_type: huggingface
   #   repo_id: youliangtan/rlds_test_viperx_ds
   #   branch: main
-# NOTE: Append the dataset here
