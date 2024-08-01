@@ -30,6 +30,8 @@ jobs:
       run: python scripts/verify_oxe.py https://huggingface.co/datasets/youliangtan/bridge_dataset
 
     - name: Generate dataset stats
+      env:
+        WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
       run: python scripts/generate_stats.py --repo_id youliangtan/bridge_dataset --enable_wandb
 
     # TODO: comment on PR with the generated stats

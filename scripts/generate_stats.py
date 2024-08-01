@@ -2,45 +2,52 @@ from verify_oxe import GitRepoReader, verify_hg_dataset
 import argparse
 import os
 from rlds_reader import read_single_episode, plot_stats, generate_video
+from typing import Optional
 
 
-def generate_stats_from_shard(repo_id: str, branch: str, tmp_save_dir: str, stats_dir: str, enable_wandb: bool):
+def generate_stats_from_shard(
+    repo_id: str,
+    branch: str,
+    tmp_save_dir: str = "tmp/",
+    stats_dir: Optional[str] = None,
+    enable_wandb: bool = False,
+):
     # Define the dataset and reader
-    assert verify_hg_dataset(args.repo_id), "Dataset is not valid."
+    assert verify_hg_dataset(repo_id), "Huggingface dataset is not valid, check if the repo_id is correct."
 
-    hugging_face_url = f"https://huggingface.co/datasets/{args.repo_id}"
-    repo_reader = GitRepoReader(repo_url=hugging_face_url, branch=args.branch)
+    hugging_face_url = f"https://huggingface.co/datasets/{repo_id}"
+    repo_reader = GitRepoReader(repo_url=hugging_face_url, branch=branch)
 
     # Download metadata files
-    assert repo_reader.download_file("features.json", args.tmp_save_dir), "Failed to download features.json"
-    assert repo_reader.download_file("dataset_info.json", args.tmp_save_dir), "Failed to download dataset_info.json"
+    assert repo_reader.download_file("features.json", tmp_save_dir), "Failed to download features.json"
+    assert repo_reader.download_file("dataset_info.json", tmp_save_dir), "Failed to download dataset_info.json"
 
     # Get the first RLDS shard name
     tfrecord_files = repo_reader.find_files('*.tfrecord*')
     assert tfrecord_files, "No TFRecord files found in the repository."
     file_name = tfrecord_files[0].name  # Get the first tfrecord file
-    full_shard_path = os.path.join(args.tmp_save_dir, file_name)
+    full_shard_path = os.path.join(tmp_save_dir, file_name)
     print(f" trying to download : {file_name}")
 
     # Download the first shard
-    print(f"  =>> Downloading {file_name} to {args.tmp_save_dir}")
+    print(f"  =>> Downloading {file_name} to {tmp_save_dir}")
     if os.path.exists(full_shard_path):
-        print(f"File already exists in {args.tmp_save_dir}, will skip downloading.")
+        print(f"File already exists in {tmp_save_dir}, will skip downloading.")
     else:
-        assert repo_reader.download_file(file_name, args.tmp_save_dir), f"Failed to download {file_name}"
+        assert repo_reader.download_file(file_name, tmp_save_dir), f"Failed to download {file_name}"
 
     # Try load single shard tfrecord file
-    im_buffer, other_buffer = read_single_episode(args.tmp_save_dir, args.enable_wandb)
+    im_buffer, other_buffer = read_single_episode(tmp_save_dir, enable_wandb)
     assert im_buffer, "Image buffer is empty, check if the episode has images"
     assert other_buffer, "Other buffer is empty, check if other keys are present in the step of each episode"
 
     # Read the single shard and plot the stats
-    if args.stats_dir:
-        os.makedirs(args.stats_dir, exist_ok=True)
-        generate_video(im_buffer, args.stats_dir)
+    if stats_dir:
+        os.makedirs(stats_dir, exist_ok=True)
+        generate_video(im_buffer, stats_dir)
         for k, v in other_buffer.items():
-            plot_stats(v, k, args.stats_dir)
-        print(f"Stats saved to {args.stats_dir}")
+            plot_stats(v, k, stats_dir)
+        print(f"Stats saved to {stats_dir}")
 
 
 if __name__ == "__main__":
