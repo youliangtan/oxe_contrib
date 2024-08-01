@@ -40,9 +40,10 @@ jobs:
         run: python scripts/run_ci.py | tee full_output.log
 
       - name: Get last 10 lines of logs
+        # https://stackoverflow.com/questions/59191913/how-do-i-get-the-output-of-a-specific-step-in-github-actions
         run: |
           tail -n 10 full_output.log > last_10_lines.log
-          echo "last_10_lines=$(<last_10_lines.log)" >> $GITHUB_ENV
+          echo "last_10_lines=$(<last_10_lines.log)" >> $GITHUB_OUTPUT
         id: last_10_lines
   
       - name: Comment PR
@@ -52,5 +53,5 @@ jobs:
           message: |
             Last 10 lines of CI output:
             ```
-            ${{ env.last_10_lines }}
+            ${{ steps.last_10_lines.outputs.* }}
             ```
