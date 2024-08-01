@@ -30,7 +30,7 @@ jobs:
       run: python scripts/verify_oxe.py https://huggingface.co/datasets/youliangtan/bridge_dataset
 
     - name: Generate dataset stats
-      run: python scripts/generate_oxe_stats.py --repo_id youliangtan/bridge_dataset --enable_wandb --stats_dir ""
+      run: python scripts/generate_stats.py --repo_id youliangtan/bridge_dataset --enable_wandb --stats_dir ""
 
     # TODO: comment on PR with the generated stats
     # https://github.com/marketplace/actions/comment-pull-request
