@@ -42,9 +42,9 @@ jobs:
       - name: Get last 10 lines of logs
         run: |
           tail -n 10 full_output.log > last_10_lines.log
-          echo "::set-output name=last_10_lines::$(<last_10_lines.log)"
+          echo "last_10_lines=$(<last_10_lines.log)" >> $GITHUB_ENV
         id: last_10_lines
-
+  
       - name: Comment PR
         if: github.event_name == 'pull_request'
         uses: thollander/actions-comment-pull-request@v2
@@ -52,6 +52,5 @@ jobs:
           message: |
             Last 10 lines of CI output:
             ```
-            ${{ steps.last_10_lines.outputs.last_10_lines }}
+            ${{ env.last_10_lines }}
             ```
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
