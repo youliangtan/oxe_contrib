@@ -1,5 +1,10 @@
 # Open Cross Embodiment Datasets Contributions
 
+[![Website](https://img.shields.io/website-up-down-green-red/https/youliangtan.github.io/oxe_contrib/)](https://youliangtan.github.io/oxe_contrib/)
+
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+
+
 Website at: https://youliangtan.github.io/oxe_contrib/
 
 Original OXE website: https://github.com/google-deepmind/open_x_embodiment

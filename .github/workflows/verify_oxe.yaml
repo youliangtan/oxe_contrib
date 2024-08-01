@@ -32,13 +32,18 @@ jobs:
         # Internally this runs the verification script and generate stats script
         run: python scripts/run_ci.py | tee full_output.log
 
-      - name: Get last 10 lines of logs
+      - name: Get last few lines of logs
         # https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-output-parameter
-        id: last_10_lines
+        id: last_few_lines
         run: |
           last_10_lines=$(tail -n 10 full_output.log)
           echo "last_10_lines<<EOF" >> $GITHUB_OUTPUT
           echo "$last_10_lines" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+          last_2_lines=$(tail -n 2 full_output.log)
+          echo "last_2_lines<<EOF" >> $GITHUB_OUTPUT
+          echo "$last_2_lines" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
   
       - name: Comment PR
@@ -46,9 +51,14 @@ jobs:
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            Last 10 lines of CI output:
+            Show last 10 lines of CI output:
             ```
-            ${{ steps.last_10_lines.outputs.last_10_lines }}
+            ${{ steps.last_few_lines.outputs.last_10_lines }}
             ```
+
+            ---
+            
+            ${{ steps.last_few_lines.outputs.last_2_lines }}
+
             Click on the wandb link above to visualize the stats of the first episode
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
