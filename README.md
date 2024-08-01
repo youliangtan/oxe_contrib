@@ -30,28 +30,28 @@ Example dataset: https://huggingface.co/datasets/youliangtan/bridge_dataset
 
 ### 3. Run verification script and plot the dataset
 
+**Verfify remote dataset**
 ```bash
 python scripts/verify_oxe.py https://huggingface.co/datasets/youliangtan/bridge_dataset
 ```
 
 This script will verify if the dataset is in the correct form of RLDS format, with sufficient metadata and correct licensing information.
 
-
-To Generate the dataset stats, run the following script:
-
+**Generate stats for the dataset**
 ```bash
-# --stats_dir <LOCAL_DIR> to save a plot and img mp4 of the trajectory, default is stats/
+# Usage:
+# --stats_dir <LOCAL_DIR> to save a plot and img mp4 of the trajectory
 # --enable_wandb to log the stats to wandb
-python scripts/generate_stats.py.py --repo_id youliangtan/bridge_dataset --enable_wandb
+python scripts/generate_stats.py.py --repo_id youliangtan/bridge_dataset --stats_dir stats/
 ```
 
-This will download only a single shard, and read a single episode of the data. The plot is saved in `stats/` directory.
+This will download only a single shard, and read the first episode of the data. The plot is saved in `stats/` directory.
 
 ### 4. Open a pull request with the dataset information and wait for review
 
-User should also add the metadata of the dataset in the `csv` file, located in `docs/xxx.csv`
-
-TODO: will trigger CI to run verification script
+User should append the files in `docs/` directory with the dataset information.
+ - **xxx.csv**: Metadata of the dataset, for display on the website
+ - **data_sources.yaml**: The source of the dataset, for verfiication purposes
 
 ### 5. Once the pull request is merged, the dataset will be added to the list
 
