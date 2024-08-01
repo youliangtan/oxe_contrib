@@ -114,7 +114,7 @@
             $.fn.dataTable.ext.errMode = 'none';
 
             $.ajax({
-                url: 'https://raw.githubusercontent.com/youliangtan/oxe_contrib/main/docs/oxe_data_24jul2024.csv',
+                url: 'https://raw.githubusercontent.com/youliangtan/oxe_contrib/main/docs/oxe_dataset_overview.csv',
                 dataType: 'text',
             }).done(function(data) {
                 var parsedData = Papa.parse(data, {

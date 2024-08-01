@@ -3,7 +3,7 @@ name: generate-docs
 on:
   push:
     branches:
-      - main
+      - doc_generation # Trigger the workflow on push to the doc_generation branch Not Used now
 
 jobs:
   generate-readme:
