@@ -23,7 +23,7 @@ There are multiple ways to convert the dataset to RLDS format. Some useful resou
  - [rlds_dataset_builder](https://github.com/kpertsch/rlds_dataset_builder)
  - [oxe_envlogger](https://github.com/rail-berkeley/oxe_envlogger)
 
-### Step 2: push the dataset to huggingface
+### Step 2: Push the dataset to huggingface
 
 The easiest way to contribute is to push the dataset to huggingface. (example below)
 ```bash
@@ -39,6 +39,7 @@ Example dataset: https://huggingface.co/datasets/youliangtan/bridge_dataset
 
 **Verfify remote dataset**
 ```bash
+# Example Usage:
 python scripts/verify_oxe.py https://huggingface.co/datasets/youliangtan/bridge_dataset
 ```
 
@@ -46,7 +47,7 @@ python scripts/verify_oxe.py https://huggingface.co/datasets/youliangtan/bridge_
 
 **Generate stats for the dataset**
 ```bash
-# Usage:
+# Example Usage:
 # --stats_dir <LOCAL_DIR> to save a plot and img mp4 of the trajectory
 # --enable_wandb to log the stats to wandb
 python scripts/generate_stats.py.py --repo_id youliangtan/bridge_dataset --stats_dir stats/
@@ -54,15 +55,19 @@ python scripts/generate_stats.py.py --repo_id youliangtan/bridge_dataset --stats
 
 *This will download only a single shard, and read the first episode of the data. The plot is saved in `stats/` directory.*
 
-### Step 4: Open a pull request with the dataset information and wait for review
+### Step 4: Open a pull request with the dataset information
 
 User should append the metadata to the file with the dataset information.
  - **docs/oxe_dataset_overview.csv**: Metadata of the dataset, for display on the website
  - **docs/data_sources.yaml**: The source of the dataset, for verfiication purposes
 
-### Step 5. Once the pull request is merged, the dataset will be added to the official OXE list
+*The CI will automatically verify the dataset and upload the stats to wandb for sanity check*
 
-TODO: CI will automatically pull private datasets, conduct face blurring, and upload to OXE huggingface account.
+### Step 5. Wait for PR review to merge the dataset to OXE
+
+Once the PR is opened, the dataset will be reviewed by the OXE team. If the dataset is approved, it will be merged to the official OXE dataset list.
+
+*TODO: CI will automatically pull private datasets, conduct face blurring, and upload to OXE huggingface account.*
 
 ## License
 
