@@ -37,7 +37,7 @@ jobs:
       - name: Run full CI
         env:
           WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
-        run: python run_ci.py | tee full_output.log
+        run: python scripts/run_ci.py | tee full_output.log
 
       - name: Get last 10 lines of logs
         run: |
