@@ -37,7 +37,7 @@ jobs:
         id: last_10_lines
         run: |
             tail -n 10 full_output.log > last_10_lines.log
-            echo "last_10_lines=$(<last_10_lines.log)" >> "$GITHUB_OUTPUT"
+            echo "last_10_lines=$(<last_10_lines.log)"
   
       - name: Comment PR
         if: github.event_name == 'pull_request'
