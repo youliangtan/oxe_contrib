@@ -36,8 +36,10 @@ jobs:
         # https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-output-parameter
         id: last_10_lines
         run: |
-            tail -n 10 full_output.log > last_10_lines.log
-            echo "last_10_lines=$(<last_10_lines.log)"
+          last_10_lines=$(tail -n 10 full_output.log)
+          echo "last_10_lines<<EOF" >> $GITHUB_OUTPUT
+          echo "$last_10_lines" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
   
       - name: Comment PR
         if: github.event_name == 'pull_request'
@@ -46,5 +48,6 @@ jobs:
           message: |
             Last 10 lines of CI output:
             ```
-            ${{ steps.last_10_lines.outputs.last_10_lines }}
+            ${{ steps.last_10_lines.outputs.* }}
             ```
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
