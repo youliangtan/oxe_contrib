@@ -13,31 +13,41 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.10'
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-    - name: Run verification script
-      run: python scripts/verify_oxe.py https://huggingface.co/datasets/youliangtan/bridge_dataset
+      - name: Run verification script
+        run: python scripts/verify_oxe.py https://huggingface.co/datasets/youliangtan/bridge_dataset | tee verify_output.log
 
-    - name: Generate dataset stats
-      env:
-        WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
-      run: python scripts/generate_stats.py --repo_id youliangtan/bridge_dataset --enable_wandb
+      - name: Generate dataset stats
+        env:
+          WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
+        run: python scripts/generate_stats.py --repo_id youliangtan/bridge_dataset --enable_wandb | tee stats_output.log
 
-    # TODO: comment on PR with the generated stats
-    # https://github.com/marketplace/actions/comment-pull-request
-    # - name: Comment PR
-    #   uses: thollander/actions-comment-pull-request@v2
-    #   with:
-    #     message: |
-    #         Hello world ! :wave:
+      - name: Get last 10 lines of logs
+        run: |
+          cat verify_output.log stats_output.log > combined_output.log
+          tail -n 10 combined_output.log > last_10_lines.log
+          echo "::set-output name=last_10_lines::$(<last_10_lines.log)"
+        id: last_10_lines
+
+      - name: Comment PR
+        if: github.event_name == 'pull_request'
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            Last 10 lines of output:
+            ```
+            ${{ steps.last_10_lines.outputs.last_10_lines }}
+            ```
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
