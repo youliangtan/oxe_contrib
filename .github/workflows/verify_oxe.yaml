@@ -26,18 +26,22 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run verification script
-        run: python scripts/verify_oxe.py https://huggingface.co/datasets/youliangtan/bridge_dataset | tee verify_output.log
+    #   - name: Run verification script
+    #     run: python scripts/verify_oxe.py https://huggingface.co/datasets/youliangtan/bridge_dataset | tee verify_output.log
 
-      - name: Generate dataset stats
+    #   - name: Generate dataset stats
+    #     env:
+    #       WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
+    #     run: python scripts/generate_stats.py --repo_id youliangtan/bridge_dataset --enable_wandb | tee stats_output.log
+
+      - name: Run full CI
         env:
           WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
-        run: python scripts/generate_stats.py --repo_id youliangtan/bridge_dataset --enable_wandb | tee stats_output.log
+        run: python run_ci.py | tee full_output.log
 
       - name: Get last 10 lines of logs
         run: |
-          cat verify_output.log stats_output.log > combined_output.log
-          tail -n 10 combined_output.log > last_10_lines.log
+          tail -n 10 full_output.log > last_10_lines.log
           echo "::set-output name=last_10_lines::$(<last_10_lines.log)"
         id: last_10_lines
 
@@ -46,7 +50,7 @@ jobs:
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            Last 10 lines of output:
+            Last 10 lines of CI output:
             ```
             ${{ steps.last_10_lines.outputs.last_10_lines }}
             ```

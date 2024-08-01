@@ -3,6 +3,7 @@ import argparse
 import os
 from rlds_reader import read_single_episode, plot_stats, generate_video
 from typing import Optional
+import wandb
 
 
 def generate_stats_from_shard(
@@ -48,6 +49,9 @@ def generate_stats_from_shard(
         for k, v in other_buffer.items():
             plot_stats(v, k, stats_dir)
         print(f"Stats saved to {stats_dir}")
+    
+    if enable_wandb:
+        print("Stats logged to wandb with url: ", wandb.run.get_url())
 
 
 if __name__ == "__main__":
@@ -61,7 +65,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     generate_stats_from_shard(args.repo_id, args.branch, args.tmp_save_dir, args.stats_dir, args.enable_wandb)
-    print("Done!")
+    print(f"Done with Stats generation. Stats saved to {args.stats_dir}, wandb enabled: {args.enable_wandb}")
 
     # python scripts/generate_stats.py --repo_id youliangtan/bridge_dataset --enable_wandb
     # python scripts/generate_stats.py --repo_id youliangtan/rlds_test_viperx_ds --enable_wandb
