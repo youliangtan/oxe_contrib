@@ -48,6 +48,6 @@ jobs:
           message: |
             Last 10 lines of CI output:
             ```
-            ${{ steps.last_10_lines.outputs.* }}
+            ${{ steps.last_10_lines.outputs.last_10_lines }}
             ```
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
