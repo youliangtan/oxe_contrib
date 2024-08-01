@@ -77,6 +77,9 @@ class GitRepoReader:
         return None
 
     def download_file(self, file_name: str, download_path: str) -> bool:
+        """
+        Download a file from the repository.
+        """
         blob = self.find_file(file_name)
         if blob is None:
             print(f"File '{file_name}' not found in the repository.")
@@ -118,7 +121,10 @@ class GitRepoReader:
 ####################################################################################
 
 def verify_oxe_repo(repo_url, branch='main') -> Optional[OXEDatasetConfig]:
-
+    """
+    A simple verification function to check if the RLDS dataset is in the correct format.
+    This checks the metadata, and doesn't require the dataset to be downloaded.
+    """
     repo_reader = GitRepoReader(repo_url, branch)
 
     ##############################################################################

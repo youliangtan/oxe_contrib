@@ -1,4 +1,3 @@
-tensorflow-datasets
 wget
 wandb
 numpy
@@ -7,3 +6,5 @@ matplotlib
 datetime
 requests
 gitpython
+tensorflow
+tensorflow-datasets
