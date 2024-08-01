@@ -6,7 +6,7 @@ import json
 from typing import Optional, List
 import fnmatch
 from dataclasses import dataclass
-import subprocess
+import requests
 import wget
 
 
@@ -115,6 +115,8 @@ class GitRepoReader:
         shutil.rmtree(self.temp_dir)
 
 
+####################################################################################
+
 def verify_oxe_repo(repo_url, branch='main') -> Optional[OXEDatasetConfig]:
 
     repo_reader = GitRepoReader(repo_url, branch)
@@ -177,8 +179,24 @@ def verify_oxe_repo(repo_url, branch='main') -> Optional[OXEDatasetConfig]:
     )
 
 
-def single_shard_tfrecord_loader(repo_url, branch='main'):
-    raise NotImplementedError
+def verify_hg_dataset(repo_id: str) -> bool:
+    """
+    Check if a huggingface dataset is valid/exist.
+    # URL: https://datasets-server.huggingface.co/is-valid?=dataset=$repo_id
+
+    :param repo_id: Hugging Face dataset id
+    :return: True if the dataset is valid, otherwise False
+    """
+    query_url = f"https://datasets-server.huggingface.co/is-valid?dataset={repo_id}"
+    response = requests.get(query_url)
+    if response.status_code != 200:
+        print(f"Failed to check dataset: {response.status_code}")
+        print(response.text)
+        return False
+    if response.json().get('error') or response.json().get('valid') is False:
+        print(f"Error: {response.json().get('error')}")
+        return False
+    return True
 
 
 def main():
@@ -193,6 +211,7 @@ def main():
 
     print("\nDataset Configuration:")
     print(config)
+    print("Done!")
 
 
 if __name__ == "__main__":

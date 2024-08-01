@@ -35,10 +35,12 @@ python scripts/verify_oxe.py https://huggingface.co/datasets/youliangtan/bridge_
 This script will verify if the dataset is in the correct form of RLDS format, with sufficient metadata and correct licensing information.
 
 
-To plot the dataset, run the following script:
+To Generate the dataset stats, run the following script:
 
 ```bash
-python scripts/plot_oxe_stats.py --repo_id youliangtan/bridge_dataset
+# --stats_dir <LOCAL_DIR> to save a plot and img mp4 of the trajectory, default is stats/
+# --enable_wandb to log the stats to wandb
+python scripts/generate_oxe_stats.py.py --repo_id youliangtan/bridge_dataset --enable_wandb
 ```
 
 This will download only a single shard, and read a single episode of the data. The plot is saved in `stats/` directory.

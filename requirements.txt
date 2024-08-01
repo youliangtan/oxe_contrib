@@ -1,0 +1,9 @@
+tensorflow-datasets
+wget
+wandb
+numpy
+argparse
+matplotlib
+datetime
+requests
+gitpython
