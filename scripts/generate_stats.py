@@ -4,16 +4,7 @@ import os
 from rlds_reader import read_single_episode, plot_stats, generate_video
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Analyze a Git repository without downloading.")
-    parser.add_argument("--repo_id", type=str, default="youliantan/bridge_data",
-                        help="dataset repo id of the Hugging Face hub.")
-    parser.add_argument("--branch", default="main", help="Branch to analyze (default: main)")
-    parser.add_argument("--tmp_save_dir", default="tmp/", help="Path to save the downloaded TFRecord shard.")
-    parser.add_argument("--stats_dir", default=None, help="Path to save the stats of the episode.")
-    parser.add_argument("--enable_wandb", action="store_true", help="Enable logging to wandb.")
-    args = parser.parse_args()
-
+def generate_stats_from_shard(repo_id: str, branch: str, tmp_save_dir: str, stats_dir: str, enable_wandb: bool):
     # Define the dataset and reader
     assert verify_hg_dataset(args.repo_id), "Dataset is not valid."
 
@@ -51,11 +42,19 @@ def main():
             plot_stats(v, k, args.stats_dir)
         print(f"Stats saved to {args.stats_dir}")
 
-    print("Done!")
-
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Analyze a Git repository without downloading.")
+    parser.add_argument("--repo_id", type=str, default="youliantan/bridge_data",
+                        help="dataset repo id of the Hugging Face hub.")
+    parser.add_argument("--branch", default="main", help="Branch to analyze (default: main)")
+    parser.add_argument("--tmp_save_dir", default="tmp/", help="Path to save the downloaded TFRecord shard.")
+    parser.add_argument("--stats_dir", default=None, help="Path to save the stats of the episode.")
+    parser.add_argument("--enable_wandb", action="store_true", help="Enable logging to wandb.")
+    args = parser.parse_args()
 
-# python scripts/plot_oxe_stats.py --repo_id youliangtan/bridge_dataset --enable_wandb
-# python scripts/plot_oxe_stats.py --repo_id youliangtan/rlds_test_viperx_ds --enable_wandb
+    generate_stats_from_shard(args.repo_id, args.branch, args.tmp_save_dir, args.stats_dir, args.enable_wandb)
+    print("Done!")
+
+    # python scripts/generate_stats.py --repo_id youliangtan/bridge_dataset --enable_wandb
+    # python scripts/generate_stats.py --repo_id youliangtan/rlds_test_viperx_ds --enable_wandb

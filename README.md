@@ -4,6 +4,8 @@ Website at: https://youliangtan.github.io/oxe_contrib/
 
 Original OXE website: https://github.com/google-deepmind/open_x_embodiment
 
+Install: `pip install -r requirements.txt`
+
 ## How to Contribute
 
 Steps to contribute your dataset to OXE:
@@ -40,7 +42,7 @@ To Generate the dataset stats, run the following script:
 ```bash
 # --stats_dir <LOCAL_DIR> to save a plot and img mp4 of the trajectory, default is stats/
 # --enable_wandb to log the stats to wandb
-python scripts/generate_oxe_stats.py.py --repo_id youliangtan/bridge_dataset --enable_wandb
+python scripts/generate_stats.py.py --repo_id youliangtan/bridge_dataset --enable_wandb
 ```
 
 This will download only a single shard, and read a single episode of the data. The plot is saved in `stats/` directory.

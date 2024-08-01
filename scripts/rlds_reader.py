@@ -53,13 +53,12 @@ def read_single_episode(rlds_dir: str, enable_wandb=False):
     # and action might not be in np.array format
     other_buffer = {"states": [], "actions": []}
 
+    # loop through the steps in the episode
     for j, step in enumerate(steps):
-        # print(step['observation'].keys())
-
         action = step["action"]
         state = step['observation']['state']
-        print(f" [step {j}] action: ", action)
-        print(f" [step {j}] state: ", state)
+        # print(f" [step {j}] action: ", action)
+        # print(f" [step {j}] state: ", state)
 
         other_buffer["states"].append(state)
         other_buffer["actions"].append(action)
@@ -69,7 +68,7 @@ def read_single_episode(rlds_dir: str, enable_wandb=False):
         log_dict.update(action_dict)  # merge the two dicts for logging
 
         if "language_text" in step:
-            print(f" [step {j}] lang: ", step["language_text"])
+            # print(f" [step {j}] lang: ", step["language_text"])
             log_dict["language_text"] = step["language_text"]  # log the language text to wandb
 
         if image_keys:
@@ -90,7 +89,7 @@ def read_single_episode(rlds_dir: str, enable_wandb=False):
     return image_buffer, other_buffer
 
 
-def plot_stats(data: list[np.ndarray | float], title: str, save_dir=None):
+def plot_stats(data: list[np.ndarray], title: str, save_dir=None):
     """
     Plot the stats of the data
     list is a series of datapoints in timestep

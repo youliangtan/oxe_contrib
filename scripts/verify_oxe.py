@@ -199,7 +199,13 @@ def verify_hg_dataset(repo_id: str) -> bool:
     return True
 
 
-def main():
+if __name__ == "__main__":
+    """
+    Example:
+      python verify_oxe.py https://huggingface.co/datasets/youliangtan/rlds_test_viperx_ds
+      python verify_oxe.py https://huggingface.co/datasets/youliangtan/bridge_dataset
+
+    """
     parser = argparse.ArgumentParser(description="Analyze a Git repository without downloading.")
     parser.add_argument("repo_url", help="URL of the Git repository")
     parser.add_argument("--branch", default="main", help="Branch to analyze (default: main)")
@@ -212,11 +218,3 @@ def main():
     print("\nDataset Configuration:")
     print(config)
     print("Done!")
-
-
-if __name__ == "__main__":
-    main()
-
-# Example:
-#   python verify_oxe.py https://huggingface.co/datasets/youliangtan/rlds_test_viperx_ds
-#   python verify_oxe.py https://huggingface.co/datasets/youliangtan/bridge_dataset
