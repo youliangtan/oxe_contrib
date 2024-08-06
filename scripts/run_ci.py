@@ -1,4 +1,3 @@
-import os
 import yaml
 from verify_oxe import verify_oxe_repo
 from generate_stats import generate_stats_from_shard

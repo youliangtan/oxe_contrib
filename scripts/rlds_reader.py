@@ -13,10 +13,14 @@ def get_cameras_keys(obs_keys):
     return [key for key in obs_keys if "image" in key]
 
 
-def read_single_episode(rlds_dir: str, enable_wandb=False):
+def read_single_episode(rlds_dir: str, enable_wandb=False, idx=0, fps=5):
     """
     This function reads a single episode from the RLDS dataset
     and log the data to wandb if enable
+    :param rlds_dir: the directory of the RLDS dataset
+    :param enable_wandb: enable logging to wandb
+    :param idx: the index of the episode to read
+    :param fps: the fps of the video to log to wandb
     """
     ds_builder = tfds.builder_from_directory(rlds_dir)
     dataset = ds_builder.as_dataset(split='all')
@@ -43,7 +47,17 @@ def read_single_episode(rlds_dir: str, enable_wandb=False):
     dataset = dataset.take(ds_length)
     it = iter(dataset)
 
-    episode = next(it)
+    # Option to skip to the idx episode
+    print(f"Reading episode {idx} from the dataset")
+    assert idx >= 0, "Index must be positive"
+    approx_shard_size = round(
+        dataset_info.splits['all'].num_examples/ 
+        dataset_info.splits['all'].num_shards
+    )
+    assert idx <= approx_shard_size, f"index should be less than {approx_shard_size}"
+    for i in range(idx + 1):
+        episode = next(it)
+
     steps = episode['steps']
 
     image_keys = get_cameras_keys(obs_keys)
@@ -80,10 +94,15 @@ def read_single_episode(rlds_dir: str, enable_wandb=False):
                 img = np.array(img)
                 image_buffer[k].append(img)
 
-                log_dict[k] = wandb.Image(img)  # log the image to wandb
-
         if enable_wandb:
             wandb.log(log_dict)
+
+    # wandb log video
+    for k, frames in image_buffer.items():
+        # https://docs.wandb.ai/ref/python/data-types/video
+        # transpose (N, H, W, C) to (N, C, H, W)
+        video = np.array(frames).transpose(0, 3, 1, 2)
+        wandb.log({k: wandb.Video(video, fps=fps)})
 
     del it, dataset
     return image_buffer, other_buffer
