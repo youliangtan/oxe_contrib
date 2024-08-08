@@ -122,7 +122,6 @@ if __name__ == "__main__":
     time.sleep(1)
     # exit with success
     dataset = ds_builder.as_dataset(split='all')
-    exit(0)
     print("here3")
     time.sleep(1)
 
@@ -134,6 +133,7 @@ if __name__ == "__main__":
     print_yellow(f"!!NOTE!! It is recommended to keep tfrecord size at "
                  f"around 200MB. Thus the recommended shard size should "
                  f"be around {recommended_shard_size} episodes. ")
+    # exit(0)
 
     if args.shard_size is None:
         print_yellow(f"Using the recommended shard size: {recommended_shard_size}")
