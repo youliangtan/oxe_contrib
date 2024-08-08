@@ -135,16 +135,16 @@ if __name__ == "__main__":
     else:
         shard_size = args.shard_size
 
-    def update_data_dir(target_dir, dataset_info):
-        # Bug in update_data_dir() method, need to update the identity object as well
-        # https://github.com/tensorflow/datasets/pull/5297
-        # dataset_info.update_data_dir(target_dir) # not supported in MultiSplitInfo()
-        dataset_info._identity.data_dir = target_dir
+    # def update_data_dir(target_dir, dataset_info):
+    #     # Bug in update_data_dir() method, need to update the identity object as well
+    #     # https://github.com/tensorflow/datasets/pull/5297
+    #     # dataset_info.update_data_dir(target_dir) # not supported in MultiSplitInfo()
+    #     dataset_info._identity.data_dir = target_dir
 
-    # Create a new dataset info with the updated data_dir
-    dataset_info = copy.deepcopy(dataset_info)
-    update_data_dir(args.output_rlds, dataset_info)
-    assert dataset_info.data_dir == args.output_rlds
+    # # Create a new dataset info with the updated data_dir
+    # dataset_info = copy.deepcopy(dataset_info)
+    # update_data_dir(args.output_rlds, dataset_info)
+    # assert dataset_info.data_dir == args.output_rlds
     # print(dataset_info)
 
     print("here1", flush=True)
