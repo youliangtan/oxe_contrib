@@ -24,6 +24,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         pip install mediapipe
+
     - name: Install Hugging Face CLI
       run: pip install huggingface-hub
 
