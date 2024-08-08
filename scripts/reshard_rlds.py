@@ -93,7 +93,7 @@ def save_rlds_dataset(
     writer.close_all()
 
 
-def print_yellow(x): return print("\033[93m {}\033[00m" .format(x))
+def print_yellow(x): return print("\033[93m {}\033[00m" .format(x), flush=True)
 
 
 if __name__ == "__main__":
@@ -112,18 +112,12 @@ if __name__ == "__main__":
     print_yellow(f"Content in the directory: {args.rlds_dir}")
     os.system(f"ls -lh {args.rlds_dir}")
 
-    print("here1")
-    import time
-    time.sleep(1)
 
     # Recursively find all datasets in the given directories
     ds_builder = tfds.builder_from_directory(args.rlds_dir)
-    print("here2")
-    time.sleep(1)
+
     # exit with success
     dataset = ds_builder.as_dataset(split='all')
-    print("here3")
-    time.sleep(1)
 
     dataset_info = ds_builder.info
     total_size = dataset_info.dataset_size
@@ -153,6 +147,8 @@ if __name__ == "__main__":
     assert dataset_info.data_dir == args.output_rlds
     # print(dataset_info)
 
+    print("here1", flush=True)
+
     os.makedirs(args.output_rlds, exist_ok=True)
 
     # For user to skip some episodes
@@ -165,6 +161,8 @@ if __name__ == "__main__":
             return idx not in skip_eps_indices
     else:
         eps_filtering_fn = None
+
+    print("here2", flush=True)
 
     if args.face_blur:
         from face_blur import MediaPipeFaceBlur, HaarCascadeFaceBlur
@@ -182,6 +180,7 @@ if __name__ == "__main__":
             """
             A function to blur faces in the images.
             """
+            print("call", flush=True)
             image_keys = set([key for key in step.keys() if "image" in key])
             for key in image_keys:
                 step[key] = face_blurring_class.blur_faces(step[key])
