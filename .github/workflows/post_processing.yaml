@@ -30,7 +30,7 @@ jobs:
     - name: Download dataset
       run: |
         mkdir -p tmp_dataset
-        huggingface-cli download youliangtan/viperx_pick_up_object --repo-type dataset --local-dir tmp_dataset
+        huggingface-cli download youliangtan/rlds_test_viperx_ds --repo-type dataset --local-dir tmp_dataset
 
     - name: Run Python script
       run: |
