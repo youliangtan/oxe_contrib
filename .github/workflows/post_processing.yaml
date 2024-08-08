@@ -1,0 +1,40 @@
+name: Post Processing OXE dataset
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        required: true
+        default: 'development'
+
+jobs:
+  process-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install mediapipe
+    - name: Install Hugging Face CLI
+      run: pip install huggingface-hub
+
+    - name: Download dataset
+      run: |
+        mkdir -p tmp_dataset
+        huggingface-cli download youliangtan/viperx_pick_up_object --repo-type dataset --local-dir tmp_dataset
+
+    - name: Run Python script
+      run: |
+        python scripts/reshard_rlds.py --rlds_dir tmp_dataset/0.1.0 --output_rlds new_dataset --overwrite --face_blur
+        echo "Running post processing script"
