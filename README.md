@@ -74,7 +74,7 @@ python scripts/reshard_rlds.py --rlds_dir <ORIGINAL_DATASET> --output_rlds <RESH
 ```
 This script will reshard the dataset, and blur the faces of the human actors in the dataset. You can try to run this script locally to verify the dataset.
 
-*TODO: CI will automatically pull private datasets, conduct resharding & face blurring, and upload to OXE huggingface account.*
+*CI will get triggered during approval, automatically pull private datasets, conduct resharding & face blurring, and upload to OXE huggingface account.*
 
 ## License
 
