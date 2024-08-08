@@ -10,6 +10,8 @@ on:
 
 jobs:
   verify-and-generate-stats:
+    # TODO: remove this if statement
+    if: github.event.review.state == 'APPROVED'  
     runs-on: ubuntu-latest
 
     steps:
