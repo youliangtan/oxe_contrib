@@ -25,8 +25,8 @@ jobs:
           git diff --name-only origin/main..HEAD
           
           # Determine if docs/data_sources.yaml has changed
-          echo "Checking if docs/data_sources.yaml has changed..."
-          if git diff --name-only origin/main..HEAD | grep -q docs/data_sources.yaml; then
+          echo "Checking if docs/index.html has changed..."
+          if git diff --name-only origin/main..HEAD | grep -q docs/index.html; then
               echo "File has changed."
               echo "file_changed=true" >> $GITHUB_OUTPUT
           else
