@@ -6,7 +6,7 @@ on:
     - main
 
 jobs:
-  approved:
+  post-processing:
     # if: github.event.review.state == 'APPROVED'
     runs-on: ubuntu-latest
 
@@ -34,5 +34,12 @@ jobs:
 
     - name: Run Python script
       run: |
-        python scripts/reshard_rlds.py --rlds_dir tmp_dataset/0.1.0 --output_rlds new_dataset --overwrite --face_blur
+        python scripts/reshard_rlds.py --rlds_dir tmp_dataset/0.1.0 \
+            --output_rlds new_dataset --overwrite --face_blur --face_blur_type haar
         echo "Running post processing script"
+
+    # - name: Upload dataset
+    #   run: |
+    #     huggingface-cli login
+    #     huggingface-cli upload new_dataset --token ${{ secrets.HF_TOKEN }}
+    #     echo "Uploaded new dataset"

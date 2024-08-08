@@ -105,6 +105,7 @@ if __name__ == "__main__":
                         help="List of episode indices to skip")
     parser.add_argument("--shard_size", type=int, default=None, help="Max episodes per shard")
     parser.add_argument("--face_blur", action='store_true', help="Apply face blurring")
+    parser.add_argument("--face_blur_type", type=str, default="mediapipe")
     args = parser.parse_args()
 
     # Recursively find all datasets in the given directories
@@ -152,9 +153,14 @@ if __name__ == "__main__":
         eps_filtering_fn = None
 
     if args.face_blur:
-        from face_blur import MediaPipeFaceBlur
+        from face_blur import MediaPipeFaceBlur, HaarCascadeFaceBlur
 
-        face_blurring_class = MediaPipeFaceBlur()
+        if args.face_blur_type == "mediapipe":
+            face_blurring_class = MediaPipeFaceBlur()
+        elif args.face_blur_type == "haar":
+            face_blurring_class = HaarCascadeFaceBlur()
+        else:
+            raise ValueError(f"Unknown face_blur_type: {args.face_blur_type}")
 
         def face_blurring_fn(step: Dict[str, Any]) -> Dict[str, Any]:
             """
