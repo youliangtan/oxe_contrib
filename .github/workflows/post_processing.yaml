@@ -1,0 +1,65 @@
+name: Post Processing OXE dataset
+
+on:
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  post-processing:
+    if: github.event.review.state == 'APPROVED'
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Check if specific datasource file has changed
+      id: check_changes
+      run: |
+        git fetch origin main
+        if git diff --name-only origin/main...HEAD | grep -q docs/data_sources.yaml; then
+          echo "File has changed."
+          echo "file_changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "File has not changed."
+          echo "file_changed=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Set up Python
+      if: steps.check_changes.outputs.file_changed == 'true'
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      if: steps.check_changes.outputs.file_changed == 'true'
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install mediapipe
+
+    - name: Install Hugging Face CLI
+      if: steps.check_changes.outputs.file_changed == 'true'
+      run: pip install huggingface-hub
+
+    # TODO: a simple script to get the newly contributed dataset
+
+    - name: Download dataset
+      if: steps.check_changes.outputs.file_changed == 'true'
+      run: |
+        mkdir -p tmp_dataset
+        huggingface-cli download youliangtan/rlds_test_viperx_ds --repo-type dataset --local-dir tmp_dataset
+
+    - name: Run Resharing and Face Blur
+      if: steps.check_changes.outputs.file_changed == 'true'
+      run: |
+        python scripts/reshard_rlds.py --rlds_dir tmp_dataset/0.1.0 \
+            --output_rlds new_dataset/0.1.0 --overwrite --face_blur
+        echo "Done running post processing script"
+
+    # - name: Upload dataset
+    #   run: |
+    #     huggingface-cli login
+    #     huggingface-cli upload new_dataset --token ${{ secrets.HF_TOKEN }}
+    #     echo "Uploaded new dataset"

@@ -93,7 +93,7 @@ def save_rlds_dataset(
     writer.close_all()
 
 
-def print_yellow(x): return print("\033[93m {}\033[00m" .format(x))
+def print_yellow(x): return print("\033[93m {}\033[00m" .format(x), flush=True)
 
 
 if __name__ == "__main__":
@@ -105,10 +105,17 @@ if __name__ == "__main__":
                         help="List of episode indices to skip")
     parser.add_argument("--shard_size", type=int, default=None, help="Max episodes per shard")
     parser.add_argument("--face_blur", action='store_true', help="Apply face blurring")
+    parser.add_argument("--face_blur_type", type=str, default="mediapipe")
     args = parser.parse_args()
+
+    # show content in the directory
+    print_yellow(f"Content in the directory: {args.rlds_dir}")
+    os.system(f"ls -lh {args.rlds_dir}")
 
     # Recursively find all datasets in the given directories
     ds_builder = tfds.builder_from_directory(args.rlds_dir)
+
+    # exit with success
     dataset = ds_builder.as_dataset(split='all')
 
     dataset_info = ds_builder.info
@@ -133,10 +140,11 @@ if __name__ == "__main__":
         dataset_info._identity.data_dir = target_dir
 
     # Create a new dataset info with the updated data_dir
-    dataset_info = copy.deepcopy(dataset_info)
+    # dataset_info = copy.deepcopy(dataset_info) # TODO (YL): this segfaults on github action. DEBUG
     update_data_dir(args.output_rlds, dataset_info)
+
     assert dataset_info.data_dir == args.output_rlds
-    # print(dataset_info)
+    print(dataset_info)
 
     os.makedirs(args.output_rlds, exist_ok=True)
 
@@ -152,10 +160,17 @@ if __name__ == "__main__":
         eps_filtering_fn = None
 
     if args.face_blur:
-        from face_blur import MediaPipeFaceBlur
+        from face_blur import MediaPipeFaceBlur, HaarCascadeFaceBlur
 
-        face_blurring_class = MediaPipeFaceBlur()
+        # Choose the face blurring method
+        if args.face_blur_type == "mediapipe":
+            face_blurring_class = MediaPipeFaceBlur()
+        elif args.face_blur_type == "haar":
+            face_blurring_class = HaarCascadeFaceBlur()
+        else:
+            raise ValueError(f"Unknown face_blur_type: {args.face_blur_type}")
 
+        # callback function to blur faces in the images
         def face_blurring_fn(step: Dict[str, Any]) -> Dict[str, Any]:
             """
             A function to blur faces in the images.
@@ -178,3 +193,6 @@ if __name__ == "__main__":
     )
     print("Updated dataset info: ", dataset_info)
     print_yellow(f"Saved rlds dataset to: {args.output_rlds}")
+    
+    print(os.system(f"ls -lh {args.output_rlds}"))
+    print("Done!")
