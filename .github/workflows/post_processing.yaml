@@ -32,7 +32,7 @@ jobs:
         mkdir -p tmp_dataset
         huggingface-cli download youliangtan/rlds_test_viperx_ds --repo-type dataset --local-dir tmp_dataset
 
-    - name: Run Python script
+    - name: Run Resharing and Face Blur
       run: |
         python scripts/reshard_rlds.py --rlds_dir tmp_dataset/0.1.0 \
             --output_rlds new_dataset --overwrite --face_blur --face_blur_type haar

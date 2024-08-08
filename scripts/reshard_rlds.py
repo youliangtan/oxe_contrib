@@ -115,11 +115,11 @@ if __name__ == "__main__":
     print("here1")
     import time
     time.sleep(1)
-    # exit with success
-    exit(0)
 
     # Recursively find all datasets in the given directories
     ds_builder = tfds.builder_from_directory(args.rlds_dir)
+    # exit with success
+    exit(0)
     print("here2")
     time.sleep(1)
     dataset = ds_builder.as_dataset(split='all')
