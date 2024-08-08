@@ -113,11 +113,18 @@ if __name__ == "__main__":
     os.system(f"ls -lh {args.rlds_dir}")
 
     print("here1")
+    import time
+    time.sleep(1)
+    # exit with success
+    exit(0)
+
     # Recursively find all datasets in the given directories
     ds_builder = tfds.builder_from_directory(args.rlds_dir)
     print("here2")
+    time.sleep(1)
     dataset = ds_builder.as_dataset(split='all')
     print("here3")
+    time.sleep(1)
 
     dataset_info = ds_builder.info
     total_size = dataset_info.dataset_size
@@ -162,6 +169,7 @@ if __name__ == "__main__":
     if args.face_blur:
         from face_blur import MediaPipeFaceBlur, HaarCascadeFaceBlur
 
+        # Choose the face blurring method
         if args.face_blur_type == "mediapipe":
             face_blurring_class = MediaPipeFaceBlur()
         elif args.face_blur_type == "haar":
@@ -169,6 +177,7 @@ if __name__ == "__main__":
         else:
             raise ValueError(f"Unknown face_blur_type: {args.face_blur_type}")
 
+        # callback function to blur faces in the images
         def face_blurring_fn(step: Dict[str, Any]) -> Dict[str, Any]:
             """
             A function to blur faces in the images.
