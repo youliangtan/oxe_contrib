@@ -1,15 +1,13 @@
 name: Post Processing OXE dataset
 
 on:
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Target environment'
-        required: true
-        default: 'development'
+  pull_request:
+    branches:
+    - main
 
 jobs:
-  process-data:
+  approved:
+    if: github.event.review.state == 'APPROVED'
     runs-on: ubuntu-latest
 
     steps:
