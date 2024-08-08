@@ -489,7 +489,3 @@ v1.1,Plex RoboSuite,Franka,450,1.26,Single Arm,Default,EEF Position,5,5,1,None,H
     booktitle={CoRL},
     year={2023}
 }",thomas2023plex,"Opening a door, stacking 2 cubes, picking and placing various objects to specially designated areas, putting a loop onto a peg.",,
-v1.2 viperx_rail ,ViperX,1000,0.5,Single Arm,Default,EEF Position,1,0,0,None,Scripted,No,No,No,Table Top,10,viperx_rail,"@article{viperx_rail,
-  title={ViperX Rail: An expert Demonstration dataset with viperx robot},
-  author={You Liang Tan},
-}",viperx_rail,The robot interacts with different objects on a table top.,,
