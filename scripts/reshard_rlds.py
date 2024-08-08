@@ -137,11 +137,12 @@ if __name__ == "__main__":
         # Bug in update_data_dir() method, need to update the identity object as well
         # https://github.com/tensorflow/datasets/pull/5297
         # dataset_info.update_data_dir(target_dir) # not supported in MultiSplitInfo()
+        # TODO: this is not working when running on github actions. DEBUG this
         dataset_info._identity.data_dir = target_dir
 
     # Create a new dataset info with the updated data_dir
-    dataset_info = copy.deepcopy(dataset_info)
     if args.output_rlds != args.rlds_dir:
+        dataset_info = copy.deepcopy(dataset_info)
         update_data_dir(args.output_rlds, dataset_info)
 
     assert dataset_info.data_dir == args.output_rlds
@@ -159,8 +160,6 @@ if __name__ == "__main__":
             return idx not in skip_eps_indices
     else:
         eps_filtering_fn = None
-
-    print("here2", flush=True)
 
     if args.face_blur:
         from face_blur import MediaPipeFaceBlur, HaarCascadeFaceBlur
