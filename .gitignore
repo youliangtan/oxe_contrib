@@ -135,3 +135,4 @@ tmp/
 stats/
 wandb/
 *.log
+*.tflite

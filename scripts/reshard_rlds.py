@@ -19,11 +19,8 @@ python scripts/reshard_rlds.py --rlds_dir ~/rail/manipulator_gym/test_pick20/ \
 
 import argparse
 import copy
-import cv2
-import numpy as np
-
-import tensorflow as tf
 import tensorflow_datasets as tfds
+import tensorflow as tf
 import os
 from typing import Tuple, List, Set, Callable, Optional, Dict, Any
 from tensorflow_datasets.core import SequentialWriter
@@ -77,7 +74,7 @@ def save_rlds_dataset(
         episodic_data_dict = {
             key: episode[key] for key in episode.keys() if key != "steps"
         }
-        
+
         # Skip this episode if filter returns False
         if eps_filtering_fn and not eps_filtering_fn(idx, episodic_data_dict):
             continue
@@ -94,21 +91,6 @@ def save_rlds_dataset(
             {"train": [{"steps": steps, **episodic_data_dict}]}
         )
     writer.close_all()
-
-
-def face_blurring_fn(step: Dict[str, Any], image_keys: Set[str]) -> Dict[str, Any]:
-    """
-    A function to blur faces in the images.
-    
-    Args:
-        step: Dict[str, Any]: The step data dictionary.
-        image_keys: Set[str]: The keys of the images in the step data dictionary.
-        
-    Returns:
-        Dict[str, Any]: The transformed step data dictionary.
-    """
-    raise NotImplementedError("Implement the face blurring function here.")
-
 
 
 def print_yellow(x): return print("\033[93m {}\033[00m" .format(x))
@@ -128,7 +110,7 @@ if __name__ == "__main__":
     # Recursively find all datasets in the given directories
     ds_builder = tfds.builder_from_directory(args.rlds_dir)
     dataset = ds_builder.as_dataset(split='all')
-    
+
     dataset_info = ds_builder.info
     total_size = dataset_info.dataset_size
     recommended_shard_size = round(200*1024*1024*len(dataset)/total_size)
@@ -137,8 +119,7 @@ if __name__ == "__main__":
     print_yellow(f"!!NOTE!! It is recommended to keep tfrecord size at "
                  f"around 200MB. Thus the recommended shard size should "
                  f"be around {recommended_shard_size} episodes. ")
-    
-    
+
     if args.shard_size is None:
         print_yellow(f"Using the recommended shard size: {recommended_shard_size}")
         shard_size = recommended_shard_size
@@ -170,7 +151,21 @@ if __name__ == "__main__":
     else:
         eps_filtering_fn = None
 
-    step_transform_fn = face_blurring_fn if args.face_blur else None
+    if args.face_blur:
+        from face_blur import MediaPipeFaceBlur
+
+        face_blurring_class = MediaPipeFaceBlur()
+
+        def face_blurring_fn(step: Dict[str, Any]) -> Dict[str, Any]:
+            """
+            A function to blur faces in the images.
+            """
+            image_keys = set([key for key in step.keys() if "image" in key])
+            for key in image_keys:
+                step[key] = face_blurring_class.blur_faces(step[key])
+            return step
+    else:
+        face_blurring_fn = None
 
     # save the merged dataset to disk
     print_yellow(f"Writing episodes to disk: [{args.output_rlds}]")
