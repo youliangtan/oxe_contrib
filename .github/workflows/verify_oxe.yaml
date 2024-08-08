@@ -32,7 +32,7 @@ jobs:
         env:
           WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
         # Internally this runs the verification script and generate stats script
-        run: python -u scripts/run_ci.py | tee full_output.log
+        run: python scripts/run_ci.py | tee full_output.log
 
       - name: Get last few lines of logs
         # https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-output-parameter

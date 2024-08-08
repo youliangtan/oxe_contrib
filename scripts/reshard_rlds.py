@@ -112,7 +112,6 @@ if __name__ == "__main__":
     print_yellow(f"Content in the directory: {args.rlds_dir}")
     os.system(f"ls -lh {args.rlds_dir}")
 
-
     # Recursively find all datasets in the given directories
     ds_builder = tfds.builder_from_directory(args.rlds_dir)
 
@@ -127,7 +126,6 @@ if __name__ == "__main__":
     print_yellow(f"!!NOTE!! It is recommended to keep tfrecord size at "
                  f"around 200MB. Thus the recommended shard size should "
                  f"be around {recommended_shard_size} episodes. ")
-    # exit(0)
 
     if args.shard_size is None:
         print_yellow(f"Using the recommended shard size: {recommended_shard_size}")
@@ -135,19 +133,19 @@ if __name__ == "__main__":
     else:
         shard_size = args.shard_size
 
-    # def update_data_dir(target_dir, dataset_info):
-    #     # Bug in update_data_dir() method, need to update the identity object as well
-    #     # https://github.com/tensorflow/datasets/pull/5297
-    #     # dataset_info.update_data_dir(target_dir) # not supported in MultiSplitInfo()
-    #     dataset_info._identity.data_dir = target_dir
+    def update_data_dir(target_dir, dataset_info):
+        # Bug in update_data_dir() method, need to update the identity object as well
+        # https://github.com/tensorflow/datasets/pull/5297
+        # dataset_info.update_data_dir(target_dir) # not supported in MultiSplitInfo()
+        dataset_info._identity.data_dir = target_dir
 
-    # # Create a new dataset info with the updated data_dir
-    # dataset_info = copy.deepcopy(dataset_info)
-    # update_data_dir(args.output_rlds, dataset_info)
-    # assert dataset_info.data_dir == args.output_rlds
-    # print(dataset_info)
+    # Create a new dataset info with the updated data_dir
+    dataset_info = copy.deepcopy(dataset_info)
+    if args.output_rlds != args.rlds_dir:
+        update_data_dir(args.output_rlds, dataset_info)
 
-    print("here1", flush=True)
+    assert dataset_info.data_dir == args.output_rlds
+    print(dataset_info)
 
     os.makedirs(args.output_rlds, exist_ok=True)
 
@@ -199,3 +197,5 @@ if __name__ == "__main__":
     )
     print("Updated dataset info: ", dataset_info)
     print_yellow(f"Saved rlds dataset to: {args.output_rlds}")
+    
+    print(os.system(f"ls -lh {args.output_rlds}"))
