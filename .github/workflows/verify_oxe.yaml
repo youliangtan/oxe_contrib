@@ -19,14 +19,19 @@ jobs:
       - name: Check if specific datasource file has changed
         id: check_changes
         run: |
+
+          # Fetch the latest changes from the origin repository
           git fetch origin main
           git diff --name-only origin/main..HEAD
-          if git diff --name-only origin/main...HEAD | grep -q docs/data_sources.yaml; then
-            echo "File has changed."
-            echo "file_changed=true" >> $GITHUB_OUTPUT
+          
+          # Determine if docs/data_sources.yaml has changed
+          echo "Checking if docs/data_sources.yaml has changed..."
+          if git diff --name-only origin/main..HEAD | grep -q docs/data_sources.yaml; then
+              echo "File has changed."
+              echo "file_changed=true" >> $GITHUB_OUTPUT
           else
-            echo "File has not changed."
-            echo "file_changed=false" >> $GITHUB_OUTPUT
+              echo "File has not changed."
+              echo "file_changed=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Stop job if file(s) not changed
