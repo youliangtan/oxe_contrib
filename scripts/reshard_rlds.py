@@ -137,13 +137,11 @@ if __name__ == "__main__":
         # Bug in update_data_dir() method, need to update the identity object as well
         # https://github.com/tensorflow/datasets/pull/5297
         # dataset_info.update_data_dir(target_dir) # not supported in MultiSplitInfo()
-        # TODO: this is not working when running on github actions. DEBUG this
         dataset_info._identity.data_dir = target_dir
 
     # Create a new dataset info with the updated data_dir
-    if args.output_rlds != args.rlds_dir:
-        dataset_info = copy.deepcopy(dataset_info)
-        update_data_dir(args.output_rlds, dataset_info)
+    # dataset_info = copy.deepcopy(dataset_info) # TODO (YL): this segfaults on github action. DEBUG
+    update_data_dir(args.output_rlds, dataset_info)
 
     assert dataset_info.data_dir == args.output_rlds
     print(dataset_info)
@@ -177,7 +175,6 @@ if __name__ == "__main__":
             """
             A function to blur faces in the images.
             """
-            print("call", flush=True)
             image_keys = set([key for key in step.keys() if "image" in key])
             for key in image_keys:
                 step[key] = face_blurring_class.blur_faces(step[key])
@@ -198,3 +195,4 @@ if __name__ == "__main__":
     print_yellow(f"Saved rlds dataset to: {args.output_rlds}")
     
     print(os.system(f"ls -lh {args.output_rlds}"))
+    print("Done!")
