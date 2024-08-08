@@ -108,9 +108,16 @@ if __name__ == "__main__":
     parser.add_argument("--face_blur_type", type=str, default="mediapipe")
     args = parser.parse_args()
 
+    # show content in the directory
+    print_yellow(f"Content in the directory: {args.rlds_dir}")
+    os.system(f"ls -lh {args.rlds_dir}")
+
+    print("here1")
     # Recursively find all datasets in the given directories
     ds_builder = tfds.builder_from_directory(args.rlds_dir)
+    print("here2")
     dataset = ds_builder.as_dataset(split='all')
+    print("here3")
 
     dataset_info = ds_builder.info
     total_size = dataset_info.dataset_size
