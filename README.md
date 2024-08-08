@@ -67,7 +67,14 @@ User should append the metadata to the file with the dataset information.
 
 Once the PR is opened, the dataset will be reviewed by the OXE team. If the dataset is approved, it will be merged to the official OXE dataset list.
 
-*TODO: CI will automatically pull private datasets, conduct face blurring, and upload to OXE huggingface account.*
+
+Internally the CI will run:
+```bash
+python scripts/reshard_rlds.py --rlds_dir <ORIGINAL_DATASET> --output_rlds <RESHARD_BLURED_DATASET> --overwrite --face_blur
+```
+This script will reshard the dataset, and blur the faces of the human actors in the dataset. You can try to run this script locally to verify the dataset.
+
+*CI will get triggered during approval, automatically pull private datasets, conduct resharding & face blurring, and upload to OXE huggingface account.*
 
 ## License
 
