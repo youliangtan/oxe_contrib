@@ -159,26 +159,15 @@ if __name__ == "__main__":
     else:
         eps_filtering_fn = None
 
+    # get image keys:
+    obs_keys = dataset_info.features["steps"]["observation"].keys()
+    image_keys = set([key for key in obs_keys if "image" in key])
+    print_yellow(f"Image keys: {image_keys}")
+
+    # get the face blurring step transformation function
     if args.face_blur:
-        from face_blur import MediaPipeFaceBlur, HaarCascadeFaceBlur
-
-        # Choose the face blurring method
-        if args.face_blur_type == "mediapipe":
-            face_blurring_class = MediaPipeFaceBlur()
-        elif args.face_blur_type == "haar":
-            face_blurring_class = HaarCascadeFaceBlur()
-        else:
-            raise ValueError(f"Unknown face_blur_type: {args.face_blur_type}")
-
-        # callback function to blur faces in the images
-        def face_blurring_fn(step: Dict[str, Any]) -> Dict[str, Any]:
-            """
-            A function to blur faces in the images.
-            """
-            image_keys = set([key for key in step.keys() if "image" in key])
-            for key in image_keys:
-                step[key] = face_blurring_class.blur_faces(step[key])
-            return step
+        from face_blur import face_blur_step_transform_fn
+        face_blurring_fn = face_blur_step_transform_fn(image_keys, args.face_blur_type)
     else:
         face_blurring_fn = None
 
@@ -190,9 +179,10 @@ if __name__ == "__main__":
         max_episodes_per_shard=shard_size,
         overwrite=args.overwrite,
         eps_filtering_fn=eps_filtering_fn,
+        step_transform_fn=face_blurring_fn,
     )
     print("Updated dataset info: ", dataset_info)
     print_yellow(f"Saved rlds dataset to: {args.output_rlds}")
-    
+
     print(os.system(f"ls -lh {args.output_rlds}"))
     print("Done!")
