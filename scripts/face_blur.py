@@ -1,7 +1,9 @@
-import numpy as np
-import cv2
 from abc import ABC, abstractmethod
 import os
+import cv2
+import numpy as np
+from concurrent.futures import ThreadPoolExecutor
+from typing import List, Dict, Any, Set, Callable
 
 
 class FaceBlurBase(ABC):
@@ -92,6 +94,84 @@ class MediaPipeFaceBlur(FaceBlurBase):
 
 
 #####################################################################################
+
+class BatchFaceBlur:
+    def __init__(self, worker_count: int, type: str = "mediapipe"):
+        self.detectors = []
+        if type == "mediapipe":
+            self.detectors = [MediaPipeFaceBlur() for _ in range(worker_count)]
+        elif type == "haar":
+            self.detectors = [HaarCascadeFaceBlur() for _ in range(worker_count)]
+        else:
+            raise ValueError(f"Unknown face_blur type: {type}")
+        self.workercount = worker_count
+
+    def _blur_face_worker(self, image: np.ndarray, worker_index: int) -> np.ndarray:
+        return self.detectors[worker_index].blur_faces(image)
+
+    def batch_blur_faces(self, images: List[np.ndarray]) -> List[np.ndarray]:
+        assert len(images) == self.workercount, "Image count should == worker count"
+        with ThreadPoolExecutor(max_workers=self.workercount) as executor:
+            results = list(executor.map(self._blur_face_worker,
+                           images, range(self.workercount)))
+        return results
+
+
+#####################################################################################
+
+
+def face_blur_step_transform_fn(image_keys: Set[str], face_blur_type: str) -> Callable:
+    """
+    Get the step transformation function to blur faces in the images. This is the
+    high-level helper function to create a step transformation function that blurs
+    faces in the images.
+
+    Args:
+        image_keys: Set[str]: Set of image keys in the observation.
+        face_blur_type: str: The type of face blurring to apply.
+
+    Returns:
+        Callable[[Dict[str, Any]], Dict[str, Any]]: The step transformation function.
+    """
+    from face_blur import MediaPipeFaceBlur, HaarCascadeFaceBlur, BatchFaceBlur
+
+    # Batch face blurring if there are multiple images
+    if len(image_keys) > 1:
+        worker_count = len(image_keys)
+        print("Using batch face blurring with worker count: ", worker_count)
+        _blur_method = BatchFaceBlur(worker_count, type=face_blur_type)
+
+        # callback function to blur faces in the images
+        def face_blurring_fn(step: Dict[str, Any]) -> Dict[str, Any]:
+            """A function to blur faces in the images."""
+            original_images = [step["observation"][key] for key in image_keys]
+            blurred_images = _blur_method.batch_blur_faces(original_images)
+            for key, img in zip(image_keys, blurred_images):
+                step["observation"][key] = img
+            return step
+
+    # Single image face blurring
+    else:
+        # Choose the face blurring method
+        if face_blur_type == "mediapipe":
+            _blur_method = MediaPipeFaceBlur()
+        elif face_blur_type == "haar":
+            _blur_method = HaarCascadeFaceBlur()
+        else:
+            raise ValueError(f"Unknown face_blur_type: {face_blur_type}")
+
+        # callback function to blur faces in the images
+        def face_blurring_fn(step: Dict[str, Any]) -> Dict[str, Any]:
+            """A function to blur faces in the images."""
+            for key in image_keys:
+                step["observation"][key] = _blur_method.blur_faces(
+                    step["observation"][key])
+            return step
+
+    return face_blurring_fn
+
+#####################################################################################
+
 
 if __name__ == "__main__":
     # NOTE: test impl of face blurring implementation
